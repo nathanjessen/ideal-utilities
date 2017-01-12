@@ -1,0 +1,29 @@
+/*
+@styleguide
+
+@title Font Style
+
+Use these classes on an element to change the font-style.
+
+<p class="u-fs--italic">u-fs--italic</p>
+<p class="u-fs--normal">u-fs--normal</p>
+<p class="u-fs--oblique">u-fs--oblique</p>
+
+```
+<p class="u-fs--italic"></p>
+<p class="u-fs--normal"></p>
+<p class="u-fs--oblique"></p>
+```
+*/
+
+.u-fs--italic {
+  font-style: italic !important;
+}
+
+.u-fs--normal {
+  font-style: normal !important;
+}
+
+.u-fs--oblique {
+  font-style: oblique !important;
+}

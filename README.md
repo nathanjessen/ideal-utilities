@@ -1,2 +1,3 @@
-# ideal-utilities
-Utility classes for the Ideal framework
+# Ideal Utilities
+
+CSS Utilities

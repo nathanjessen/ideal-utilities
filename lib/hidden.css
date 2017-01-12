@@ -1,0 +1,17 @@
+/*
+@styleguide
+
+@title Hidden
+
+Use these classes to hide an element.
+
+<p class="u-hidden">u-hidden</p>
+
+```
+<p class="u-hidden"></p>
+```
+*/
+
+.u-hidden {
+  display: none !important;
+}

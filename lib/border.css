@@ -1,0 +1,61 @@
+/*
+@styleguide
+
+@title Border
+
+Use these classes on any element to apply a border.
+
+<p class="u-border--all">u-border--all</p>
+<p class="u-border--x">u-border--x</p>
+<p class="u-border--y">u-border--y</p>
+<p class="u-border--top">u-border--top</p>
+<p class="u-border--right">u-border--right</p>
+<p class="u-border--bottom">u-border--bottom</p>
+<p class="u-border--left">u-border--left</p>
+<p class="u-border--none">u-border--none</p>
+
+```
+<p class="u-border--all"></p>
+<p class="u-border--x"></p>
+<p class="u-border--y"></p>
+<p class="u-border--top"></p>
+<p class="u-border--right"></p>
+<p class="u-border--bottom"></p>
+<p class="u-border--left"></p>
+<p class="u-border--none"></p>
+```
+*/
+
+.u-border--all {
+  border: 1px solid var(--border-color) !important;
+}
+
+.u-border--x {
+  border-left: 1px solid var(--border-color) !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+.u-border--y {
+  border-top: 1px solid var(--border-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.u-border--top {
+  border-top: 1px solid var(--border-color) !important;
+}
+
+.u-border--right {
+  border-right: 1px solid var(--border-color) !important;
+}
+
+.u-border--bottom {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.u-border--left {
+  border-left: 1px solid var(--border-color) !important;
+}
+
+.u-border--none {
+  border: none !important;
+}

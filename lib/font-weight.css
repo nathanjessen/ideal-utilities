@@ -1,0 +1,31 @@
+/*
+@styleguide
+
+@title Font Weight
+
+Use these classes on any element to change the font-weight.
+
+<p class="u-fw--light">u-fw--light</p>
+<p class="u-fw--normal">u-fw--normal</p>
+<p class="u-fw--medium">u-fw--medium</p>
+<p class="u-fw--semibold">u-fw--semibold</p>
+<p class="u-fw--bold">u-fw--bold</p>
+<p class="u-fw--black">u-fw--black</p>
+
+```
+<p class="u-fw--light"></p>
+<p class="u-fw--normal"></p>
+<p class="u-fw--medium"></p>
+<p class="u-fw--semibold"></p>
+<p class="u-fw--bold"></p>
+<p class="u-fw--black"></p>
+```
+*/
+
+@each $weight in light, normal, medium, semibold, bold, black {
+
+  .u-fw--$weight {
+    font-weight: var(--$weight) !important;
+  }
+
+}

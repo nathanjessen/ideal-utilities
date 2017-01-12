@@ -1,0 +1,44 @@
+/*
+@styleguide
+
+@title List
+
+Utility classes to control the appearance of a list element (e.g. `ul`, `ol`, `dl`).
+
+<ul class="u-list--unstyled">
+  <li>.u-list--unstyled</li>
+  <li>.u-list--unstyled</li>
+</ul>
+
+```
+<ul class="u-list--unstyled">
+  <li></li>
+</ul>
+```
+
+<ul class="u-list--inline">
+  <li>.u-list--inline</li>
+  <li>.u-list--inline</li>
+  <li>.u-list--inline</li>
+</ul>
+
+```
+<ul class="u-list--inline">
+  <li></li>
+</ul>
+```
+*/
+
+.u-list--unstyled,
+.u-list--inline {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.u-list--inline > li {
+  display: inline-block !important;
+
+  &:not(:last-child)::after {
+    content: " |" !important;
+  }
+}

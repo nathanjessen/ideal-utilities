@@ -1,0 +1,53 @@
+/*
+@styleguide
+
+@title Display
+
+Use these classes on any element to change the display property.
+
+<p class="u-display--block">u-display--block</p>
+<p class="u-display--inline-block">u-display--inline-block</p>
+<p class="u-display--inline">u-display--inline</p>
+<p class="u-display--flex">u-display--flex</p>
+<p class="u-display--table">u-display--table</p>
+<p class="u-display--table-cell">u-display--table-cell</p>
+<p class="u-display--none">u-display--none</p>
+
+```
+<p class="u-display--block"></p>
+<p class="u-display--inline-block"></p>
+<p class="u-display--inline"></p>
+<p class="u-display--flex"></p>
+<p class="u-display--table"></p>
+<p class="u-display--table-cell"></p>
+<p class="u-display--none"></p>
+```
+*/
+
+.u-display--block {
+  display: block !important;
+}
+
+.u-display--inline-block {
+  display: inline-block !important;
+}
+
+.u-display--inline {
+  display: inline !important;
+}
+
+.u-display--flex {
+  display: flex !important;
+}
+
+.u-display--table {
+  display: table !important;
+}
+
+.u-display--table-cell {
+  display: table-cell !important;
+}
+
+.u-display--none {
+  display: none !important;
+}

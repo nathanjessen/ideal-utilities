@@ -1,0 +1,19 @@
+/*
+@styleguide
+
+@title Truncate
+
+Use this class to show an ellipsis instead of wrapped text.
+
+<p class="u-truncate">u-truncate</p>
+
+```
+<p class="u-truncate"></p>
+```
+*/
+
+.u-truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}

@@ -1,0 +1,49 @@
+@import "./lib/background-color.css";
+@import "./lib/border.css";
+@import "./lib/color.css";
+@import "./lib/display.css";
+@import "./lib/float.css";
+@import "./lib/font-style.css";
+@import "./lib/font-weight.css";
+@import "./lib/hidden.css";
+@import "./lib/letter-spacing.css";
+@import "./lib/list.css";
+@import "./lib/margin.css";
+@import "./lib/overflow.css";
+@import "./lib/padding.css";
+@import "./lib/text-align.css";
+@import "./lib/text-decoration.css";
+@import "./lib/text-transform.css";
+@import "./lib/truncate.css";
+@import "./lib/white-space.css";
+
+/* Variables */
+:root {
+
+  /* Colors */
+  --white: #fff;
+  --white-off: #fff;
+  --gray-light: #fff;
+  --gray: #fff;
+  --gray-dark: #fff;
+  --theme-primary: #fff;
+  --theme-secondary: #fff;
+  --theme-tertiary: #fff;
+
+  /* UI Colors*/
+  --border-color: gray;
+
+  /* Letter Spacing */
+  --letter-default: 0;
+  --letter-compact: -1px;
+  --letter-normal: 0;
+  --letter-loose: 2px;
+
+}
+
+@custom-media --mq-xs (min-width: 20em);
+@custom-media --mq-sm (min-width: 30em);
+@custom-media --mq-md (min-width: 35.5em);
+@custom-media --mq-lg (min-width: 48em);
+@custom-media --mq-xl (min-width: 64em);
+@custom-media --mq-xxl (min-width: 80em);

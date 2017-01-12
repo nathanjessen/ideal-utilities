@@ -1,0 +1,41 @@
+/*
+@styleguide
+
+@title Overflow
+
+Use these classes on any element to change the overflow property.
+
+<p class="u-overflow--visible">u-overflow--visible</p>
+<p class="u-overflow--hidden">u-overflow--hidden</p>
+<p class="u-overflow--scroll">u-overflow--scroll</p>
+<p class="u-overflow--auto">u-overflow--auto</p>
+<p class="u-overflow--initial">u-overflow--initial</p>
+
+```
+<p class="u-overflow--visible"></p>
+<p class="u-overflow--hidden"></p>
+<p class="u-overflow--scroll"></p>
+<p class="u-overflow--auto"></p>
+<p class="u-overflow--initial"></p>
+```
+*/
+
+.u-overflow--visible {
+  overflow: visible !important;
+}
+
+.u-overflow--hidden {
+  overflow: hidden !important;
+}
+
+.u-overflow--scroll {
+  overflow: scroll !important;
+}
+
+.u-overflow--auto {
+  overflow: auto !important;
+}
+
+.u-overflow--initial {
+  overflow: initial !important;
+}

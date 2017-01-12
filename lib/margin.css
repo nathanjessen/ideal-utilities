@@ -1,0 +1,184 @@
+/*
+@styleguide
+
+@title Margin
+
+Utility classes to control the margin on any side of an element.
+
+** Visual not available **
+
+```
+<h2>All Sides</h2>
+<p class="u-ma--0"></p>
+<p class="u-ma--5"></p>
+<p class="u-ma--10"></p>
+<p class="u-ma--20"></p>
+<p class="u-ma--30"></p>
+<p class="u-ma--40"></p>
+
+<h2>Left and Right</h2>
+<p class="u-mx--0"></p>
+<p class="u-mx--5"></p>
+<p class="u-mx--10"></p>
+<p class="u-mx--20"></p>
+<p class="u-mx--30"></p>
+<p class="u-mx--40"></p>
+
+<h2>Top and Bottom</h2>
+<p class="u-my--0"></p>
+<p class="u-my--5"></p>
+<p class="u-my--10"></p>
+<p class="u-my--20"></p>
+<p class="u-my--30"></p>
+<p class="u-my--40"></p>
+
+<h2>Top</h2>
+<p class="u-mt--0"></p>
+<p class="u-mt--5"></p>
+<p class="u-mt--10"></p>
+<p class="u-mt--20"></p>
+<p class="u-mt--30"></p>
+<p class="u-mt--40"></p>
+
+<h2>Right</h2>
+<p class="u-mr--0"></p>
+<p class="u-mr--5"></p>
+<p class="u-mr--10"></p>
+<p class="u-mr--20"></p>
+<p class="u-mr--30"></p>
+<p class="u-mr--40"></p>
+
+<h2>Bottom</h2>
+<p class="u-mb--0"></p>
+<p class="u-mb--5"></p>
+<p class="u-mb--10"></p>
+<p class="u-mb--20"></p>
+<p class="u-mb--30"></p>
+<p class="u-mb--40"></p>
+
+<h2>Left</h2>
+<p class="u-ml--0"></p>
+<p class="u-ml--5"></p>
+<p class="u-ml--10"></p>
+<p class="u-ml--20"></p>
+<p class="u-ml--30"></p>
+<p class="u-ml--40"></p>
+```
+*/
+
+/* All Sides */
+.u-ma--a { margin: auto !important; }
+.u-ma--0 { margin: 0 !important; }
+.u-ma--5 { margin: 5px !important; }
+.u-ma--10 { margin: 10px !important; }
+.u-ma--20 { margin: 20px !important; }
+.u-ma--30 { margin: 30px !important; }
+.u-ma--40 { margin: 40px !important; }
+
+/* Left and Right */
+.u-mx--a {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.u-mx--0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.u-mx--5 {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+.u-mx--10 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.u-mx--20 {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+.u-mx--30 {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+}
+
+.u-mx--40 {
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+}
+
+/* Top and Bottom */
+.u-my--a {
+  margin-bottom: auto !important;
+  margin-top: auto !important;
+}
+
+.u-my--0 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.u-my--5 {
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+}
+
+.u-my--10 {
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+}
+
+.u-my--20 {
+  margin-bottom: 20px !important;
+  margin-top: 20px !important;
+}
+
+.u-my--30 {
+  margin-bottom: 30px !important;
+  margin-top: 30px !important;
+}
+
+.u-my--40 {
+  margin-bottom: 40px !important;
+  margin-top: 40px !important;
+}
+
+/* Top */
+.u-mt--a { margin-top: auto !important; }
+.u-mt--0 { margin-top: 0 !important; }
+.u-mt--5 { margin-top: 5px !important; }
+.u-mt--10 { margin-top: 10px !important; }
+.u-mt--20 { margin-top: 20px !important; }
+.u-mt--30 { margin-top: 30px !important; }
+.u-mt--40 { margin-top: 40px !important; }
+
+/* Right */
+.u-mr--a { margin-right: auto !important; }
+.u-mr--0 { margin-right: 0 !important; }
+.u-mr--5 { margin-right: 5px !important; }
+.u-mr--10 { margin-right: 10px !important; }
+.u-mr--20 { margin-right: 20px !important; }
+.u-mr--30 { margin-right: 30px !important; }
+.u-mr--40 { margin-right: 40px !important; }
+
+/* Bottom */
+.u-mb--a { margin-bottom: auto !important; }
+.u-mb--0 { margin-bottom: 0 !important; }
+.u-mb--5 { margin-bottom: 5px !important; }
+.u-mb--10 { margin-bottom: 10px !important; }
+.u-mb--20 { margin-bottom: 20px !important; }
+.u-mb--30 { margin-bottom: 30px !important; }
+.u-mb--40 { margin-bottom: 40px !important; }
+
+/* Left */
+.u-ml--a { margin-left: auto !important; }
+.u-ml--0 { margin-left: 0 !important; }
+.u-ml--5 { margin-left: 5px !important; }
+.u-ml--10 { margin-left: 10px !important; }
+.u-ml--20 { margin-left: 20px !important; }
+.u-ml--30 { margin-left: 30px !important; }
+.u-ml--40 { margin-left: 40px !important; }

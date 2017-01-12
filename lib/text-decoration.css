@@ -1,0 +1,23 @@
+/*
+@styleguide
+
+@title Text Decoration
+
+Use these classes on an element to change the font-style.
+
+<p class="u-text--strikeout">u-text--strikeout</p>
+<p class="u-text--underline">u-text--underline</p>
+
+```
+<p class="u-text--strikeout"></p>
+<p class="u-text--underline"></p>
+```
+*/
+
+.u-text--strikeout {
+  text-decoration: line-through !important;
+}
+
+.u-text--underline {
+  text-decoration: underline !important;
+}

@@ -1,0 +1,29 @@
+/*
+@styleguide
+
+@title Text Decoration
+
+Use these classes on an element to change the font-style.
+
+<p class="u-text--capitalize">u-text--capitalize</p>
+<p class="u-text--lowercase">u-text--lowercase</p>
+<p class="u-text--uppercase">u-text--uppercase</p>
+
+```
+<p class="u-text--capitalize"></p>
+<p class="u-text--lowercase"></p>
+<p class="u-text--uppercase"></p>
+```
+*/
+
+.u-text--capitalize {
+  text-transform: capitalize !important;
+}
+
+.u-text--lowercase {
+  text-transform: lowercase !important;
+}
+
+.u-text--uppercase {
+  text-transform: uppercase !important;
+}

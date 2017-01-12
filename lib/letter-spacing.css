@@ -1,0 +1,35 @@
+/*
+@styleguide
+
+@title Letter Spacing
+
+Use these classes on any element to alter the letter-spacing.
+
+<p class="u-ls--default">u-ls--default</p>
+<p class="u-ls--compact">u-ls--compact</p>
+<p class="u-ls--normal">u-ls--normal</p>
+<p class="u-ls--loose">u-ls--loose</p>
+
+```
+<p class="u-ls--default"></p>
+<p class="u-ls--compact"></p>
+<p class="u-ls--normal"></p>
+<p class="u-ls--loose"></p>
+```
+*/
+
+.u-ls--default {
+  letter-spacing: var(--letter-default) !important;
+}
+
+.u-ls--compact {
+  letter-spacing: var(--letter-compact) !important;
+}
+
+.u-ls--normal {
+  letter-spacing: var(--letter-normal) !important;
+}
+
+.u-ls--loose {
+  letter-spacing: var(--letter-loose) !important;
+}
