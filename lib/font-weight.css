@@ -24,8 +24,8 @@ Use these classes on any element to change the font-weight.
 
 @each $weight in light, normal, medium, semibold, bold, black {
 
-  .u-fw--$weight {
-    font-weight: var(--$weight) !important;
+  .u-fw--$(weight) {
+    font-weight: var(--font-$(weight)) !important;
   }
 
 }

@@ -1,0 +1,59 @@
+/*
+@styleguide
+
+@title Vertical Align
+
+Use these classes to alter the vertical alignment.
+
+<p class="u-va--baseline">u-va--baseline</p>
+<p class="u-va--bottom">u-va--bottom</p>
+<p class="u-va--middle">u-va--middle</p>
+<p class="u-va--sub">u-va--sub</p>
+<p class="u-va--super">u-va--super</p>
+<p class="u-va--text-bottom">u-va--text-bottom</p>
+<p class="u-va--text-top">u-va--text-top</p>
+<p class="u-va--top">u-va--top</p>
+
+```
+<p class="u-va--baseline"></p>
+<p class="u-va--bottom"></p>
+<p class="u-va--middle"></p>
+<p class="u-va--sub"></p>
+<p class="u-va--super"></p>
+<p class="u-va--text-bottom"></p>
+<p class="u-va--text-top"></p>
+<p class="u-va--top"></p>
+```
+*/
+
+.u-va--baseline {
+  vertical-align: baseline !important;
+}
+
+.u-va--bottom {
+  vertical-align: bottom !important;
+}
+
+.u-va--middle {
+  vertical-align: middle !important;
+}
+
+.u-va--sub {
+  vertical-align: sub !important;
+}
+
+.u-va--super {
+  vertical-align: super !important;
+}
+
+.u-va--text-bottom {
+  vertical-align: text-bottom !important;
+}
+
+.u-va--text-top {
+  vertical-align: text-top !important;
+}
+
+.u-va--top {
+  vertical-align: top !important;
+}

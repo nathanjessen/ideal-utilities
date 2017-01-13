@@ -5,25 +5,49 @@
 
 Use these classes on an element to alter text alignment.
 
-<p class="u-text--left">u-text--left</p>
-<p class="u-text--right">u-text--right</p>
-<p class="u-text--center">u-text--center</p>
+<p class="u-ta--left">u-ta--left</p>
+<p class="u-ta--right">u-ta--right</p>
+<p class="u-ta--center">u-ta--center</p>
 
 ```
-<p class="u-text--left"></p>
-<p class="u-text--right"></p>
-<p class="u-text--center"></p>
+<p class="u-ta--left"></p>
+<p class="u-ta--right"></p>
+<p class="u-ta--center"></p>
 ```
 */
 
-.text-left {
-  text-align: left !important;
-}
+@each $mq in var(--mq-options) {
 
-.text-right {
-  text-align: right !important;
-}
+  @if $(mq) == e {
+    .u-ta--left {
+      text-align: left !important;
+    }
 
-.text-center {
-  text-align: center !important;
+    .u-ta--right {
+      text-align: right !important;
+    }
+
+    .u-ta--center {
+      text-align: center !important;
+    }
+
+  } @else {
+
+    @media (--mq-$(mq)) {
+
+      .u-ta--left\@$(mq) {
+        text-align: left !important;
+      }
+
+      .u-ta--right\@$(mq) {
+        text-align: right !important;
+      }
+
+      .u-ta--center\@$(mq) {
+        text-align: center !important;
+      }
+
+    }
+
+  }
 }

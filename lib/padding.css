@@ -7,62 +7,13 @@ Utility classes to control the padding on any side of an element.
 
 ** Visual not available **
 
+Classname format: `.u-abreviation--value`
+
+Example: `.u-pa-0`
+
 ```
-<h2>All Sides</h2>
-<p class="u-pa--0"></p>
-<p class="u-pa--5"></p>
-<p class="u-pa--10"></p>
-<p class="u-pa--20"></p>
-<p class="u-pa--30"></p>
-<p class="u-pa--40"></p>
-
-<h2>Left and Right</h2>
-<p class="u-px--0"></p>
-<p class="u-px--5"></p>
-<p class="u-px--10"></p>
-<p class="u-px--20"></p>
-<p class="u-px--30"></p>
-<p class="u-px--40"></p>
-
-<h2>Top and Bottom</h2>
-<p class="u-py--0"></p>
-<p class="u-py--5"></p>
-<p class="u-py--10"></p>
-<p class="u-py--20"></p>
-<p class="u-py--30"></p>
-<p class="u-py--40"></p>
-
-<h2>Top</h2>
-<p class="u-pt--0"></p>
-<p class="u-pt--5"></p>
-<p class="u-pt--10"></p>
-<p class="u-pt--20"></p>
-<p class="u-pt--30"></p>
-<p class="u-pt--40"></p>
-
-<h2>Right</h2>
-<p class="u-pr--0"></p>
-<p class="u-pr--5"></p>
-<p class="u-pr--10"></p>
-<p class="u-pr--20"></p>
-<p class="u-pr--30"></p>
-<p class="u-pr--40"></p>
-
-<h2>Bottom</h2>
-<p class="u-pb--0"></p>
-<p class="u-pb--5"></p>
-<p class="u-pb--10"></p>
-<p class="u-pb--20"></p>
-<p class="u-pb--30"></p>
-<p class="u-pb--40"></p>
-
-<h2>Left</h2>
-<p class="u-pl--0"></p>
-<p class="u-pl--5"></p>
-<p class="u-pl--10"></p>
-<p class="u-pl--20"></p>
-<p class="u-pl--30"></p>
-<p class="u-pl--40"></p>
+Abbreviations: [pa, px, py, pt, pr, pb, pl]
+Values: [0, 5, 10, 20, 30, 40]
 ```
 */
 
@@ -72,7 +23,7 @@ Utility classes to control the padding on any side of an element.
 .u-pa--10 { padding: 10px !important; }
 .u-pa--20 { padding: 20px !important; }
 .u-pa--30 { padding: 30px !important; }
-.u-pa--5 { padding: 40px !important; }
+.u-pa--40 { padding: 40px !important; }
 
 /* Left and Right */
 .u-px--0 {

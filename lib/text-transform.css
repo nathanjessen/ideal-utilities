@@ -1,9 +1,9 @@
 /*
 @styleguide
 
-@title Text Decoration
+@title Text Transform
 
-Use these classes on an element to change the font-style.
+Use these classes on an element to change the text-transform.
 
 <p class="u-text--capitalize">u-text--capitalize</p>
 <p class="u-text--lowercase">u-text--lowercase</p>

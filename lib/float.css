@@ -16,14 +16,36 @@ Use these classes to float an element to the left or right.
 ```
 */
 
-.u-float--left {
-  float: left !important;
-}
+@each $mq in var(--mq-options) {
+  @if $(mq) == e {
 
-.u-float--right {
-  float: right !important;
-}
+    .u-float--left {
+      float: left !important;
+    }
 
-.u-float--none {
-  float: none !important;
+    .u-float--right {
+      float: right !important;
+    }
+
+    .u-float--none {
+      float: none !important;
+    }
+
+  } @else {
+
+    @media (--mq-$(mq)) {
+      .u-float--left\@$(mq) {
+        float: left !important;
+      }
+
+      .u-float--right\@$(mq) {
+        float: right !important;
+      }
+
+      .u-float--none\@$(mq) {
+        float: none !important;
+      }
+    }
+
+  }
 }

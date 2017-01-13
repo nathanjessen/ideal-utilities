@@ -1,11 +1,17 @@
+@import "./lib/align-content.css";
+@import "./lib/align-items.css";
+@import "./lib/align-self.css";
 @import "./lib/background-color.css";
 @import "./lib/border.css";
 @import "./lib/color.css";
 @import "./lib/display.css";
+@import "./lib/flex-direction.css";
+@import "./lib/flex-wrap.css";
 @import "./lib/float.css";
 @import "./lib/font-style.css";
 @import "./lib/font-weight.css";
 @import "./lib/hidden.css";
+@import "./lib/justify-content.css";
 @import "./lib/letter-spacing.css";
 @import "./lib/list.css";
 @import "./lib/margin.css";
@@ -15,22 +21,25 @@
 @import "./lib/text-decoration.css";
 @import "./lib/text-transform.css";
 @import "./lib/truncate.css";
+@import "./lib/vertical-align.css";
 @import "./lib/white-space.css";
 
-/* Variables */
+/* @start color */
+:root {
+  --white: #fff;
+  --white-off: gray(95%);
+  --gray-light: gray(80%);
+  --gray: gray(40%);
+  --gray-dark: gray(20%);
+  --theme-primary: #3494e6;
+  --theme-secondary: #36d7b7;
+  --theme-tertiary: #86d5c7;
+}
+/* @end color */
+
 :root {
 
-  /* Colors */
-  --white: #fff;
-  --white-off: #fff;
-  --gray-light: #fff;
-  --gray: #fff;
-  --gray-dark: #fff;
-  --theme-primary: #fff;
-  --theme-secondary: #fff;
-  --theme-tertiary: #fff;
-
-  /* UI Colors*/
+  /* UI Colors */
   --border-color: gray;
 
   /* Letter Spacing */
@@ -39,7 +48,57 @@
   --letter-normal: 0;
   --letter-loose: 2px;
 
+  /* Font Weight */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 900;
+
+  /* Media Queries */
+  --mq-options: e, xs, sm, md, lg, xl, xxl;
+
 }
+
+/*
+@styleguide
+
+@title Media Queries
+
+Uses custom properties to make media queries more semantic.
+
+```
+## Custom Properties available
+@custom-media --mq-xs (min-width: 20em);
+@custom-media --mq-sm (min-width: 30em);
+@custom-media --mq-md (min-width: 35.5em);
+@custom-media --mq-lg (min-width: 48em);
+@custom-media --mq-xl (min-width: 64em);
+@custom-media --mq-xxl (min-width: 80em);
+
+## Usage
+@media (--mq-xs) {}
+@media (--mq-sm) {}
+@media (--mq-md) {}
+@media (--mq-lg) {}
+@media (--mq-xl) {}
+@media (--mq-xxl) {}
+
+## Each loop
+@each $mq in var(--mq-options) {
+
+  @if $(mq) == e {
+    .u-name {}
+  } @else {
+    @media (--mq-$(mq)) {
+      .u-name\@$mq {}
+    }
+  }
+
+}
+```
+*/
 
 @custom-media --mq-xs (min-width: 20em);
 @custom-media --mq-sm (min-width: 30em);
