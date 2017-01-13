@@ -40,8 +40,10 @@ gulp.task('css', function () {
     }),
     mqpacker(),
     styleGuide({
+      dest: siteRoot + '/index.html',
       project: 'Ideal Utilities',
-      dest: siteRoot + '/index.html'
+      showCode: true,
+      theme: 'ideal'
     })
   ];
 
