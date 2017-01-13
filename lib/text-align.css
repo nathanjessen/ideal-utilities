@@ -19,6 +19,7 @@ Use these classes on an element to alter text alignment.
 @each $mq in var(--mq-options) {
 
   @if $(mq) == e {
+
     .u-ta--left {
       text-align: left !important;
     }
@@ -31,7 +32,9 @@ Use these classes on an element to alter text alignment.
       text-align: center !important;
     }
 
-  } @else {
+  }
+
+  @else {
 
     @media (--mq-$(mq)) {
 

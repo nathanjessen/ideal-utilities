@@ -17,6 +17,7 @@ Use these classes to float an element to the left or right.
 */
 
 @each $mq in var(--mq-options) {
+
   @if $(mq) == e {
 
     .u-float--left {
@@ -31,7 +32,9 @@ Use these classes to float an element to the left or right.
       float: none !important;
     }
 
-  } @else {
+  }
+
+  @else {
 
     @media (--mq-$(mq)) {
       .u-float--left\@$(mq) {

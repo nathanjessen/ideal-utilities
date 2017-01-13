@@ -20,7 +20,9 @@ Use these classes to hide an element.
       display: none !important;
     }
 
-  } @else {
+  }
+
+  @else {
 
     @media (--mq-$(mq)) {
 

@@ -1,248 +1,248 @@
 <!doctype html>
 <html class="psg-theme" lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Ideal Utilities</title>
-        <style>.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8;-webkit-text-size-adjust:none}.diff .hljs-header,.hljs-comment{color:#998;font-style:italic}.css .rule .hljs-keyword,.hljs-keyword,.hljs-request,.hljs-status,.hljs-subst,.hljs-winutils,.nginx .hljs-title{color:#333;font-weight:700}.hljs-hexcolor,.hljs-number,.ruby .hljs-constant{color:teal}.hljs-doctag,.hljs-string,.hljs-tag .hljs-value,.tex .hljs-formula{color:#d14}.hljs-id,.hljs-title,.scss .hljs-preprocessor{color:#900;font-weight:700}.hljs-list .hljs-keyword,.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type,.tex .hljs-command,.vhdl .hljs-literal{color:#458;font-weight:700}.django .hljs-tag .hljs-keyword,.hljs-rule .hljs-property,.hljs-tag,.hljs-tag .hljs-title{color:navy;font-weight:400}.hljs-attribute,.hljs-name,.hljs-variable,.lisp .hljs-body{color:teal}.hljs-regexp{color:#009926}.clojure .hljs-keyword,.hljs-prompt,.hljs-symbol,.lisp .hljs-keyword,.ruby .hljs-symbol .hljs-string,.scheme .hljs-keyword,.tex .hljs-special{color:#990073}.hljs-built_in{color:#0086b3}.hljs-cdata,.hljs-doctype,.hljs-pi,.hljs-pragma,.hljs-preprocessor,.hljs-shebang{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.diff .hljs-change{background:#0086b3}.hljs-chunk{color:#aaa}/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}html{box-sizing:border-box}*,:after,:before,input[type=search]{box-sizing:inherit}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,p,pre{margin:0}button{background:transparent;border:0;padding:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset{border:0;margin:0;padding:0}iframe{border:0}ol,ul{list-style:none;margin:0;padding:0}[tabindex="-1"]:focus{outline:none!important}html.psg-theme{font-size:62.5%}body{margin:0}body,html{height:100%;overflow-y:hidden}h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]{margin:2rem 0 1rem;font-weight:400;line-height:1.6;color:#444}h1[id]{font-size:2.8rem}h2[id]{font-size:2.4rem}h3[id]{font-size:2rem}h4[id],h5[id],h6[id]{font-size:1.8rem}p[id]{margin:1rem 0}.psg-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;height:100%;font-size:1.6rem;font-family:Arial,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,Osaka,メイリオ,Meiryo,ＭＳ\ Ｐゴシック,MS PGothic,sans-serif;color:#444;line-height:1.5}.psg-menu{width:240px;height:100%;padding:2rem 3.2rem;border-right:1px solid #ddd;overflow-y:scroll}.psg-logo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:2rem}.psg-logo>img{width:100%;margin-left:-50px}.psg-ComponentList__item{display:block;color:#3f526b;padding:12px 8px}.psg-ComponentList__item:hover{background-color:#eee}.psg-main{-webkit-box-flex:1;-ms-flex:1 1 0%;flex:1 1 0%;height:100%;background-color:#fff;overflow-y:scroll}.psg-title{width:100%;padding:40px 60px;font-size:2rem;text-align:center;color:#fff;background-color:#e23b00}.psg-container{margin:50px 0}.psg-component-title.psg-component-title{margin:2rem 0 1rem;font-size:3.2rem;font-weight:700;line-height:1.6;color:#3f526b}.psg-section{max-width:580px;margin:0 auto}.psg-contents>p,.psg-contents>pre{margin:2rem 0}hr.psg-separator{margin:4rem 0;border:0;border-top:1px solid #ddd}.psg-colorPalette{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap}.psg-colorBox{width:180px;box-shadow:1px 1px 10px 0 rgba(0,0,0,.2);margin:3rem}.psg-colorBox__sample{height:100px}.psg-colorBox__name{padding:1em;font-size:1.4rem;text-align:center}.u-ac--flex-start{-ms-flex-line-pack:start;align-content:flex-start}.u-ac--flex-end{-ms-flex-line-pack:end;align-content:flex-end}.u-ac--center{-ms-flex-line-pack:center;align-content:center}.u-ac--stretch{-ms-flex-line-pack:stretch;align-content:stretch}.u-ac--space-between{-ms-flex-line-pack:justify;align-content:space-between}.u-ac--space-around{-ms-flex-line-pack:distribute;align-content:space-around}.u-ai--flex-start{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.u-ai--flex-end{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.u-ai--center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.u-ai--baseline{-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}.u-ai--stretch{-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}.u-as--flex-start{-ms-flex-item-align:start;align-self:flex-start}.u-as--flex-end{-ms-flex-item-align:end;align-self:flex-end}.u-as--center{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}.u-as--stretch{-ms-flex-item-align:stretch;-ms-grid-row-align:stretch;align-self:stretch}.u-as--auto{-ms-flex-item-align:auto;-ms-grid-row-align:auto;align-self:auto}.u-bgc--white{background-color:#fff!important}.u-bgc--white-off{background-color:#f2f2f2!important}.u-bgc--gray-light{background-color:#ccc!important}.u-bgc--gray{background-color:#666!important}.u-bgc--gray-dark{background-color:#333!important}.u-bgc--theme-primary{background-color:#3494e6!important}.u-bgc--theme-secondary{background-color:#36d7b7!important}.u-bgc--theme-tertiary{background-color:#86d5c7!important}.u-border--all{border:1px solid gray!important}.u-border--x{border-left:1px solid gray!important;border-right:1px solid gray!important}.u-border--y{border-bottom:1px solid gray!important}.u-border--top,.u-border--y{border-top:1px solid gray!important}.u-border--right{border-right:1px solid gray!important}.u-border--bottom{border-bottom:1px solid gray!important}.u-border--left{border-left:1px solid gray!important}.u-border--none{border:none!important}.u-color--white{color:#fff!important}.u-color--white-off{color:#f2f2f2!important}.u-color--gray-light{color:#ccc!important}.u-color--gray{color:#666!important}.u-color--gray-dark{color:#333!important}.u-color--theme-primary{color:#3494e6!important}.u-color--theme-secondary{color:#36d7b7!important}.u-color--theme-tertiary{color:#86d5c7!important}.u-display--block{display:block!important}.u-display--inline-block{display:inline-block!important}.u-display--inline{display:inline!important}.u-display--flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.u-display--table{display:table!important}.u-display--table-cell{display:table-cell!important}.u-display--none{display:none!important}.u-flex--column{-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important}.u-flex--column-reverse{-webkit-box-orient:vertical!important;-webkit-box-direction:reverse!important;-ms-flex-direction:column-reverse!important;flex-direction:column-reverse!important}.u-flex--row{-webkit-box-direction:normal!important;-ms-flex-direction:row!important;flex-direction:row!important}.u-flex--row,.u-flex--row-reverse{-webkit-box-orient:horizontal!important}.u-flex--row-reverse{-webkit-box-direction:reverse!important;-ms-flex-direction:row-reverse!important;flex-direction:row-reverse!important}.u-flex--wrap{-webkit-box-direction:normal!important;-ms-flex-direction:wrap!important;flex-direction:wrap!important}.u-flex--wrap,.u-flex--wrap-reverse{-webkit-box-orient:vertical!important}.u-flex--wrap-reverse{-webkit-box-direction:reverse!important;-ms-flex-direction:wrap-reverse!important;flex-direction:wrap-reverse!important}.u-flex--nowrap{-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:nowrap!important;flex-direction:nowrap!important}.u-float--left{float:left!important}.u-float--right{float:right!important}.u-float--none{float:none!important}.u-fs--italic{font-style:italic!important}.u-fs--normal{font-style:normal!important}.u-fs--oblique{font-style:oblique!important}.u-fw--light{font-weight:300!important}.u-fw--normal{font-weight:400!important}.u-fw--medium{font-weight:500!important}.u-fw--semibold{font-weight:600!important}.u-fw--bold{font-weight:700!important}.u-fw--black{font-weight:900!important}.u-hidden{display:none!important}.u-justify--flex-start{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important}.u-justify--flex-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.u-justify--center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}.u-justify--space-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}.u-justify--space-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}.u-ls--default{letter-spacing:0!important}.u-ls--compact{letter-spacing:-1px!important}.u-ls--normal{letter-spacing:0!important}.u-ls--loose{letter-spacing:2px!important}.u-list--inline,.u-list--unstyled{list-style:none!important;padding-left:0!important}.u-list--inline>li{display:inline-block!important}.u-list--inline>li:not(:last-child):after{content:" |"!important}.u-ma--auto{margin:auto!important}.u-ma--0{margin:0!important}.u-ma--5{margin:5px!important}.u-ma--10{margin:10px!important}.u-ma--20{margin:20px!important}.u-ma--30{margin:30px!important}.u-ma--40{margin:40px!important}.u-mx--auto{margin-left:auto!important;margin-right:auto!important}.u-mx--0{margin-left:0!important;margin-right:0!important}.u-mx--5{margin-left:5px!important;margin-right:5px!important}.u-mx--10{margin-left:10px!important;margin-right:10px!important}.u-mx--20{margin-left:20px!important;margin-right:20px!important}.u-mx--30{margin-left:30px!important;margin-right:30px!important}.u-mx--40{margin-left:40px!important;margin-right:40px!important}.u-my--auto{margin-bottom:auto!important;margin-top:auto!important}.u-my--0{margin-bottom:0!important;margin-top:0!important}.u-my--5{margin-bottom:5px!important;margin-top:5px!important}.u-my--10{margin-bottom:10px!important;margin-top:10px!important}.u-my--20{margin-bottom:20px!important;margin-top:20px!important}.u-my--30{margin-bottom:30px!important;margin-top:30px!important}.u-my--40{margin-bottom:40px!important;margin-top:40px!important}.u-mt--auto{margin-top:auto!important}.u-mt--0{margin-top:0!important}.u-mt--5{margin-top:5px!important}.u-mt--10{margin-top:10px!important}.u-mt--20{margin-top:20px!important}.u-mt--30{margin-top:30px!important}.u-mt--40{margin-top:40px!important}.u-mr--auto{margin-right:auto!important}.u-mr--0{margin-right:0!important}.u-mr--5{margin-right:5px!important}.u-mr--10{margin-right:10px!important}.u-mr--20{margin-right:20px!important}.u-mr--30{margin-right:30px!important}.u-mr--40{margin-right:40px!important}.u-mb--auto{margin-bottom:auto!important}.u-mb--0{margin-bottom:0!important}.u-mb--5{margin-bottom:5px!important}.u-mb--10{margin-bottom:10px!important}.u-mb--20{margin-bottom:20px!important}.u-mb--30{margin-bottom:30px!important}.u-mb--40{margin-bottom:40px!important}.u-ml--auto{margin-left:auto!important}.u-ml--0{margin-left:0!important}.u-ml--5{margin-left:5px!important}.u-ml--10{margin-left:10px!important}.u-ml--20{margin-left:20px!important}.u-ml--30{margin-left:30px!important}.u-ml--40{margin-left:40px!important}.u-overflow--visible{overflow:visible!important}.u-overflow--hidden{overflow:hidden!important}.u-overflow--scroll{overflow:scroll!important}.u-overflow--auto{overflow:auto!important}.u-overflow--initial{overflow:visible!important;overflow:initial!important}.u-pa--0{padding:0!important}.u-pa--5{padding:5px!important}.u-pa--10{padding:10px!important}.u-pa--20{padding:20px!important}.u-pa--30{padding:30px!important}.u-pa--40{padding:40px!important}.u-px--0{padding-left:0!important;padding-right:0!important}.u-px--5{padding-left:5px!important;padding-right:5px!important}.u-px--10{padding-left:10px!important;padding-right:10px!important}.u-px--20{padding-left:20px!important;padding-right:20px!important}.u-px--30{padding-left:30px!important;padding-right:30px!important}.u-px--40{padding-left:40px!important;padding-right:40px!important}.u-py--0{padding-bottom:0!important;padding-top:0!important}.u-py--5{padding-bottom:5px!important;padding-top:5px!important}.u-py--10{padding-bottom:10px!important;padding-top:10px!important}.u-py--20{padding-bottom:20px!important;padding-top:20px!important}.u-py--30{padding-bottom:30px!important;padding-top:30px!important}.u-py--40{padding-bottom:40px!important;padding-top:40px!important}.u-pt--0{padding-top:0!important}.u-pt--5{padding-top:5px!important}.u-pt--10{padding-top:10px!important}.u-pt--20{padding-top:20px!important}.u-pt--30{padding-top:30px!important}.u-pt--40{padding-top:40px!important}.u-pr--0{padding-right:0!important}.u-pr--5{padding-right:5px!important}.u-pr--10{padding-right:10px!important}.u-pr--20{padding-right:20px!important}.u-pr--30{padding-right:30px!important}.u-pr--40{padding-right:40px!important}.u-pb--0{padding-bottom:0!important}.u-pb--5{padding-bottom:5px!important}.u-pb--10{padding-bottom:10px!important}.u-pb--20{padding-bottom:20px!important}.u-pb--30{padding-bottom:30px!important}.u-pb--40{padding-bottom:40px!important}.u-pl--0{padding-left:0!important}.u-pl--5{padding-left:5px!important}.u-pl--10{padding-left:10px!important}.u-pl--20{padding-left:20px!important}.u-pl--30{padding-left:30px!important}.u-pl--40{padding-left:40px!important}.u-ta--left{text-align:left!important}.u-ta--right{text-align:right!important}.u-ta--center{text-align:center!important}.u-text--strikeout{text-decoration:line-through!important}.u-text--underline{text-decoration:underline!important}.u-text--capitalize{text-transform:capitalize!important}.u-text--lowercase{text-transform:lowercase!important}.u-text--uppercase{text-transform:uppercase!important}.u-truncate{overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.u-va--baseline{vertical-align:baseline!important}.u-va--bottom{vertical-align:bottom!important}.u-va--middle{vertical-align:middle!important}.u-va--sub{vertical-align:sub!important}.u-va--super{vertical-align:super!important}.u-va--text-bottom{vertical-align:text-bottom!important}.u-va--text-top{vertical-align:text-top!important}.u-va--top{vertical-align:top!important}.u-text--nowrap{white-space:nowrap!important}@media (min-width:20em){.u-float--left\@xs{float:left!important}.u-float--right\@xs{float:right!important}.u-float--none\@xs{float:none!important}.u-hidden\@xs{display:none!important}.u-ta--left\@xs{text-align:left!important}.u-ta--right\@xs{text-align:right!important}.u-ta--center\@xs{text-align:center!important}}@media (min-width:30em){.u-float--left\@sm{float:left!important}.u-float--right\@sm{float:right!important}.u-float--none\@sm{float:none!important}.u-hidden\@sm{display:none!important}.u-ta--left\@sm{text-align:left!important}.u-ta--right\@sm{text-align:right!important}.u-ta--center\@sm{text-align:center!important}}@media (min-width:35.5em){.u-float--left\@md{float:left!important}.u-float--right\@md{float:right!important}.u-float--none\@md{float:none!important}.u-hidden\@md{display:none!important}.u-ta--left\@md{text-align:left!important}.u-ta--right\@md{text-align:right!important}.u-ta--center\@md{text-align:center!important}}@media (min-width:48em){.u-float--left\@lg{float:left!important}.u-float--right\@lg{float:right!important}.u-float--none\@lg{float:none!important}.u-hidden\@lg{display:none!important}.u-ta--left\@lg{text-align:left!important}.u-ta--right\@lg{text-align:right!important}.u-ta--center\@lg{text-align:center!important}}@media (min-width:64em){.u-float--left\@xl{float:left!important}.u-float--right\@xl{float:right!important}.u-float--none\@xl{float:none!important}.u-hidden\@xl{display:none!important}.u-ta--left\@xl{text-align:left!important}.u-ta--right\@xl{text-align:right!important}.u-ta--center\@xl{text-align:center!important}}@media (min-width:80em){.u-float--left\@xxl{float:left!important}.u-float--right\@xxl{float:right!important}.u-float--none\@xxl{float:none!important}.u-hidden\@xxl{display:none!important}.u-ta--left\@xxl{text-align:left!important}.u-ta--right\@xxl{text-align:right!important}.u-ta--center\@xxl{text-align:center!important}}</style>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Ideal Utilities</title>
+  <style>.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8;-webkit-text-size-adjust:none}.diff .hljs-header,.hljs-comment{color:#998;font-style:italic}.css .rule .hljs-keyword,.hljs-keyword,.hljs-request,.hljs-status,.hljs-subst,.hljs-winutils,.nginx .hljs-title{color:#333;font-weight:700}.hljs-hexcolor,.hljs-number,.ruby .hljs-constant{color:teal}.hljs-doctag,.hljs-string,.hljs-tag .hljs-value,.tex .hljs-formula{color:#d14}.hljs-id,.hljs-title,.scss .hljs-preprocessor{color:#900;font-weight:700}.hljs-list .hljs-keyword,.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type,.tex .hljs-command,.vhdl .hljs-literal{color:#458;font-weight:700}.django .hljs-tag .hljs-keyword,.hljs-rule .hljs-property,.hljs-tag,.hljs-tag .hljs-title{color:navy;font-weight:400}.hljs-attribute,.hljs-name,.hljs-variable,.lisp .hljs-body{color:teal}.hljs-regexp{color:#009926}.clojure .hljs-keyword,.hljs-prompt,.hljs-symbol,.lisp .hljs-keyword,.ruby .hljs-symbol .hljs-string,.scheme .hljs-keyword,.tex .hljs-special{color:#990073}.hljs-built_in{color:#0086b3}.hljs-cdata,.hljs-doctype,.hljs-pi,.hljs-pragma,.hljs-preprocessor,.hljs-shebang{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.diff .hljs-change{background:#0086b3}.hljs-chunk{color:#aaa}/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}html{box-sizing:border-box}*,:after,:before,input[type=search]{box-sizing:inherit}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,p,pre{margin:0}button{background:transparent;border:0;padding:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset{border:0;margin:0;padding:0}iframe{border:0}ol,ul{list-style:none;margin:0;padding:0}[tabindex="-1"]:focus{outline:none!important}html.psg-theme{font-size:62.5%}body{margin:0}body,html{height:100%;overflow-y:hidden}h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]{margin:2rem 0 1rem;font-weight:400;line-height:1.6;color:#444}h1[id]{font-size:2.8rem}h2[id]{font-size:2.4rem}h3[id]{font-size:2rem}h4[id],h5[id],h6[id]{font-size:1.8rem}p[id]{margin:1rem 0}.psg-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;height:100%;font-size:1.6rem;font-family:Arial,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,Osaka,メイリオ,Meiryo,ＭＳ\ Ｐゴシック,MS PGothic,sans-serif;color:#444;line-height:1.5}.psg-menu{width:240px;height:100%;padding:2rem 3.2rem;border-right:1px solid #ddd;overflow-y:scroll}.psg-logo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:2rem}.psg-logo>img{width:100%;margin-left:-50px}.psg-ComponentList__item{display:block;color:#3f526b;padding:12px 8px}.psg-ComponentList__item:hover{background-color:#eee}.psg-main{-webkit-box-flex:1;-ms-flex:1 1 0%;flex:1 1 0%;height:100%;background-color:#fff;overflow-y:scroll}.psg-title{padding:40px 60px;font-size:2rem;text-align:center;color:#fff;background-color:#e23b00}.psg-container{margin:50px 0}.psg-component-title.psg-component-title{margin:2rem 0 1rem;font-size:3.2rem;font-weight:700;line-height:1.6;color:#3f526b}.psg-section{max-width:580px;margin:0 auto}.psg-contents>p,.psg-contents>pre{margin:2rem 0}hr.psg-separator{margin:4rem 0;border:0;border-top:1px solid #ddd}.psg-colorPalette{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap}.psg-colorBox{width:180px;box-shadow:1px 1px 10px 0 rgba(0,0,0,.2);margin:3rem}.psg-colorBox__sample{height:100px}.psg-colorBox__name{padding:1em;font-size:1.4rem;text-align:center}.u-ac--flex-start{-ms-flex-line-pack:start;align-content:flex-start}.u-ac--flex-end{-ms-flex-line-pack:end;align-content:flex-end}.u-ac--center{-ms-flex-line-pack:center;align-content:center}.u-ac--stretch{-ms-flex-line-pack:stretch;align-content:stretch}.u-ac--space-between{-ms-flex-line-pack:justify;align-content:space-between}.u-ac--space-around{-ms-flex-line-pack:distribute;align-content:space-around}.u-ai--flex-start{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.u-ai--flex-end{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.u-ai--center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.u-ai--baseline{-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}.u-ai--stretch{-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}.u-as--flex-start{-ms-flex-item-align:start;align-self:flex-start}.u-as--flex-end{-ms-flex-item-align:end;align-self:flex-end}.u-as--center{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}.u-as--stretch{-ms-flex-item-align:stretch;-ms-grid-row-align:stretch;align-self:stretch}.u-as--auto{-ms-flex-item-align:auto;-ms-grid-row-align:auto;align-self:auto}.u-bgc--white{background-color:#fff!important}.u-bgc--white-off{background-color:#f2f2f2!important}.u-bgc--gray-light{background-color:#ccc!important}.u-bgc--gray{background-color:#666!important}.u-bgc--gray-dark{background-color:#333!important}.u-bgc--theme-primary{background-color:#3494e6!important}.u-bgc--theme-secondary{background-color:#36d7b7!important}.u-bgc--theme-tertiary{background-color:#86d5c7!important}.u-border--all{border:1px solid gray!important}.u-border--x{border-left:1px solid gray!important;border-right:1px solid gray!important}.u-border--y{border-bottom:1px solid gray!important}.u-border--top,.u-border--y{border-top:1px solid gray!important}.u-border--right{border-right:1px solid gray!important}.u-border--bottom{border-bottom:1px solid gray!important}.u-border--left{border-left:1px solid gray!important}.u-border--none{border:none!important}.u-color--white{color:#fff!important}.u-color--white-off{color:#f2f2f2!important}.u-color--gray-light{color:#ccc!important}.u-color--gray{color:#666!important}.u-color--gray-dark{color:#333!important}.u-color--theme-primary{color:#3494e6!important}.u-color--theme-secondary{color:#36d7b7!important}.u-color--theme-tertiary{color:#86d5c7!important}.u-display--block{display:block!important}.u-display--inline-block{display:inline-block!important}.u-display--inline{display:inline!important}.u-display--flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.u-display--table{display:table!important}.u-display--table-cell{display:table-cell!important}.u-display--none{display:none!important}.u-flex--column{-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important}.u-flex--column-reverse{-webkit-box-orient:vertical!important;-webkit-box-direction:reverse!important;-ms-flex-direction:column-reverse!important;flex-direction:column-reverse!important}.u-flex--row{-webkit-box-direction:normal!important;-ms-flex-direction:row!important;flex-direction:row!important}.u-flex--row,.u-flex--row-reverse{-webkit-box-orient:horizontal!important}.u-flex--row-reverse{-webkit-box-direction:reverse!important;-ms-flex-direction:row-reverse!important;flex-direction:row-reverse!important}.u-flex--wrap{-webkit-box-direction:normal!important;-ms-flex-direction:wrap!important;flex-direction:wrap!important}.u-flex--wrap,.u-flex--wrap-reverse{-webkit-box-orient:vertical!important}.u-flex--wrap-reverse{-webkit-box-direction:reverse!important;-ms-flex-direction:wrap-reverse!important;flex-direction:wrap-reverse!important}.u-flex--nowrap{-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:nowrap!important;flex-direction:nowrap!important}.u-float--left{float:left!important}.u-float--right{float:right!important}.u-float--none{float:none!important}.u-fs--italic{font-style:italic!important}.u-fs--normal{font-style:normal!important}.u-fs--oblique{font-style:oblique!important}.u-fw--light{font-weight:300!important}.u-fw--normal{font-weight:400!important}.u-fw--medium{font-weight:500!important}.u-fw--semibold{font-weight:600!important}.u-fw--bold{font-weight:700!important}.u-fw--black{font-weight:900!important}.u-hidden{display:none!important}.u-justify--flex-start{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important}.u-justify--flex-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.u-justify--center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}.u-justify--space-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}.u-justify--space-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}.u-ls--default{letter-spacing:0!important}.u-ls--compact{letter-spacing:-1px!important}.u-ls--normal{letter-spacing:0!important}.u-ls--loose{letter-spacing:2px!important}.u-list--inline,.u-list--unstyled{list-style:none!important;padding-left:0!important}.u-list--inline>li{display:inline-block!important}.u-list--inline>li:not(:last-child):after{content:" |"!important}.u-ma--auto{margin:auto!important}.u-ma--0{margin:0!important}.u-ma--5{margin:5px!important}.u-ma--10{margin:10px!important}.u-ma--20{margin:20px!important}.u-ma--30{margin:30px!important}.u-ma--40{margin:40px!important}.u-mx--auto{margin-left:auto!important;margin-right:auto!important}.u-mx--0{margin-left:0!important;margin-right:0!important}.u-mx--5{margin-left:5px!important;margin-right:5px!important}.u-mx--10{margin-left:10px!important;margin-right:10px!important}.u-mx--20{margin-left:20px!important;margin-right:20px!important}.u-mx--30{margin-left:30px!important;margin-right:30px!important}.u-mx--40{margin-left:40px!important;margin-right:40px!important}.u-my--auto{margin-bottom:auto!important;margin-top:auto!important}.u-my--0{margin-bottom:0!important;margin-top:0!important}.u-my--5{margin-bottom:5px!important;margin-top:5px!important}.u-my--10{margin-bottom:10px!important;margin-top:10px!important}.u-my--20{margin-bottom:20px!important;margin-top:20px!important}.u-my--30{margin-bottom:30px!important;margin-top:30px!important}.u-my--40{margin-bottom:40px!important;margin-top:40px!important}.u-mt--auto{margin-top:auto!important}.u-mt--0{margin-top:0!important}.u-mt--5{margin-top:5px!important}.u-mt--10{margin-top:10px!important}.u-mt--20{margin-top:20px!important}.u-mt--30{margin-top:30px!important}.u-mt--40{margin-top:40px!important}.u-mr--auto{margin-right:auto!important}.u-mr--0{margin-right:0!important}.u-mr--5{margin-right:5px!important}.u-mr--10{margin-right:10px!important}.u-mr--20{margin-right:20px!important}.u-mr--30{margin-right:30px!important}.u-mr--40{margin-right:40px!important}.u-mb--auto{margin-bottom:auto!important}.u-mb--0{margin-bottom:0!important}.u-mb--5{margin-bottom:5px!important}.u-mb--10{margin-bottom:10px!important}.u-mb--20{margin-bottom:20px!important}.u-mb--30{margin-bottom:30px!important}.u-mb--40{margin-bottom:40px!important}.u-ml--auto{margin-left:auto!important}.u-ml--0{margin-left:0!important}.u-ml--5{margin-left:5px!important}.u-ml--10{margin-left:10px!important}.u-ml--20{margin-left:20px!important}.u-ml--30{margin-left:30px!important}.u-ml--40{margin-left:40px!important}.u-overflow--visible{overflow:visible!important}.u-overflow--hidden{overflow:hidden!important}.u-overflow--scroll{overflow:scroll!important}.u-overflow--auto{overflow:auto!important}.u-overflow--initial{overflow:visible!important;overflow:initial!important}.u-pa--0{padding:0!important}.u-pa--5{padding:5px!important}.u-pa--10{padding:10px!important}.u-pa--20{padding:20px!important}.u-pa--30{padding:30px!important}.u-pa--40{padding:40px!important}.u-px--0{padding-left:0!important;padding-right:0!important}.u-px--5{padding-left:5px!important;padding-right:5px!important}.u-px--10{padding-left:10px!important;padding-right:10px!important}.u-px--20{padding-left:20px!important;padding-right:20px!important}.u-px--30{padding-left:30px!important;padding-right:30px!important}.u-px--40{padding-left:40px!important;padding-right:40px!important}.u-py--0{padding-bottom:0!important;padding-top:0!important}.u-py--5{padding-bottom:5px!important;padding-top:5px!important}.u-py--10{padding-bottom:10px!important;padding-top:10px!important}.u-py--20{padding-bottom:20px!important;padding-top:20px!important}.u-py--30{padding-bottom:30px!important;padding-top:30px!important}.u-py--40{padding-bottom:40px!important;padding-top:40px!important}.u-pt--0{padding-top:0!important}.u-pt--5{padding-top:5px!important}.u-pt--10{padding-top:10px!important}.u-pt--20{padding-top:20px!important}.u-pt--30{padding-top:30px!important}.u-pt--40{padding-top:40px!important}.u-pr--0{padding-right:0!important}.u-pr--5{padding-right:5px!important}.u-pr--10{padding-right:10px!important}.u-pr--20{padding-right:20px!important}.u-pr--30{padding-right:30px!important}.u-pr--40{padding-right:40px!important}.u-pb--0{padding-bottom:0!important}.u-pb--5{padding-bottom:5px!important}.u-pb--10{padding-bottom:10px!important}.u-pb--20{padding-bottom:20px!important}.u-pb--30{padding-bottom:30px!important}.u-pb--40{padding-bottom:40px!important}.u-pl--0{padding-left:0!important}.u-pl--5{padding-left:5px!important}.u-pl--10{padding-left:10px!important}.u-pl--20{padding-left:20px!important}.u-pl--30{padding-left:30px!important}.u-pl--40{padding-left:40px!important}.u-ta--left{text-align:left!important}.u-ta--right{text-align:right!important}.u-ta--center{text-align:center!important}.u-text--strikeout{text-decoration:line-through!important}.u-text--underline{text-decoration:underline!important}.u-text--capitalize{text-transform:capitalize!important}.u-text--lowercase{text-transform:lowercase!important}.u-text--uppercase{text-transform:uppercase!important}.u-truncate{overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.u-va--baseline{vertical-align:baseline!important}.u-va--bottom{vertical-align:bottom!important}.u-va--middle{vertical-align:middle!important}.u-va--sub{vertical-align:sub!important}.u-va--super{vertical-align:super!important}.u-va--text-bottom{vertical-align:text-bottom!important}.u-va--text-top{vertical-align:text-top!important}.u-va--top{vertical-align:top!important}.u-text--nowrap{white-space:nowrap!important}@media (min-width:20em){.u-float--left\@xs{float:left!important}.u-float--right\@xs{float:right!important}.u-float--none\@xs{float:none!important}.u-hidden\@xs{display:none!important}.u-ta--left\@xs{text-align:left!important}.u-ta--right\@xs{text-align:right!important}.u-ta--center\@xs{text-align:center!important}}@media (min-width:30em){.u-float--left\@sm{float:left!important}.u-float--right\@sm{float:right!important}.u-float--none\@sm{float:none!important}.u-hidden\@sm{display:none!important}.u-ta--left\@sm{text-align:left!important}.u-ta--right\@sm{text-align:right!important}.u-ta--center\@sm{text-align:center!important}}@media (min-width:35.5em){.u-float--left\@md{float:left!important}.u-float--right\@md{float:right!important}.u-float--none\@md{float:none!important}.u-hidden\@md{display:none!important}.u-ta--left\@md{text-align:left!important}.u-ta--right\@md{text-align:right!important}.u-ta--center\@md{text-align:center!important}}@media (min-width:48em){.u-float--left\@lg{float:left!important}.u-float--right\@lg{float:right!important}.u-float--none\@lg{float:none!important}.u-hidden\@lg{display:none!important}.u-ta--left\@lg{text-align:left!important}.u-ta--right\@lg{text-align:right!important}.u-ta--center\@lg{text-align:center!important}}@media (min-width:64em){.u-float--left\@xl{float:left!important}.u-float--right\@xl{float:right!important}.u-float--none\@xl{float:none!important}.u-hidden\@xl{display:none!important}.u-ta--left\@xl{text-align:left!important}.u-ta--right\@xl{text-align:right!important}.u-ta--center\@xl{text-align:center!important}}@media (min-width:80em){.u-float--left\@xxl{float:left!important}.u-float--right\@xxl{float:right!important}.u-float--none\@xxl{float:none!important}.u-hidden\@xxl{display:none!important}.u-ta--left\@xxl{text-align:left!important}.u-ta--right\@xxl{text-align:right!important}.u-ta--center\@xxl{text-align:center!important}}</style>
+</head>
 
-    <body>
-      <div class="psg-wrapper">
-        <nav class="psg-menu">
-          <a href="" class="psg-logo">
-            <img
-              title="Philosopher’s stone, logo of PostCSS"
-              src="http://postcss.github.io/postcss/logo-leftp.svg">
-          </a>
+<body>
+  <div class="psg-wrapper">
+    <nav class="psg-menu">
+      <a href="" class="psg-logo">
+        <img
+          title="Philosopher’s stone, logo of PostCSS"
+          src="http://postcss.github.io/postcss/logo-leftp.svg">
+      </a>
 
-          <ul class="psg-ComponentList">
-            
-            
-              
-                <a href="#psg-link-0" class="psg-ComponentList__item">
-                  <li>
-                    Align Content
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-1" class="psg-ComponentList__item">
-                  <li>
-                    Align Items
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-2" class="psg-ComponentList__item">
-                  <li>
-                    Align Self
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-3" class="psg-ComponentList__item">
-                  <li>
-                    Background Color
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-4" class="psg-ComponentList__item">
-                  <li>
-                    Border
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-5" class="psg-ComponentList__item">
-                  <li>
-                    Color
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-6" class="psg-ComponentList__item">
-                  <li>
-                    Display
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-7" class="psg-ComponentList__item">
-                  <li>
-                    Flex Direction
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-8" class="psg-ComponentList__item">
-                  <li>
-                    Flex Wrap
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-9" class="psg-ComponentList__item">
-                  <li>
-                    Float
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-10" class="psg-ComponentList__item">
-                  <li>
-                    Font Style
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-11" class="psg-ComponentList__item">
-                  <li>
-                    Font Weight
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-12" class="psg-ComponentList__item">
-                  <li>
-                    Hidden
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-13" class="psg-ComponentList__item">
-                  <li>
-                    Justify Content
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-14" class="psg-ComponentList__item">
-                  <li>
-                    Letter Spacing
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-15" class="psg-ComponentList__item">
-                  <li>
-                    List
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-16" class="psg-ComponentList__item">
-                  <li>
-                    Margin
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-17" class="psg-ComponentList__item">
-                  <li>
-                    Overflow
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-18" class="psg-ComponentList__item">
-                  <li>
-                    Padding
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-19" class="psg-ComponentList__item">
-                  <li>
-                    Text Align
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-20" class="psg-ComponentList__item">
-                  <li>
-                    Text Decoration
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-21" class="psg-ComponentList__item">
-                  <li>
-                    Text Transform
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-22" class="psg-ComponentList__item">
-                  <li>
-                    Truncate
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-23" class="psg-ComponentList__item">
-                  <li>
-                    Vertical Align
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-24" class="psg-ComponentList__item">
-                  <li>
-                    White Space
-                  </li>
-                </a>
-              
-            
-              
-                <a href="#psg-link-25" class="psg-ComponentList__item">
-                  <li>
-                    Media Queries
-                  </li>
-                </a>
-              
-            
-          </ul>
+      <ul class="psg-ComponentList">
+        
+        
+          
+            <a href="#psg-link-0" class="psg-ComponentList__item">
+              <li>
+                Align Content
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-1" class="psg-ComponentList__item">
+              <li>
+                Align Items
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-2" class="psg-ComponentList__item">
+              <li>
+                Align Self
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-3" class="psg-ComponentList__item">
+              <li>
+                Background Color
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-4" class="psg-ComponentList__item">
+              <li>
+                Border
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-5" class="psg-ComponentList__item">
+              <li>
+                Color
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-6" class="psg-ComponentList__item">
+              <li>
+                Display
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-7" class="psg-ComponentList__item">
+              <li>
+                Flex Direction
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-8" class="psg-ComponentList__item">
+              <li>
+                Flex Wrap
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-9" class="psg-ComponentList__item">
+              <li>
+                Float
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-10" class="psg-ComponentList__item">
+              <li>
+                Font Style
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-11" class="psg-ComponentList__item">
+              <li>
+                Font Weight
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-12" class="psg-ComponentList__item">
+              <li>
+                Hidden
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-13" class="psg-ComponentList__item">
+              <li>
+                Justify Content
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-14" class="psg-ComponentList__item">
+              <li>
+                Letter Spacing
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-15" class="psg-ComponentList__item">
+              <li>
+                List
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-16" class="psg-ComponentList__item">
+              <li>
+                Margin
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-17" class="psg-ComponentList__item">
+              <li>
+                Overflow
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-18" class="psg-ComponentList__item">
+              <li>
+                Padding
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-19" class="psg-ComponentList__item">
+              <li>
+                Text Align
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-20" class="psg-ComponentList__item">
+              <li>
+                Text Decoration
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-21" class="psg-ComponentList__item">
+              <li>
+                Text Transform
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-22" class="psg-ComponentList__item">
+              <li>
+                Truncate
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-23" class="psg-ComponentList__item">
+              <li>
+                Vertical Align
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-24" class="psg-ComponentList__item">
+              <li>
+                White Space
+              </li>
+            </a>
+          
+        
+          
+            <a href="#psg-link-25" class="psg-ComponentList__item">
+              <li>
+                Media Queries
+              </li>
+            </a>
+          
+        
+      </ul>
 
-        </nav>
+    </nav>
 
-        <div class="psg-main">
-          <header class="psg-title">
-            <h1>Ideal Utilities</h1>
-          </header>
+    <div class="psg-main">
+      <header class="psg-title">
+        <h1>Ideal Utilities</h1>
+      </header>
 
-          <div class="psg-container">
-            
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-0" class="psg-component-title">Align Content</h2>
+      <div class="psg-container">
+        
+        
+            <section class="psg-section">
+                <h2 id="psg-link-0" class="psg-component-title">Align Content</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes to alter flexbox content alignment.</p>
+                <div class="psg-contents">
+                  <p>Use these classes to alter flexbox content alignment.</p>
 <p class="u-ac--flex-start">u-ac--flex-start</p>
 <p class="u-ac--flex-end">u-ac--flex-end</p>
 <p class="u-ac--center">u-ac--center</p>
@@ -257,15 +257,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-ac--space-between"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-ac--space-around"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-1" class="psg-component-title">Align Items</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-1" class="psg-component-title">Align Items</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes to alter flexbox item alignment.</p>
+                <div class="psg-contents">
+                  <p>Use these classes to alter flexbox item alignment.</p>
 <p class="u-ai--flex-start">u-ai--flex-start</p>
 <p class="u-ai--flex-end">u-ai--flex-end</p>
 <p class="u-ai--center">u-ai--center</p>
@@ -278,15 +278,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-ai--baseline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-ai--stretch"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-2" class="psg-component-title">Align Self</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-2" class="psg-component-title">Align Self</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes to alter flexbox self alignment.</p>
+                <div class="psg-contents">
+                  <p>Use these classes to alter flexbox self alignment.</p>
 <p class="u-as--flex-start">u-as--flex-start</p>
 <p class="u-as--flex-end">u-as--flex-end</p>
 <p class="u-as--center">u-as--center</p>
@@ -299,15 +299,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-as--stretch"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-as--auto"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-3" class="psg-component-title">Background Color</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-3" class="psg-component-title">Background Color</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on any element to apply a background color.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on any element to apply a background color.</p>
 <p class="u-bgc--white">u-bgc--white</p>
 <p class="u-bgc--white-off">u-bgc--white-off</p>
 <p class="u-bgc--gray-light">u-bgc--gray-light</p>
@@ -326,15 +326,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-bgc--theme-secondary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-bgc--theme-tertiary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-4" class="psg-component-title">Border</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-4" class="psg-component-title">Border</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on any element to apply a border.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on any element to apply a border.</p>
 <p class="u-border--all">u-border--all</p>
 <p class="u-border--x">u-border--x</p>
 <p class="u-border--y">u-border--y</p>
@@ -353,15 +353,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-border--left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-border--none"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-5" class="psg-component-title">Color</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-5" class="psg-component-title">Color</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on any element to apply a text color.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on any element to apply a text color.</p>
 <p class="u-color--white">u-color--white</p>
 <p class="u-color--white-off">u-color--white-off</p>
 <p class="u-color--gray-light">u-color--gray-light</p>
@@ -380,15 +380,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-color--theme-secondary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-color--theme-tertiary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-6" class="psg-component-title">Display</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-6" class="psg-component-title">Display</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on any element to change the display property.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on any element to change the display property.</p>
 <p class="u-display--block">u-display--block</p>
 <p class="u-display--inline-block">u-display--inline-block</p>
 <p class="u-display--inline">u-display--inline</p>
@@ -405,15 +405,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-display--table-cell"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-display--none"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-7" class="psg-component-title">Flex Direction</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-7" class="psg-component-title">Flex Direction</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes to alter flexbox direction.</p>
+                <div class="psg-contents">
+                  <p>Use these classes to alter flexbox direction.</p>
 <p class="u-flex--column">u-flex--column</p>
 <p class="u-flex--column-reverse">u-flex--column-reverse</p>
 <p class="u-flex--row">u-flex--row</p>
@@ -424,15 +424,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-flex--row"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-flex--row-reverse"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-8" class="psg-component-title">Flex Wrap</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-8" class="psg-component-title">Flex Wrap</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes to alter flexbox wrap.</p>
+                <div class="psg-contents">
+                  <p>Use these classes to alter flexbox wrap.</p>
 <p class="u-flex--wrap">u-flex--wrap</p>
 <p class="u-flex--wrap-reverse">u-flex--wrap-reverse</p>
 <p class="u-flex--nowrap">u-flex--nowrap</p>
@@ -441,15 +441,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-flex--wrap-reverse"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-flex--nowrap"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-9" class="psg-component-title">Float</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-9" class="psg-component-title">Float</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes to float an element to the left or right.</p>
+                <div class="psg-contents">
+                  <p>Use these classes to float an element to the left or right.</p>
 <p class="u-float--left">u-float--left</p>
 <p class="u-float--right">u-float--right</p>
 <p class="u-float--none">u-float--none</p>
@@ -458,15 +458,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-float--right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-float--none"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-10" class="psg-component-title">Font Style</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-10" class="psg-component-title">Font Style</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on an element to change the font-style.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on an element to change the font-style.</p>
 <p class="u-fs--italic">u-fs--italic</p>
 <p class="u-fs--normal">u-fs--normal</p>
 <p class="u-fs--oblique">u-fs--oblique</p>
@@ -475,15 +475,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-fs--normal"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-fs--oblique"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-11" class="psg-component-title">Font Weight</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-11" class="psg-component-title">Font Weight</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on any element to change the font-weight.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on any element to change the font-weight.</p>
 <p class="u-fw--light">u-fw--light</p>
 <p class="u-fw--normal">u-fw--normal</p>
 <p class="u-fw--medium">u-fw--medium</p>
@@ -498,28 +498,28 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-fw--bold"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-fw--black"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-12" class="psg-component-title">Hidden</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-12" class="psg-component-title">Hidden</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes to hide an element.</p>
+                <div class="psg-contents">
+                  <p>Use these classes to hide an element.</p>
 <p class="u-hidden">u-hidden</p>
 
 <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-hidden"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-13" class="psg-component-title">Justify Content</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-13" class="psg-component-title">Justify Content</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes to alter flexbox content justification.</p>
+                <div class="psg-contents">
+                  <p>Use these classes to alter flexbox content justification.</p>
 <p class="u-justify--flex-start">u-justify--flex-start</p>
 <p class="u-justify--flex-end">u-justify--flex-end</p>
 <p class="u-justify--center">u-justify--center</p>
@@ -532,15 +532,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-justify--space-between"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-justify--space-around"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-14" class="psg-component-title">Letter Spacing</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-14" class="psg-component-title">Letter Spacing</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on any element to alter the letter-spacing.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on any element to alter the letter-spacing.</p>
 <p class="u-ls--default">u-ls--default</p>
 <p class="u-ls--compact">u-ls--compact</p>
 <p class="u-ls--normal">u-ls--normal</p>
@@ -551,15 +551,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-ls--normal"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-ls--loose"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-15" class="psg-component-title">List</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-15" class="psg-component-title">List</h2>
 
-                    <div class="psg-contents">
-                      <p>Utility classes to control the appearance of a list element (e.g. <code>ul</code>, <code>ol</code>, <code>dl</code>).</p>
+                <div class="psg-contents">
+                  <p>Utility classes to control the appearance of a list element (e.g. <code>ul</code>, <code>ol</code>, <code>dl</code>).</p>
 <ul class="u-list--unstyled">
   <li>.u-list--unstyled</li>
   <li>.u-list--unstyled</li>
@@ -578,30 +578,30 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-16" class="psg-component-title">Margin</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-16" class="psg-component-title">Margin</h2>
 
-                    <div class="psg-contents">
-                      <p>Utility classes to control the margin on any side of an element.</p>
+                <div class="psg-contents">
+                  <p>Utility classes to control the margin on any side of an element.</p>
 <p><strong> Visual not available </strong></p>
 <p>Classname format: <code>.u-abreviation--value</code></p>
 <p>Example: <code>.u-ma-0</code></p>
 <pre><code>Abbreviations: [ma, mx, my, mt, mr, mb, ml]
 Values: [<span class="hljs-keyword">auto</span>, <span class="hljs-number">0</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>]
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-17" class="psg-component-title">Overflow</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-17" class="psg-component-title">Overflow</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on any element to change the overflow property.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on any element to change the overflow property.</p>
 <p class="u-overflow--visible">u-overflow--visible</p>
 <p class="u-overflow--hidden">u-overflow--hidden</p>
 <p class="u-overflow--scroll">u-overflow--scroll</p>
@@ -614,30 +614,30 @@ Values: [<span class="hljs-keyword">auto</span>, <span class="hljs-number">0</sp
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-overflow--auto"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-overflow--initial"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-18" class="psg-component-title">Padding</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-18" class="psg-component-title">Padding</h2>
 
-                    <div class="psg-contents">
-                      <p>Utility classes to control the padding on any side of an element.</p>
+                <div class="psg-contents">
+                  <p>Utility classes to control the padding on any side of an element.</p>
 <p><strong> Visual not available </strong></p>
 <p>Classname format: <code>.u-abreviation--value</code></p>
 <p>Example: <code>.u-pa-0</code></p>
 <pre><code>Abbreviations: [pa, px, py, pt, pr, pb, pl]
 Values: [<span class="hljs-number">0</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>]
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-19" class="psg-component-title">Text Align</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-19" class="psg-component-title">Text Align</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on an element to alter text alignment.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on an element to alter text alignment.</p>
 <p class="u-ta--left">u-ta--left</p>
 <p class="u-ta--right">u-ta--right</p>
 <p class="u-ta--center">u-ta--center</p>
@@ -646,30 +646,30 @@ Values: [<span class="hljs-number">0</span>, <span class="hljs-number">5</span>,
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-ta--right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-ta--center"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-20" class="psg-component-title">Text Decoration</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-20" class="psg-component-title">Text Decoration</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on an element to change the font-style.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on an element to change the font-style.</p>
 <p class="u-text--strikeout">u-text--strikeout</p>
 <p class="u-text--underline">u-text--underline</p>
 
 <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-text--strikeout"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-text--underline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-21" class="psg-component-title">Text Transform</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-21" class="psg-component-title">Text Transform</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes on an element to change the text-transform.</p>
+                <div class="psg-contents">
+                  <p>Use these classes on an element to change the text-transform.</p>
 <p class="u-text--capitalize">u-text--capitalize</p>
 <p class="u-text--lowercase">u-text--lowercase</p>
 <p class="u-text--uppercase">u-text--uppercase</p>
@@ -678,28 +678,28 @@ Values: [<span class="hljs-number">0</span>, <span class="hljs-number">5</span>,
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-text--lowercase"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-text--uppercase"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-22" class="psg-component-title">Truncate</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-22" class="psg-component-title">Truncate</h2>
 
-                    <div class="psg-contents">
-                      <p>Use this class to show an ellipsis instead of wrapped text.</p>
+                <div class="psg-contents">
+                  <p>Use this class to show an ellipsis instead of wrapped text.</p>
 <p class="u-truncate">u-truncate</p>
 
 <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-truncate"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-23" class="psg-component-title">Vertical Align</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-23" class="psg-component-title">Vertical Align</h2>
 
-                    <div class="psg-contents">
-                      <p>Use these classes to alter the vertical alignment.</p>
+                <div class="psg-contents">
+                  <p>Use these classes to alter the vertical alignment.</p>
 <p class="u-va--baseline">u-va--baseline</p>
 <p class="u-va--bottom">u-va--bottom</p>
 <p class="u-va--middle">u-va--middle</p>
@@ -718,28 +718,28 @@ Values: [<span class="hljs-number">0</span>, <span class="hljs-number">5</span>,
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-va--text-top"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-va--top"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-24" class="psg-component-title">White Space</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-24" class="psg-component-title">White Space</h2>
 
-                    <div class="psg-contents">
-                      <p>Use this class to prevent text wrapping.</p>
+                <div class="psg-contents">
+                  <p>Use this class to prevent text wrapping.</p>
 <p class="u-text--nowrap">u-text--nowrap</p>
 
 <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-text--nowrap"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-                <section class="psg-section">
-                    <h2 id="psg-link-25" class="psg-component-title">Media Queries</h2>
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
+            <section class="psg-section">
+                <h2 id="psg-link-25" class="psg-component-title">Media Queries</h2>
 
-                    <div class="psg-contents">
-                      <p>Uses custom properties to make media queries more semantic.</p>
+                <div class="psg-contents">
+                  <p>Uses custom properties to make media queries more semantic.</p>
 <pre><code>## <span class="hljs-tag">Custom</span> <span class="hljs-tag">Properties</span> <span class="hljs-tag">available</span>
 <span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --mq-xs (min-width: <span class="hljs-number">20em</span>)</span>;
 <span class="hljs-at_rule">@<span class="hljs-keyword">custom-media</span> --mq-sm (min-width: <span class="hljs-number">30em</span>)</span>;
@@ -769,14 +769,14 @@ Values: [<span class="hljs-number">0</span>, <span class="hljs-number">5</span>,
 
 }
 </code></pre>
-                    </div>
-                </section>
-                <hr class="psg-separator">
-            
-          </div>
-        </div>
-
+                </div>
+            </section>
+            <hr class="psg-separator">
+        
       </div>
+    </div>
 
-    </body>
+  </div>
+
+</body>
 </html>
