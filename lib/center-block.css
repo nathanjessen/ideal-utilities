@@ -1,0 +1,19 @@
+/*
+@styleguide
+
+@title Center Block
+
+This is a helper class to center a block element.
+
+<div class="u-center-block">u-center-block</div>
+
+```
+<div class="u-center-block"></div>
+```
+*/
+
+.u-center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

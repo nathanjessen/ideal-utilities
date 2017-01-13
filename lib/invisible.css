@@ -1,14 +1,14 @@
 /*
 @styleguide
 
-@title Hidden
+@title Invisible
 
-Use these classes to hide an element.
+Use these classes to visibly hide an element.
 
-<p class="u-hidden">u-hidden</p>
+<p class="u-invisible">u-invisible</p>
 
 ```
-<p class="u-hidden"></p>
+<p class="u-invisible"></p>
 ```
 */
 
@@ -16,8 +16,7 @@ Use these classes to hide an element.
 
   @if $(mq) == e {
 
-    .u-hidden {
-      display: none !important;
+    .u-invisible {
       visibility: hidden !important;
     }
 
@@ -27,8 +26,7 @@ Use these classes to hide an element.
 
     @media (--mq-$(mq)) {
 
-      .u-hidden\@$mq {
-        display: none !important;
+      .u-invisible\@$mq {
         visibility: hidden !important;
       }
 

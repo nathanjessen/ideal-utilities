@@ -1,0 +1,77 @@
+/*
+@styleguide
+
+@title Position
+
+Use these classes on any element to change the position property.
+
+<p class="u-position--absolute">u-position--absolute</p>
+<p class="u-position--fixed">u-position--fixed</p>
+<p class="u-position--relative">u-position--relative</p>
+<p class="u-position--static">u-position--static</p>
+<p class="u-position--sticky">u-position--sticky</p>
+
+```
+<p class="u-position--absolute"></p>
+<p class="u-position--fixed"></p>
+<p class="u-position--relative"></p>
+<p class="u-position--static"></p>
+<p class="u-position--sticky"></p>
+```
+*/
+
+@each $mq in var(--mq-options) {
+
+  @if $(mq) == e {
+
+    .u-position--absolute {
+      position: absolute !important;
+    }
+
+    .u-position--fixed {
+      position: fixed !important;
+
+    }
+
+    .u-position--relative {
+      position: relative !important;
+    }
+
+    .u-position--static {
+      position: static !important;
+    }
+
+    .u-position--sticky {
+      position: sticky !important;
+    }
+
+  }
+
+  @else {
+
+    @media (--mq-$(mq)) {
+
+      .u-position--absolute\@$mq {
+        position: absolute !important;
+      }
+
+      .u-position--fixed\@$mq {
+        position: fixed !important;
+
+      }
+
+      .u-position--relative\@$mq {
+        position: relative !important;
+      }
+
+      .u-position--static\@$mq {
+        position: static !important;
+      }
+
+      .u-position--sticky\@$mq {
+        position: sticky !important;
+      }
+
+    }
+  }
+}

@@ -24,30 +24,72 @@ Use these classes on any element to change the display property.
 ```
 */
 
-.u-display--block {
-  display: block !important;
-}
+@each $mq in var(--mq-options) {
 
-.u-display--inline-block {
-  display: inline-block !important;
-}
+  @if $(mq) == e {
 
-.u-display--inline {
-  display: inline !important;
-}
+    .u-display--block {
+      display: block !important;
+    }
 
-.u-display--flex {
-  display: flex !important;
-}
+    .u-display--inline-block {
+      display: inline-block !important;
+    }
 
-.u-display--table {
-  display: table !important;
-}
+    .u-display--inline {
+      display: inline !important;
+    }
 
-.u-display--table-cell {
-  display: table-cell !important;
-}
+    .u-display--flex {
+      display: flex !important;
+    }
 
-.u-display--none {
-  display: none !important;
+    .u-display--table {
+      display: table !important;
+    }
+
+    .u-display--table-cell {
+      display: table-cell !important;
+    }
+
+    .u-display--none {
+      display: none !important;
+    }
+
+  }
+
+  @else {
+
+    @media (--mq-$(mq)) {
+
+      .u-display--block\@$mq {
+        display: block !important;
+      }
+
+      .u-display--inline-block\@$mq {
+        display: inline-block !important;
+      }
+
+      .u-display--inline\@$mq {
+        display: inline !important;
+      }
+
+      .u-display--flex\@$mq {
+        display: flex !important;
+      }
+
+      .u-display--table\@$mq {
+        display: table !important;
+      }
+
+      .u-display--table-cell\@$mq {
+        display: table-cell !important;
+      }
+
+      .u-display--none\@$mq {
+        display: none !important;
+      }
+
+    }
+  }
 }

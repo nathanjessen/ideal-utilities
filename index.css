@@ -3,6 +3,7 @@
 @import "./lib/align-self.css";
 @import "./lib/background-color.css";
 @import "./lib/border.css";
+@import "./lib/center-block.css";
 @import "./lib/color.css";
 @import "./lib/display.css";
 @import "./lib/flex-direction.css";
@@ -11,12 +12,15 @@
 @import "./lib/font-style.css";
 @import "./lib/font-weight.css";
 @import "./lib/hidden.css";
+@import "./lib/invisible.css";
 @import "./lib/justify-content.css";
 @import "./lib/letter-spacing.css";
 @import "./lib/list.css";
 @import "./lib/margin.css";
 @import "./lib/overflow.css";
 @import "./lib/padding.css";
+@import "./lib/position.css";
+@import "./lib/screen-reader.css";
 @import "./lib/text-align.css";
 @import "./lib/text-decoration.css";
 @import "./lib/text-transform.css";
