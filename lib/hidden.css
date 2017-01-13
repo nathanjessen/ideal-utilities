@@ -12,6 +12,22 @@ Use these classes to hide an element.
 ```
 */
 
-.u-hidden {
-  display: none !important;
+@each $mq in var(--mq-options) {
+
+  @if $(mq) == e {
+
+    .u-hidden {
+      display: none !important;
+    }
+
+  } @else {
+
+    @media (--mq-$(mq)) {
+
+      .u-hidden\@$mq {
+        display: none !important;
+      }
+
+    }
+  }
 }

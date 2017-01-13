@@ -26,10 +26,10 @@ Use these classes on any element to apply a background color.
 ```
 */
 
-@each $color in white, white-off, gray-light, gray, gray-dark, theme-primary, theme-secondary, theme-tertiary {
+@each $color in var(--color-options) {
 
-  .u-bgc--$color {
-    background-color: var(--$color) !important;
+  .u-bgc--$(color) {
+    background-color: var(--$(color)) !important;
   }
 
 }

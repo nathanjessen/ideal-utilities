@@ -39,7 +39,8 @@
 
 :root {
 
-  /* UI Colors */
+  /* Colors */
+  --color-options: white, white-off, gray-light, gray, gray-dark, theme-primary, theme-secondary, theme-tertiary;
   --border-color: gray;
 
   /* Letter Spacing */
@@ -49,6 +50,7 @@
   --letter-loose: 2px;
 
   /* Font Weight */
+  --font-options: light, normal, medium, semibold, bold, black;
   --font-light: 300;
   --font-normal: 400;
   --font-medium: 500;
