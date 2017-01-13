@@ -1,0 +1,35 @@
+/*
+@styleguide
+
+@title Flex Direction
+
+Use these classes to alter flexbox direction.
+
+<p class="u-flex--column">u-flex--column</p>
+<p class="u-flex--column-reverse">u-flex--column-reverse</p>
+<p class="u-flex--row">u-flex--row</p>
+<p class="u-flex--row-reverse">u-flex--row-reverse</p>
+
+```
+<p class="u-flex--column"></p>
+<p class="u-flex--column-reverse"></p>
+<p class="u-flex--row"></p>
+<p class="u-flex--row-reverse"></p>
+```
+*/
+
+.u-flex--column {
+  flex-direction: column !important;
+}
+
+.u-flex--column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+.u-flex--row {
+  flex-direction: row !important;
+}
+
+.u-flex--row-reverse {
+  flex-direction: row-reverse !important;
+}

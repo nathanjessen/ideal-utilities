@@ -1,0 +1,41 @@
+/*
+@styleguide
+
+@title Align Self
+
+Use these classes to alter flexbox self alignment.
+
+<p class="u-as--flex-start">u-as--flex-start</p>
+<p class="u-as--flex-end">u-as--flex-end</p>
+<p class="u-as--center">u-as--center</p>
+<p class="u-as--stretch">u-as--stretch</p>
+<p class="u-as--auto">u-as--auto</p>
+
+```
+<p class="u-as--flex-start"></p>
+<p class="u-as--flex-end"></p>
+<p class="u-as--center"></p>
+<p class="u-as--stretch"></p>
+<p class="u-as--auto"></p>
+```
+*/
+
+.u-as--flex-start {
+  align-self: flex-start;
+}
+
+.u-as--flex-end {
+  align-self: flex-end;
+}
+
+.u-as--center {
+  align-self: center;
+}
+
+.u-as--stretch {
+  align-self: stretch;
+}
+
+.u-as--auto {
+  align-self: auto;
+}

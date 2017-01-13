@@ -1,0 +1,41 @@
+/*
+@styleguide
+
+@title Align Items
+
+Use these classes to alter flexbox item alignment.
+
+<p class="u-ai--flex-start">u-ai--flex-start</p>
+<p class="u-ai--flex-end">u-ai--flex-end</p>
+<p class="u-ai--center">u-ai--center</p>
+<p class="u-ai--baseline">u-ai--baseline</p>
+<p class="u-ai--stretch">u-ai--stretch</p>
+
+```
+<p class="u-ai--flex-start"></p>
+<p class="u-ai--flex-end"></p>
+<p class="u-ai--center"></p>
+<p class="u-ai--baseline"></p>
+<p class="u-ai--stretch"></p>
+```
+*/
+
+.u-ai--flex-start {
+  align-items: flex-start;
+}
+
+.u-ai--flex-end {
+  align-items: flex-end;
+}
+
+.u-ai--center {
+  align-items: center;
+}
+
+.u-ai--baseline {
+  align-items: baseline;
+}
+
+.u-ai--stretch {
+  align-items: stretch;
+}
