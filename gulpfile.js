@@ -1,4 +1,5 @@
 const siteRoot = 'dist';
+const projectName = 'Ideal Utilities';
 const cssFiles = ['index.css', 'lib/*.css'];
 
 const browserSync = require('browser-sync').create();
@@ -41,7 +42,7 @@ gulp.task('css', function () {
     mqpacker(),
     styleGuide({
       dest: siteRoot + '/index.html',
-      project: 'Ideal Utilities',
+      project: projectName,
       showCode: true,
       theme: 'ideal'
     })
