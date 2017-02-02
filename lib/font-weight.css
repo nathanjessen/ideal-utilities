@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Font Weight
-
-Use these classes on any element to change the font-weight.
+/*---
+title: Font Weight
+section: Text
+content: Use these classes on any element to change the font-weight.
+---
 
 <p class="u-fw--light">u-fw--light</p>
 <p class="u-fw--normal">u-fw--normal</p>
@@ -12,7 +11,7 @@ Use these classes on any element to change the font-weight.
 <p class="u-fw--bold">u-fw--bold</p>
 <p class="u-fw--black">u-fw--black</p>
 
-```
+```html
 <p class="u-fw--light"></p>
 <p class="u-fw--normal"></p>
 <p class="u-fw--medium"></p>

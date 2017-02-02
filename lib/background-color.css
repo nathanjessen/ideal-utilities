@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Background Color
-
-Use these classes on any element to apply a background color.
+/*---
+title: Background Color
+section: Layout
+content: Use these classes on any element to apply a background color.
+---
 
 <p class="u-bgc--white">u-bgc--white</p>
 <p class="u-bgc--white-off">u-bgc--white-off</p>

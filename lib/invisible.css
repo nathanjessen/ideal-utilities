@@ -1,15 +1,15 @@
-/*
-@styleguide
-
-@title Invisible
-
-Use these classes to visibly hide an element.
+/*---
+title: Invisible
+section: Layout
+content: Use these classes to visibly hide an element.
+---
 
 <p class="u-invisible">u-invisible</p>
 
-```
+```html
 <p class="u-invisible"></p>
 ```
+
 */
 
 @each $mq in var(--mq-options) {

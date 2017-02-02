@@ -1,16 +1,15 @@
-/*
-@styleguide
-
-@title Font Family
-
-Use these classes on an element to change the font-family stack.
+/*---
+title: Font Family
+section: Text
+content: Use these classes on an element to change the font-family stack.
+---
 
 <p class="u-ff--wordpress">u-ff--wordpress</p>
 <p class="u-ff--medium">u-ff--medium</p>
 <p class="u-ff--ghost">u-ff--ghost</p>
 <p class="u-ff--github">u-ff--github</p>
 
-```
+```html
 <p class="u-ff--wordpress"></p>
 <p class="u-ff--medium"></p>
 <p class="u-ff--ghost"></p>

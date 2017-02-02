@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Position
-
-Use these classes on any element to change the position property.
+/*---
+title: Position
+section: Layout
+content: Use these classes on any element to change the position property.
+---
 
 <p class="u-position--absolute">u-position--absolute</p>
 <p class="u-position--fixed">u-position--fixed</p>
@@ -11,7 +10,7 @@ Use these classes on any element to change the position property.
 <p class="u-position--static">u-position--static</p>
 <p class="u-position--sticky">u-position--sticky</p>
 
-```
+```html
 <p class="u-position--absolute"></p>
 <p class="u-position--fixed"></p>
 <p class="u-position--relative"></p>

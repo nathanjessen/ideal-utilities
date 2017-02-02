@@ -1,16 +1,15 @@
-/*
-@styleguide
-
-@title List
-
-Utility classes to control the appearance of a list element (e.g. `ul`, `ol`, `dl`).
+/*---
+title: List
+section: Layout
+content: Utility classes to control the appearance of a list element (e.g. `ul`, `ol`, `dl`).
+---
 
 <ul class="u-list--unstyled">
   <li>.u-list--unstyled</li>
   <li>.u-list--unstyled</li>
 </ul>
 
-```
+```html
 <ul class="u-list--unstyled">
   <li></li>
 </ul>
@@ -22,7 +21,7 @@ Utility classes to control the appearance of a list element (e.g. `ul`, `ol`, `d
   <li>.u-list--inline</li>
 </ul>
 
-```
+```html
 <ul class="u-list--inline">
   <li></li>
 </ul>

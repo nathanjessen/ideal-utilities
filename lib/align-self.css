@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Align Self
-
-Use these classes to alter flexbox self alignment.
+/*---
+title: Align Self
+section: Flexbox
+content: Use these classes to alter flexbox self alignment.
+---
 
 <p class="u-as--flex-start">u-as--flex-start</p>
 <p class="u-as--flex-end">u-as--flex-end</p>
@@ -11,7 +10,7 @@ Use these classes to alter flexbox self alignment.
 <p class="u-as--stretch">u-as--stretch</p>
 <p class="u-as--auto">u-as--auto</p>
 
-```
+```html
 <p class="u-as--flex-start"></p>
 <p class="u-as--flex-end"></p>
 <p class="u-as--center"></p>

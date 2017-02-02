@@ -1,15 +1,14 @@
-/*
-@styleguide
-
-@title Text Transform
-
-Use these classes on an element to change the text-transform.
+/*---
+title: Text Transform
+section: Text
+content: Use these classes on an element to change the text-transform.
+---
 
 <p class="u-text--capitalize">u-text--capitalize</p>
 <p class="u-text--lowercase">u-text--lowercase</p>
 <p class="u-text--uppercase">u-text--uppercase</p>
 
-```
+```html
 <p class="u-text--capitalize"></p>
 <p class="u-text--lowercase"></p>
 <p class="u-text--uppercase"></p>

@@ -1,13 +1,12 @@
-/*
-@styleguide
-
-@title Truncate
-
-Use this class to show an ellipsis instead of wrapped text.
+/*---
+title: Truncate
+section: Text
+content: Use this class to show an ellipsis instead of wrapped text.
+---
 
 <p class="u-truncate">u-truncate</p>
 
-```
+```html
 <p class="u-truncate"></p>
 ```
 */

@@ -1,15 +1,14 @@
-/*
-@styleguide
-
-@title Float
-
-Use these classes to float an element to the left or right.
+/*---
+title: Float
+section: Layout
+content: Use these classes to float an element to the left or right.
+---
 
 <p class="u-float--left">u-float--left</p>
 <p class="u-float--right">u-float--right</p>
 <p class="u-float--none">u-float--none</p>
 
-```
+```html
 <p class="u-float--left"></p>
 <p class="u-float--right"></p>
 <p class="u-float--none"></p>

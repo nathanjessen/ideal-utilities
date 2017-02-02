@@ -1,25 +1,25 @@
-/*
-@styleguide
+/*---
+title: Align Content
+section: Flexbox
+content: Use these classes to alter flexbox content alignment.
+---
 
-@title Align Content
-
-Use these classes to alter flexbox content alignment.
-
-<p class="u-ac--flex-start">u-ac--flex-start</p>
-<p class="u-ac--flex-end">u-ac--flex-end</p>
-<p class="u-ac--center">u-ac--center</p>
-<p class="u-ac--stretch">u-ac--stretch</p>
-<p class="u-ac--space-between">u-ac--space-between</p>
-<p class="u-ac--space-around">u-ac--space-around</p>
-
-```
 <p class="u-ac--flex-start"></p>
 <p class="u-ac--flex-end"></p>
 <p class="u-ac--center"></p>
 <p class="u-ac--stretch"></p>
 <p class="u-ac--space-between"></p>
 <p class="u-ac--space-around"></p>
+
+```html
+<p class="u-ac--flex-start">u-ac--flex-start</p>
+<p class="u-ac--flex-end">u-ac--flex-end</p>
+<p class="u-ac--center">u-ac--center</p>
+<p class="u-ac--stretch">u-ac--stretch</p>
+<p class="u-ac--space-between">u-ac--space-between</p>
+<p class="u-ac--space-around">u-ac--space-around</p>
 ```
+​
 */
 
 .u-ac--flex-start {

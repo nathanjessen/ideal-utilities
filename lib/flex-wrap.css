@@ -1,15 +1,14 @@
-/*
-@styleguide
-
-@title Flex Wrap
-
-Use these classes to alter flexbox wrap.
+/*---
+title: Flex Wrap
+section: Flexbox
+content: Use these classes to alter flexbox wrap.
+---
 
 <p class="u-flex--wrap">u-flex--wrap</p>
 <p class="u-flex--wrap-reverse">u-flex--wrap-reverse</p>
 <p class="u-flex--nowrap">u-flex--nowrap</p>
 
-```
+```html
 <p class="u-flex--wrap"></p>
 <p class="u-flex--wrap-reverse"></p>
 <p class="u-flex--nowrap"></p>
