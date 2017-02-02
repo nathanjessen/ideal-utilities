@@ -1,16 +1,15 @@
-/*
-@styleguide
-
-@title Flex Direction
-
-Use these classes to alter flexbox direction.
+/*---
+title: Flex Direction
+section: Flexbox
+content: Use these classes to alter flexbox direction.
+---
 
 <p class="u-flex--column">u-flex--column</p>
 <p class="u-flex--column-reverse">u-flex--column-reverse</p>
 <p class="u-flex--row">u-flex--row</p>
 <p class="u-flex--row-reverse">u-flex--row-reverse</p>
 
-```
+```html
 <p class="u-flex--column"></p>
 <p class="u-flex--column-reverse"></p>
 <p class="u-flex--row"></p>

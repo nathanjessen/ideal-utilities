@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Display
-
-Use these classes on any element to change the display property.
+/*---
+title: Display
+section: Layout
+content: Use these classes on any element to change the display property.
+---
 
 <p class="u-display--block">u-display--block</p>
 <p class="u-display--inline-block">u-display--inline-block</p>
@@ -13,7 +12,7 @@ Use these classes on any element to change the display property.
 <p class="u-display--table-cell">u-display--table-cell</p>
 <p class="u-display--none">u-display--none</p>
 
-```
+```html
 <p class="u-display--block"></p>
 <p class="u-display--inline-block"></p>
 <p class="u-display--inline"></p>

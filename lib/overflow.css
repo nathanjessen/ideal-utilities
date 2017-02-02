@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Overflow
-
-Use these classes on any element to change the overflow property.
+/*---
+title: Overflow
+section: Layout
+content: Use these classes on any element to change the overflow property.
+---
 
 <p class="u-overflow--visible">u-overflow--visible</p>
 <p class="u-overflow--hidden">u-overflow--hidden</p>
@@ -11,7 +10,7 @@ Use these classes on any element to change the overflow property.
 <p class="u-overflow--auto">u-overflow--auto</p>
 <p class="u-overflow--initial">u-overflow--initial</p>
 
-```
+```html
 <p class="u-overflow--visible"></p>
 <p class="u-overflow--hidden"></p>
 <p class="u-overflow--scroll"></p>

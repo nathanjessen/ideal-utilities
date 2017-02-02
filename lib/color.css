@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Color
-
-Use these classes on any element to apply a text color.
+/*---
+title: Color
+section: Text
+content: Use these classes on any element to apply a text color.
+---
 
 <p class="u-color--white">u-color--white</p>
 <p class="u-color--white-off">u-color--white-off</p>
@@ -14,7 +13,7 @@ Use these classes on any element to apply a text color.
 <p class="u-color--theme-secondary">u-color--theme-secondary</p>
 <p class="u-color--theme-tertiary">u-color--theme-tertiary</p>
 
-```
+```html
 <p class="u-color--white"></p>
 <p class="u-color--white-off"></p>
 <p class="u-color--gray-light"></p>

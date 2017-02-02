@@ -43,30 +43,36 @@
 
 }
 
-/*
-@styleguide
-
-@title Media Queries
-
-Uses custom properties to make media queries more semantic.
-
-```
-## Custom Properties available
-@custom-media --mq-xs (min-width: 20em);
-@custom-media --mq-sm (min-width: 30em);
-@custom-media --mq-md (min-width: 35.5em);
-@custom-media --mq-lg (min-width: 48em);
-@custom-media --mq-xl (min-width: 64em);
-@custom-media --mq-xxl (min-width: 80em);
+/*---
+title: Media Queries
+section: Settings
+content: Uses custom properties to make media queries more semantic.
+---
 
 ## Usage
+
+```
 @media (--mq-xs) {}
 @media (--mq-sm) {}
 @media (--mq-md) {}
 @media (--mq-lg) {}
 @media (--mq-xl) {}
 @media (--mq-xxl) {}
+```
 
+## Definitions
+
+```
+@custom-media --mq-xs (min-width: 20em);
+@custom-media --mq-sm (min-width: 30em);
+@custom-media --mq-md (min-width: 35.5em);
+@custom-media --mq-lg (min-width: 48em);
+@custom-media --mq-xl (min-width: 64em);
+@custom-media --mq-xxl (min-width: 80em);
+```
+*/
+
+/*
 ## Each loop
 @each $mq in var(--mq-options) {
 
@@ -79,7 +85,6 @@ Uses custom properties to make media queries more semantic.
   }
 
 }
-```
 */
 
 @custom-media --mq-xs (min-width: 20em);

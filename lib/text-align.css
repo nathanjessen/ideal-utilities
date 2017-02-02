@@ -1,15 +1,14 @@
-/*
-@styleguide
-
-@title Text Align
-
-Use these classes on an element to alter text alignment.
+/*---
+title: Text Align
+section: Text
+content: Use these classes on an element to alter text alignment.
+---
 
 <p class="u-ta--left">u-ta--left</p>
 <p class="u-ta--right">u-ta--right</p>
 <p class="u-ta--center">u-ta--center</p>
 
-```
+```html
 <p class="u-ta--left"></p>
 <p class="u-ta--right"></p>
 <p class="u-ta--center"></p>

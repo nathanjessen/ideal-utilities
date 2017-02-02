@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Border
-
-Use these classes on any element to apply a border.
+/*---
+title: Border
+section: Layout
+content: Use these classes on any element to apply a border.
+---
 
 <p class="u-border--all">u-border--all</p>
 <p class="u-border--x">u-border--x</p>
@@ -14,7 +13,7 @@ Use these classes on any element to apply a border.
 <p class="u-border--left">u-border--left</p>
 <p class="u-border--none">u-border--none</p>
 
-```
+```html
 <p class="u-border--all"></p>
 <p class="u-border--x"></p>
 <p class="u-border--y"></p>
@@ -24,6 +23,7 @@ Use these classes on any element to apply a border.
 <p class="u-border--left"></p>
 <p class="u-border--none"></p>
 ```
+
 */
 
 .u-border--all {

@@ -1,13 +1,12 @@
-/*
-@styleguide
-
-@title Hidden
-
-Use these classes to hide an element.
+/*---
+title: Hidden
+section: Layout
+content: Use these classes to hide an element.
+---
 
 <p class="u-hidden">u-hidden</p>
 
-```
+```html
 <p class="u-hidden"></p>
 ```
 */

@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Padding
-
-Utility classes to control the padding on any side of an element.
+/*---
+title: Padding
+section: Layout
+content: Utility classes to control the padding on any side of an element.
+---
 
 ** Visual not available **
 
@@ -11,10 +10,10 @@ Classname format: `.u-abreviation--value`
 
 Example: `.u-pa-0`
 
-```
 Abbreviations: [pa, px, py, pt, pr, pb, pl]
+
 Values: [0, 5, 10, 20, 30, 40]
-```
+
 */
 
 /* All sides */

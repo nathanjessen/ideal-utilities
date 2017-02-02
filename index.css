@@ -1,31 +1,38 @@
-@import "./lib/align-content.css";
-@import "./lib/align-items.css";
-@import "./lib/align-self.css";
+/* Section: Layout */
 @import "./lib/background-color.css";
 @import "./lib/border.css";
 @import "./lib/center-block.css";
-@import "./lib/color.css";
 @import "./lib/display.css";
-@import "./lib/flex-direction.css";
-@import "./lib/flex-wrap.css";
 @import "./lib/float.css";
-@import "./lib/font-family.css";
-@import "./lib/font-style.css";
-@import "./lib/font-weight.css";
 @import "./lib/hidden.css";
 @import "./lib/invisible.css";
-@import "./lib/justify-content.css";
-@import "./lib/letter-spacing.css";
 @import "./lib/list.css";
 @import "./lib/margin.css";
 @import "./lib/overflow.css";
 @import "./lib/padding.css";
 @import "./lib/position.css";
+@import "./lib/vertical-align.css";
+
+/* Section: Text */
+@import "./lib/color.css";
+@import "./lib/font-family.css";
+@import "./lib/font-style.css";
+@import "./lib/font-weight.css";
+@import "./lib/letter-spacing.css";
 @import "./lib/screen-reader.css";
 @import "./lib/text-align.css";
 @import "./lib/text-decoration.css";
 @import "./lib/text-transform.css";
 @import "./lib/truncate.css";
-@import "./lib/vertical-align.css";
 @import "./lib/white-space.css";
+
+/* Section: Flexbox */
+@import "./lib/align-content.css";
+@import "./lib/align-items.css";
+@import "./lib/align-self.css";
+@import "./lib/flex-direction.css";
+@import "./lib/flex-wrap.css";
+@import "./lib/justify-content.css";
+
+/* Section: Settings */
 @import "./lib/_settings.css";

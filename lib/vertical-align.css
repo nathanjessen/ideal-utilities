@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Vertical Align
-
-Use these classes to alter the vertical alignment.
+/*---
+title: Vertical Align
+section: Layout
+content: Use these classes to alter the vertical alignment.
+---
 
 <p class="u-va--baseline">u-va--baseline</p>
 <p class="u-va--bottom">u-va--bottom</p>
@@ -14,7 +13,7 @@ Use these classes to alter the vertical alignment.
 <p class="u-va--text-top">u-va--text-top</p>
 <p class="u-va--top">u-va--top</p>
 
-```
+```html
 <p class="u-va--baseline"></p>
 <p class="u-va--bottom"></p>
 <p class="u-va--middle"></p>

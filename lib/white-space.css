@@ -1,13 +1,12 @@
-/*
-@styleguide
-
-@title White Space
-
-Use this class to prevent text wrapping.
+/*---
+title: White Space
+section: Text
+content: Use this class to prevent text wrapping.
+---
 
 <p class="u-text--nowrap">u-text--nowrap</p>
 
-```
+```html
 <p class="u-text--nowrap"></p>
 ```
 */

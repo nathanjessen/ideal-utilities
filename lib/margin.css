@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Margin
-
-Utility classes to control the margin on any side of an element.
+/*---
+title: Margin
+section: Layout
+content: Utility classes to control the margin on any side of an element.
+---
 
 ** Visual not available **
 
@@ -11,10 +10,10 @@ Classname format: `.u-abreviation--value`
 
 Example: `.u-ma-0`
 
-```
 Abbreviations: [ma, mx, my, mt, mr, mb, ml]
+
 Values: [auto, 0, 5, 10, 20, 30, 40]
-```
+
 */
 
 /* All Sides */

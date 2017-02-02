@@ -1,9 +1,8 @@
-/*
-@styleguide
-
-@title Center Block
-
-This is a helper class to center a block element.
+/*---
+title: Center Block
+section: Layout
+content: This is a helper class to center a block element.
+---
 
 <div class="u-center-block">u-center-block</div>
 

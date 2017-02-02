@@ -1,15 +1,14 @@
-/*
-@styleguide
-
-@title Font Style
-
-Use these classes on an element to change the font-style.
+/*---
+title: Font Style
+section: Text
+content: Use these classes on an element to change the font-style.
+---
 
 <p class="u-fs--italic">u-fs--italic</p>
 <p class="u-fs--normal">u-fs--normal</p>
 <p class="u-fs--oblique">u-fs--oblique</p>
 
-```
+```html
 <p class="u-fs--italic"></p>
 <p class="u-fs--normal"></p>
 <p class="u-fs--oblique"></p>

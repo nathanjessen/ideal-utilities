@@ -1,14 +1,13 @@
-/*
-@styleguide
-
-@title Text Decoration
-
-Use these classes on an element to change the font-style.
+/*---
+title: Text Decoration
+section: Text
+content: Use these classes on an element to change the font-style.
+---
 
 <p class="u-text--strikeout">u-text--strikeout</p>
 <p class="u-text--underline">u-text--underline</p>
 
-```
+```html
 <p class="u-text--strikeout"></p>
 <p class="u-text--underline"></p>
 ```
