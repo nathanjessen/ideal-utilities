@@ -1,0 +1,35 @@
+/*
+@styleguide
+
+@title Font Family
+
+Use these classes on an element to change the font-family stack.
+
+<p class="u-ff--wordpress">u-ff--wordpress</p>
+<p class="u-ff--medium">u-ff--medium</p>
+<p class="u-ff--ghost">u-ff--ghost</p>
+<p class="u-ff--github">u-ff--github</p>
+
+```
+<p class="u-ff--wordpress"></p>
+<p class="u-ff--medium"></p>
+<p class="u-ff--ghost"></p>
+<p class="u-ff--github"></p>
+```
+*/
+
+.u-ff--wordpress {
+  font-family: var(--font-stack-wordpress);
+}
+
+.u-ff--medium {
+  font-family: var(--font-stack-medium);
+}
+
+.u-ff--ghost {
+  font-family: var(--font-stack-ghost);
+}
+
+.u-ff--github {
+  font-family: var(--font-stack-github);
+}
