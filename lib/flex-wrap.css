@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Flex Wrap
 section: Flexbox
-content: Use these classes to alter flexbox wrap.
 ---
+
+**Applies the designated flex-wrap value**
 
 <p class="u-flex--wrap">u-flex--wrap</p>
 <p class="u-flex--wrap-reverse">u-flex--wrap-reverse</p>
@@ -16,13 +17,13 @@ content: Use these classes to alter flexbox wrap.
 */
 
 .u-flex--wrap {
-  flex-direction: wrap !important;
+  flex-wrap: wrap;
 }
 
 .u-flex--wrap-reverse {
-  flex-direction: wrap-reverse !important;
+  flex-wrap: wrap-reverse;
 }
 
 .u-flex--nowrap {
-  flex-direction: nowrap !important;
+  flex-wrap: nowrap;
 }

@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Align Self
 section: Flexbox
-content: Use these classes to alter flexbox self alignment.
 ---
+
+**Applies the designated align-self value**
 
 <p class="u-as--flex-start">u-as--flex-start</p>
 <p class="u-as--flex-end">u-as--flex-end</p>

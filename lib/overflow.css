@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Overflow
-section: Layout
-content: Use these classes on any element to change the overflow property.
+section: Display
 ---
+
+**Applies the designated overflow value**
 
 <p class="u-overflow--visible">u-overflow--visible</p>
 <p class="u-overflow--hidden">u-overflow--hidden</p>
@@ -20,21 +21,21 @@ content: Use these classes on any element to change the overflow property.
 */
 
 .u-overflow--visible {
-  overflow: visible !important;
+  overflow: visible;
 }
 
 .u-overflow--hidden {
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 .u-overflow--scroll {
-  overflow: scroll !important;
+  overflow: scroll;
 }
 
 .u-overflow--auto {
-  overflow: auto !important;
+  overflow: auto;
 }
 
 .u-overflow--initial {
-  overflow: initial !important;
+  overflow: initial;
 }

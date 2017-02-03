@@ -1,10 +1,9 @@
-/*---
+/* ---
 title: Margin
 section: Layout
-content: Utility classes to control the margin on any side of an element.
 ---
 
-** Visual not available **
+**Applies the designated margin value**
 
 Classname format: `.u-abreviation--value`
 
@@ -17,118 +16,118 @@ Values: [auto, 0, 5, 10, 20, 30, 40]
 */
 
 /* All Sides */
-.u-ma--auto { margin: auto !important; }
-.u-ma--0 { margin: 0 !important; }
-.u-ma--5 { margin: 5px !important; }
-.u-ma--10 { margin: 10px !important; }
-.u-ma--20 { margin: 20px !important; }
-.u-ma--30 { margin: 30px !important; }
-.u-ma--40 { margin: 40px !important; }
+.u-ma--auto { margin: auto; }
+.u-ma--0 { margin: 0; }
+.u-ma--5 { margin: 5px; }
+.u-ma--10 { margin: 10px; }
+.u-ma--20 { margin: 20px; }
+.u-ma--30 { margin: 30px; }
+.u-ma--40 { margin: 40px; }
 
 /* Left and Right */
 .u-mx--auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .u-mx--0 {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .u-mx--5 {
-  margin-left: 5px !important;
-  margin-right: 5px !important;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .u-mx--10 {
-  margin-left: 10px !important;
-  margin-right: 10px !important;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .u-mx--20 {
-  margin-left: 20px !important;
-  margin-right: 20px !important;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .u-mx--30 {
-  margin-left: 30px !important;
-  margin-right: 30px !important;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .u-mx--40 {
-  margin-left: 40px !important;
-  margin-right: 40px !important;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* Top and Bottom */
 .u-my--auto {
-  margin-bottom: auto !important;
-  margin-top: auto !important;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .u-my--0 {
-  margin-bottom: 0 !important;
-  margin-top: 0 !important;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .u-my--5 {
-  margin-bottom: 5px !important;
-  margin-top: 5px !important;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .u-my--10 {
-  margin-bottom: 10px !important;
-  margin-top: 10px !important;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .u-my--20 {
-  margin-bottom: 20px !important;
-  margin-top: 20px !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .u-my--30 {
-  margin-bottom: 30px !important;
-  margin-top: 30px !important;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .u-my--40 {
-  margin-bottom: 40px !important;
-  margin-top: 40px !important;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 /* Top */
-.u-mt--auto { margin-top: auto !important; }
-.u-mt--0 { margin-top: 0 !important; }
-.u-mt--5 { margin-top: 5px !important; }
-.u-mt--10 { margin-top: 10px !important; }
-.u-mt--20 { margin-top: 20px !important; }
-.u-mt--30 { margin-top: 30px !important; }
-.u-mt--40 { margin-top: 40px !important; }
+.u-mt--auto { margin-top: auto; }
+.u-mt--0 { margin-top: 0; }
+.u-mt--5 { margin-top: 5px; }
+.u-mt--10 { margin-top: 10px; }
+.u-mt--20 { margin-top: 20px; }
+.u-mt--30 { margin-top: 30px; }
+.u-mt--40 { margin-top: 40px; }
 
 /* Right */
-.u-mr--auto { margin-right: auto !important; }
-.u-mr--0 { margin-right: 0 !important; }
-.u-mr--5 { margin-right: 5px !important; }
-.u-mr--10 { margin-right: 10px !important; }
-.u-mr--20 { margin-right: 20px !important; }
-.u-mr--30 { margin-right: 30px !important; }
-.u-mr--40 { margin-right: 40px !important; }
+.u-mr--auto { margin-right: auto; }
+.u-mr--0 { margin-right: 0; }
+.u-mr--5 { margin-right: 5px; }
+.u-mr--10 { margin-right: 10px; }
+.u-mr--20 { margin-right: 20px; }
+.u-mr--30 { margin-right: 30px; }
+.u-mr--40 { margin-right: 40px; }
 
 /* Bottom */
-.u-mb--auto { margin-bottom: auto !important; }
-.u-mb--0 { margin-bottom: 0 !important; }
-.u-mb--5 { margin-bottom: 5px !important; }
-.u-mb--10 { margin-bottom: 10px !important; }
-.u-mb--20 { margin-bottom: 20px !important; }
-.u-mb--30 { margin-bottom: 30px !important; }
-.u-mb--40 { margin-bottom: 40px !important; }
+.u-mb--auto { margin-bottom: auto; }
+.u-mb--0 { margin-bottom: 0; }
+.u-mb--5 { margin-bottom: 5px; }
+.u-mb--10 { margin-bottom: 10px; }
+.u-mb--20 { margin-bottom: 20px; }
+.u-mb--30 { margin-bottom: 30px; }
+.u-mb--40 { margin-bottom: 40px; }
 
 /* Left */
-.u-ml--auto { margin-left: auto !important; }
-.u-ml--0 { margin-left: 0 !important; }
-.u-ml--5 { margin-left: 5px !important; }
-.u-ml--10 { margin-left: 10px !important; }
-.u-ml--20 { margin-left: 20px !important; }
-.u-ml--30 { margin-left: 30px !important; }
-.u-ml--40 { margin-left: 40px !important; }
+.u-ml--auto { margin-left: auto; }
+.u-ml--0 { margin-left: 0; }
+.u-ml--5 { margin-left: 5px; }
+.u-ml--10 { margin-left: 10px; }
+.u-ml--20 { margin-left: 20px; }
+.u-ml--30 { margin-left: 30px; }
+.u-ml--40 { margin-left: 40px; }

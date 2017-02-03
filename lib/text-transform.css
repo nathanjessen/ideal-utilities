@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Text Transform
 section: Text
-content: Use these classes on an element to change the text-transform.
 ---
+
+**Applies the designated text-transform value**
 
 <p class="u-text--capitalize">u-text--capitalize</p>
 <p class="u-text--lowercase">u-text--lowercase</p>
@@ -16,13 +17,13 @@ content: Use these classes on an element to change the text-transform.
 */
 
 .u-text--capitalize {
-  text-transform: capitalize !important;
+  text-transform: capitalize;
 }
 
 .u-text--lowercase {
-  text-transform: lowercase !important;
+  text-transform: lowercase;
 }
 
 .u-text--uppercase {
-  text-transform: uppercase !important;
+  text-transform: uppercase;
 }

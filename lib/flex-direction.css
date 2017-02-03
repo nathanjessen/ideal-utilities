@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Flex Direction
 section: Flexbox
-content: Use these classes to alter flexbox direction.
 ---
+
+**Applies the designated flex-direction value**
 
 <p class="u-flex--column">u-flex--column</p>
 <p class="u-flex--column-reverse">u-flex--column-reverse</p>
@@ -18,17 +19,17 @@ content: Use these classes to alter flexbox direction.
 */
 
 .u-flex--column {
-  flex-direction: column !important;
+  flex-direction: column;
 }
 
 .u-flex--column-reverse {
-  flex-direction: column-reverse !important;
+  flex-direction: column-reverse;
 }
 
 .u-flex--row {
-  flex-direction: row !important;
+  flex-direction: row;
 }
 
 .u-flex--row-reverse {
-  flex-direction: row-reverse !important;
+  flex-direction: row-reverse;
 }

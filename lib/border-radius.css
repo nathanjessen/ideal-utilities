@@ -1,0 +1,54 @@
+/* ---
+title: Border Radius
+section: Borders
+---
+
+**Applies the designated border-radius value**
+
+<p class="u-border-radius--0">u-border-radius--0</p>
+<p class="u-border-radius--1">u-border-radius--1</p>
+<p class="u-border-radius--2">u-border-radius--2</p>
+<p class="u-border-radius--3">u-border-radius--3</p>
+<p class="u-border-radius--4">u-border-radius--4</p>
+<p class="u-border-radius--25p">u-border-radius--25p</p>
+<p class="u-border-radius--50p">u-border-radius--50p</p>
+
+```html
+<p class="u-border-radius--0"></p>
+<p class="u-border-radius--1"></p>
+<p class="u-border-radius--2"></p>
+<p class="u-border-radius--3"></p>
+<p class="u-border-radius--4"></p>
+<p class="u-border-radius--25p"></p>
+<p class="u-border-radius--50p"></p>
+```
+
+*/
+
+.u-border-radius--0 {
+  border-radius: 0;
+}
+
+.u-border-radius--1 {
+  border-radius: 1px;
+}
+
+.u-border-radius--2 {
+  border-radius: 2px;
+}
+
+.u-border-radius--3 {
+  border-radius: 3px;
+}
+
+.u-border-radius--4 {
+  border-radius: 4px;
+}
+
+.u-border-radius--25p {
+  border-radius: 25%;
+}
+
+.u-border-radius--50p {
+  border-radius: 50%;
+}

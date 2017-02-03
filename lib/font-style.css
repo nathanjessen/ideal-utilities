@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Font Style
 section: Text
-content: Use these classes on an element to change the font-style.
 ---
+
+**Applies the designated font-style value**
 
 <p class="u-fs--italic">u-fs--italic</p>
 <p class="u-fs--normal">u-fs--normal</p>
@@ -16,13 +17,13 @@ content: Use these classes on an element to change the font-style.
 */
 
 .u-fs--italic {
-  font-style: italic !important;
+  font-style: italic;
 }
 
 .u-fs--normal {
-  font-style: normal !important;
+  font-style: normal;
 }
 
 .u-fs--oblique {
-  font-style: oblique !important;
+  font-style: oblique;
 }

@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: List
 section: Layout
-content: Utility classes to control the appearance of a list element (e.g. `ul`, `ol`, `dl`).
 ---
+
+**Controls the appearance of a list element (e.g. `ul`, `ol`, `dl`)**
 
 <ul class="u-list--unstyled">
   <li>.u-list--unstyled</li>
@@ -30,14 +31,14 @@ content: Utility classes to control the appearance of a list element (e.g. `ul`,
 
 .u-list--unstyled,
 .u-list--inline {
-  list-style: none !important;
-  padding-left: 0 !important;
+  list-style: none;
+  padding-left: 0;
 }
 
 .u-list--inline > li {
-  display: inline-block !important;
+  display: inline-block;
 
   &:not(:last-child)::after {
-    content: " |" !important;
+    content: " |";
   }
 }

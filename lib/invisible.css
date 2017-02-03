@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Invisible
-section: Layout
-content: Use these classes to visibly hide an element.
+section: Miscellaneous
 ---
+
+**Visually hides an element**
 
 <p class="u-invisible">u-invisible</p>
 
@@ -17,7 +18,7 @@ content: Use these classes to visibly hide an element.
   @if $(mq) == e {
 
     .u-invisible {
-      visibility: hidden !important;
+      visibility: hidden;
     }
 
   }
@@ -27,7 +28,7 @@ content: Use these classes to visibly hide an element.
     @media (--mq-$(mq)) {
 
       .u-invisible\@$mq {
-        visibility: hidden !important;
+        visibility: hidden;
       }
 
     }

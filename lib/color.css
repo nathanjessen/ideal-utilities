@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Color
-section: Text
-content: Use these classes on any element to apply a text color.
+section: Colors
 ---
+
+**Applies the designated color value**
 
 <p class="u-color--white">u-color--white</p>
 <p class="u-color--white-off">u-color--white-off</p>
@@ -28,7 +29,7 @@ content: Use these classes on any element to apply a text color.
 @each $color in var(--color-options) {
 
   .u-color--$(color) {
-    color: var(--$(color)) !important;
+    color: var(--$(color));
   }
 
 }
