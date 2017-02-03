@@ -1,9 +1,10 @@
-/*---
+/* ---
 title: Float
 section: Layout
-content: Use these classes to float an element to the left or right.
 ---
 
+**Applies the designated float value**
+*
 <p class="u-float--left">u-float--left</p>
 <p class="u-float--right">u-float--right</p>
 <p class="u-float--none">u-float--none</p>
@@ -20,15 +21,15 @@ content: Use these classes to float an element to the left or right.
   @if $(mq) == e {
 
     .u-float--left {
-      float: left !important;
+      float: left;
     }
 
     .u-float--right {
-      float: right !important;
+      float: right;
     }
 
     .u-float--none {
-      float: none !important;
+      float: none;
     }
 
   }
@@ -37,15 +38,15 @@ content: Use these classes to float an element to the left or right.
 
     @media (--mq-$(mq)) {
       .u-float--left\@$(mq) {
-        float: left !important;
+        float: left;
       }
 
       .u-float--right\@$(mq) {
-        float: right !important;
+        float: right;
       }
 
       .u-float--none\@$(mq) {
-        float: none !important;
+        float: none;
       }
     }
 

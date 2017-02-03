@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Display
-section: Layout
-content: Use these classes on any element to change the display property.
+section: Display
 ---
+
+**Applies the designated display value**
 
 <p class="u-display--block">u-display--block</p>
 <p class="u-display--inline-block">u-display--inline-block</p>
@@ -28,31 +29,31 @@ content: Use these classes on any element to change the display property.
   @if $(mq) == e {
 
     .u-display--block {
-      display: block !important;
+      display: block;
     }
 
     .u-display--inline-block {
-      display: inline-block !important;
+      display: inline-block;
     }
 
     .u-display--inline {
-      display: inline !important;
+      display: inline;
     }
 
     .u-display--flex {
-      display: flex !important;
+      display: flex;
     }
 
     .u-display--table {
-      display: table !important;
+      display: table;
     }
 
     .u-display--table-cell {
-      display: table-cell !important;
+      display: table-cell;
     }
 
     .u-display--none {
-      display: none !important;
+      display: none;
     }
 
   }
@@ -62,31 +63,31 @@ content: Use these classes on any element to change the display property.
     @media (--mq-$(mq)) {
 
       .u-display--block\@$mq {
-        display: block !important;
+        display: block;
       }
 
       .u-display--inline-block\@$mq {
-        display: inline-block !important;
+        display: inline-block;
       }
 
       .u-display--inline\@$mq {
-        display: inline !important;
+        display: inline;
       }
 
       .u-display--flex\@$mq {
-        display: flex !important;
+        display: flex;
       }
 
       .u-display--table\@$mq {
-        display: table !important;
+        display: table;
       }
 
       .u-display--table-cell\@$mq {
-        display: table-cell !important;
+        display: table-cell;
       }
 
       .u-display--none\@$mq {
-        display: none !important;
+        display: none;
       }
 
     }

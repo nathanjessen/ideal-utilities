@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Vertical Align
 section: Layout
-content: Use these classes to alter the vertical alignment.
 ---
+
+**Applies the designated vertical-align value**
 
 <p class="u-va--baseline">u-va--baseline</p>
 <p class="u-va--bottom">u-va--bottom</p>
@@ -26,33 +27,33 @@ content: Use these classes to alter the vertical alignment.
 */
 
 .u-va--baseline {
-  vertical-align: baseline !important;
+  vertical-align: baseline;
 }
 
 .u-va--bottom {
-  vertical-align: bottom !important;
+  vertical-align: bottom;
 }
 
 .u-va--middle {
-  vertical-align: middle !important;
+  vertical-align: middle;
 }
 
 .u-va--sub {
-  vertical-align: sub !important;
+  vertical-align: sub;
 }
 
 .u-va--super {
-  vertical-align: super !important;
+  vertical-align: super;
 }
 
 .u-va--text-bottom {
-  vertical-align: text-bottom !important;
+  vertical-align: text-bottom;
 }
 
 .u-va--text-top {
-  vertical-align: text-top !important;
+  vertical-align: text-top;
 }
 
 .u-va--top {
-  vertical-align: top !important;
+  vertical-align: top;
 }

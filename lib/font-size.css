@@ -1,0 +1,47 @@
+/* ---
+title: Font Size
+section: Text
+---
+
+**Applies the designated font-size value**
+
+<p class="u-fs--05">u-fs--05</p>
+<p class="u-fs--075">u-fs--075</p>
+<p class="u-fs--1">u-fs--1</p>
+<p class="u-fs--2">u-fs--2</p>
+<p class="u-fs--3">u-fs--3</p>
+<p class="u-fs--4">u-fs--4</p>
+
+```html
+<p class="u-fs--05"></p>
+<p class="u-fs--075"></p>
+<p class="u-fs--1"></p>
+<p class="u-fs--2"></p>
+<p class="u-fs--3"></p>
+<p class="u-fs--4"></p>
+```
+*/
+
+.u-fs--05 {
+  font-size: 0.5rem;
+}
+
+.u-fs--075 {
+  font-size: 0.75rem;
+}
+
+.u-fs--1 {
+  font-size: 1rem;
+}
+
+.u-fs--2 {
+  font-size: 2rem;
+}
+
+.u-fs--3 {
+  font-size: 3rem;
+}
+
+.u-fs--4 {
+  font-size: 4rem;
+}

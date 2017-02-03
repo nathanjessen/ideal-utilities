@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Truncate
 section: Text
-content: Use this class to show an ellipsis instead of wrapped text.
 ---
+
+**Shows an ellipsis instead of wrapped text**
 
 <p class="u-truncate">u-truncate</p>
 
@@ -12,7 +13,7 @@ content: Use this class to show an ellipsis instead of wrapped text.
 */
 
 .u-truncate {
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

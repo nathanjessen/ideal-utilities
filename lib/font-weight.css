@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Font Weight
 section: Text
-content: Use these classes on any element to change the font-weight.
 ---
+
+**Applies the designated font-weight value**
 
 <p class="u-fw--light">u-fw--light</p>
 <p class="u-fw--normal">u-fw--normal</p>
@@ -24,7 +25,7 @@ content: Use these classes on any element to change the font-weight.
 @each $weight in var(--font-options) {
 
   .u-fw--$(weight) {
-    font-weight: var(--font-$(weight)) !important;
+    font-weight: var(--font-$(weight));
   }
 
 }

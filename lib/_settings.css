@@ -1,5 +1,15 @@
-/* @start color */
+/* ---
+title: Configuration
+section: Getting Started
+---
+
+The library leverages CSS Variables to set things like colors, font weights, and custom media queries. Include your own declarations to override the CSS variables.
+
+*/
+
 :root {
+
+  /* Colors */
   --white: #fff;
   --white-off: gray(95%);
   --gray-light: gray(80%);
@@ -8,12 +18,6 @@
   --theme-primary: #3494e6;
   --theme-secondary: #36d7b7;
   --theme-tertiary: #86d5c7;
-}
-/* @end color */
-
-:root {
-
-  /* Colors */
   --color-options: white, white-off, gray-light, gray, gray-dark, theme-primary, theme-secondary, theme-tertiary;
   --border-color: gray;
 
@@ -43,9 +47,9 @@
 
 }
 
-/*---
+/* ---
 title: Media Queries
-section: Settings
+section: Getting Started
 content: Uses custom properties to make media queries more semantic.
 ---
 

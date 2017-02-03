@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Border
-section: Layout
-content: Use these classes on any element to apply a border.
+section: Borders
 ---
+
+**Applies the designated border**
 
 <p class="u-border--all">u-border--all</p>
 <p class="u-border--x">u-border--x</p>
@@ -27,35 +28,35 @@ content: Use these classes on any element to apply a border.
 */
 
 .u-border--all {
-  border: 1px solid var(--border-color) !important;
+  border: 1px solid var(--border-color);
 }
 
 .u-border--x {
-  border-left: 1px solid var(--border-color) !important;
-  border-right: 1px solid var(--border-color) !important;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
 
 .u-border--y {
-  border-top: 1px solid var(--border-color) !important;
-  border-bottom: 1px solid var(--border-color) !important;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .u-border--top {
-  border-top: 1px solid var(--border-color) !important;
+  border-top: 1px solid var(--border-color);
 }
 
 .u-border--right {
-  border-right: 1px solid var(--border-color) !important;
+  border-right: 1px solid var(--border-color);
 }
 
 .u-border--bottom {
-  border-bottom: 1px solid var(--border-color) !important;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .u-border--left {
-  border-left: 1px solid var(--border-color) !important;
+  border-left: 1px solid var(--border-color);
 }
 
 .u-border--none {
-  border: none !important;
+  border: none;
 }

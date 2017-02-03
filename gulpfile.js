@@ -28,8 +28,7 @@ gulp.task('css', function () {
     stylelint(),
     immutableCss(),
     reporter({
-      clearReportedMessages: true,
-      noIcon: true
+      clearReportedMessages: true
     }),
     atVariables(),
     atFor(),

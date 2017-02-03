@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Text Align
 section: Text
-content: Use these classes on an element to alter text alignment.
 ---
+
+**Applies the designated text-align value**
 
 <p class="u-ta--left">u-ta--left</p>
 <p class="u-ta--right">u-ta--right</p>
@@ -20,15 +21,15 @@ content: Use these classes on an element to alter text alignment.
   @if $(mq) == e {
 
     .u-ta--left {
-      text-align: left !important;
+      text-align: left;
     }
 
     .u-ta--right {
-      text-align: right !important;
+      text-align: right;
     }
 
     .u-ta--center {
-      text-align: center !important;
+      text-align: center;
     }
 
   }
@@ -38,15 +39,15 @@ content: Use these classes on an element to alter text alignment.
     @media (--mq-$(mq)) {
 
       .u-ta--left\@$(mq) {
-        text-align: left !important;
+        text-align: left;
       }
 
       .u-ta--right\@$(mq) {
-        text-align: right !important;
+        text-align: right;
       }
 
       .u-ta--center\@$(mq) {
-        text-align: center !important;
+        text-align: center;
       }
 
     }

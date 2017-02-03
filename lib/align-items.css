@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Align Items
 section: Flexbox
-content: Use these classes to alter flexbox item alignment.
 ---
+
+**Applies the designated align-items value**
 
 <p class="u-ai--flex-start">u-ai--flex-start</p>
 <p class="u-ai--flex-end">u-ai--flex-end</p>

@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Hidden
-section: Layout
-content: Use these classes to hide an element.
+section: Miscellaneous
 ---
+
+**Hides an element**
 
 <p class="u-hidden">u-hidden</p>
 
@@ -16,8 +17,8 @@ content: Use these classes to hide an element.
   @if $(mq) == e {
 
     .u-hidden {
-      display: none !important;
-      visibility: hidden !important;
+      display: none;
+      visibility: hidden;
     }
 
   }
@@ -27,8 +28,8 @@ content: Use these classes to hide an element.
     @media (--mq-$(mq)) {
 
       .u-hidden\@$mq {
-        display: none !important;
-        visibility: hidden !important;
+        display: none;
+        visibility: hidden;
       }
 
     }

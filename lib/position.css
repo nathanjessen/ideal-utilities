@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Position
 section: Layout
-content: Use these classes on any element to change the position property.
 ---
+
+**Applies the designated position value**
 
 <p class="u-position--absolute">u-position--absolute</p>
 <p class="u-position--fixed">u-position--fixed</p>
@@ -24,24 +25,24 @@ content: Use these classes on any element to change the position property.
   @if $(mq) == e {
 
     .u-position--absolute {
-      position: absolute !important;
+      position: absolute;
     }
 
     .u-position--fixed {
-      position: fixed !important;
+      position: fixed;
 
     }
 
     .u-position--relative {
-      position: relative !important;
+      position: relative;
     }
 
     .u-position--static {
-      position: static !important;
+      position: static;
     }
 
     .u-position--sticky {
-      position: sticky !important;
+      position: sticky;
     }
 
   }
@@ -51,24 +52,24 @@ content: Use these classes on any element to change the position property.
     @media (--mq-$(mq)) {
 
       .u-position--absolute\@$mq {
-        position: absolute !important;
+        position: absolute;
       }
 
       .u-position--fixed\@$mq {
-        position: fixed !important;
+        position: fixed;
 
       }
 
       .u-position--relative\@$mq {
-        position: relative !important;
+        position: relative;
       }
 
       .u-position--static\@$mq {
-        position: static !important;
+        position: static;
       }
 
       .u-position--sticky\@$mq {
-        position: sticky !important;
+        position: sticky;
       }
 
     }

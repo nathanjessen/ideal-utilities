@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Font Family
 section: Text
-content: Use these classes on an element to change the font-family stack.
 ---
+
+**Applies the designated font-family stack**
 
 <p class="u-ff--wordpress">u-ff--wordpress</p>
 <p class="u-ff--medium">u-ff--medium</p>

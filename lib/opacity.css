@@ -1,0 +1,77 @@
+/* ---
+title: Opacity
+section: Display
+---
+
+**Applies the designated opacity value**
+
+<p class="u-op--0">u-op--0</p>
+<p class="u-op--01">u-op--01</p>
+<p class="u-op--02">u-op--02</p>
+<p class="u-op--03">u-op--03</p>
+<p class="u-op--04">u-op--04</p>
+<p class="u-op--05">u-op--05</p>
+<p class="u-op--06">u-op--06</p>
+<p class="u-op--07">u-op--07</p>
+<p class="u-op--08">u-op--08</p>
+<p class="u-op--09">u-op--09</p>
+<p class="u-op--1">u-op--1</p>
+
+```html
+<p class="u-op--0"></p>
+<p class="u-op--01"></p>
+<p class="u-op--02"></p>
+<p class="u-op--03"></p>
+<p class="u-op--04"></p>
+<p class="u-op--05"></p>
+<p class="u-op--06"></p>
+<p class="u-op--07"></p>
+<p class="u-op--08"></p>
+<p class="u-op--09"></p>
+<p class="u-op--1"></p>
+```
+*/
+
+.u-op--0 {
+  opacity: 0;
+}
+
+.u-op--01 {
+  opacity: 0.1;
+}
+
+.u-op--02 {
+  opacity: 0.2;
+}
+
+.u-op--03 {
+  opacity: 0.3;
+}
+
+.u-op--04 {
+  opacity: 0.4;
+}
+
+.u-op--05 {
+  opacity: 0.5;
+}
+
+.u-op--06 {
+  opacity: 0.6;
+}
+
+.u-op--07 {
+  opacity: 0.7;
+}
+
+.u-op--08 {
+  opacity: 0.8;
+}
+
+.u-op--09 {
+  opacity: 0.9;
+}
+
+.u-op--1 {
+  opacity: 1;
+}

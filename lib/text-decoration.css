@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Text Decoration
 section: Text
-content: Use these classes on an element to change the font-style.
 ---
+
+**Applies the designated text-decoration value**
 
 <p class="u-text--strikeout">u-text--strikeout</p>
 <p class="u-text--underline">u-text--underline</p>
@@ -14,9 +15,9 @@ content: Use these classes on an element to change the font-style.
 */
 
 .u-text--strikeout {
-  text-decoration: line-through !important;
+  text-decoration: line-through;
 }
 
 .u-text--underline {
-  text-decoration: underline !important;
+  text-decoration: underline;
 }

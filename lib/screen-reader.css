@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: Screen Reader
-section: Text
-content: These classes help with hiding text or making it only visible to screen readers.
+section: Miscellaneous
 ---
+
+**Hides text or makes it only visible to screen readers**
 
 <p class="u-text-hide">u-text-hide</p>
 <p class="u-sr-only">u-sr-only</p>

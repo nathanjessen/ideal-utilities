@@ -1,8 +1,9 @@
-/*---
+/* ---
 title: White Space
 section: Text
-content: Use this class to prevent text wrapping.
 ---
+
+**Applies the designated white-space value**
 
 <p class="u-text--nowrap">u-text--nowrap</p>
 
@@ -12,5 +13,5 @@ content: Use this class to prevent text wrapping.
 */
 
 .u-text--nowrap {
-  white-space: nowrap !important;
+  white-space: nowrap;
 }
