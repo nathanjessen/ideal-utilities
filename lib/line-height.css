@@ -3,14 +3,26 @@ title: Line Height
 section: Text
 ---
 
-**Applies the designated line-height value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
 
-<p class="u-lh--1">u-lh--1</p>
+**Available Values**: `[ normal | 1 ]`
+
+**Abbreviation**: `lh`
+
+**Format**: `u-lh--<value>`
 
 ```html
+<p class="u-lh--normal"></p>
 <p class="u-lh--1"></p>
 ```
+
+<p class="u-lh--normal">u-lh--normal</p>
+<p class="u-lh--1">u-lh--1</p>
 */
+
+.u-lh--normal {
+  line-height: normal;
+}
 
 .u-lh--1 {
   line-height: 1rem;

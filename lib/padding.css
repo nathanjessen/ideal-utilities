@@ -3,16 +3,25 @@ title: Padding
 section: Layout
 ---
 
-**Applies the designated padding value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
-Classname format: `.u-abreviation--value`
+**Available Values**: `[ 0 | 5 | 10 | 20 | 30 | 40 ]`
 
-Example: `.u-pa-0`
+**Abbreviation**: `[ pa | px | py | pt | pr | pb | pl ]`
 
-Abbreviations: [pa, px, py, pt, pr, pb, pl]
+**Format**: `u-<abbrev>--<value>`
 
-Values: [0, 5, 10, 20, 30, 40]
+```html
+<p class="u-pa--0"></p>
+<p class="u-px--0"></p>
+<p class="u-py--0"></p>
+<p class="u-pt--0"></p>
+<p class="u-pr--0"></p>
+<p class="u-pb--0"></p>
+<p class="u-pl--0"></p>
+```
 
+**No visuals currently available**
 */
 
 /* All sides */

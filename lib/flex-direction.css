@@ -3,28 +3,28 @@ title: Flex Direction
 section: Flexbox
 ---
 
-**Applies the designated flex-direction value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
 
-<p class="u-flex--column">u-flex--column</p>
-<p class="u-flex--column-reverse">u-flex--column-reverse</p>
-<p class="u-flex--row">u-flex--row</p>
-<p class="u-flex--row-reverse">u-flex--row-reverse</p>
+**Available Values**: `[ row | row-reverse | column | column-reverse ]`
+
+**Unavailable Values**: `[ inherit | initial | unset ]`
+
+**Abbreviation**: `flex`
+
+**Format**: `u-flex--<value>`
 
 ```html
-<p class="u-flex--column"></p>
-<p class="u-flex--column-reverse"></p>
 <p class="u-flex--row"></p>
 <p class="u-flex--row-reverse"></p>
+<p class="u-flex--column"></p>
+<p class="u-flex--column-reverse"></p>
 ```
+
+<p class="u-flex--row">u-flex--row</p>
+<p class="u-flex--row-reverse">u-flex--row-reverse</p>
+<p class="u-flex--column">u-flex--column</p>
+<p class="u-flex--column-reverse">u-flex--column-reverse</p>
 */
-
-.u-flex--column {
-  flex-direction: column;
-}
-
-.u-flex--column-reverse {
-  flex-direction: column-reverse;
-}
 
 .u-flex--row {
   flex-direction: row;
@@ -32,4 +32,12 @@ section: Flexbox
 
 .u-flex--row-reverse {
   flex-direction: row-reverse;
+}
+
+.u-flex--column {
+  flex-direction: column;
+}
+
+.u-flex--column-reverse {
+  flex-direction: column-reverse;
 }

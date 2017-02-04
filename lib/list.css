@@ -3,7 +3,19 @@ title: List
 section: Layout
 ---
 
-**Controls the appearance of a list element (e.g. `ul`, `ol`, `dl`)**
+Controls the appearance of a list element (e.g. `ul`, `ol`, `dl`)
+
+**Available Values**: `[ unstyled | inline ]`
+
+**Abbreviation**: `list`
+
+**Format**: `u-list--<value>`
+
+```html
+<ul class="u-list--unstyled">
+  <li></li>
+</ul>
+```
 
 <ul class="u-list--unstyled">
   <li>.u-list--unstyled</li>
@@ -11,7 +23,7 @@ section: Layout
 </ul>
 
 ```html
-<ul class="u-list--unstyled">
+<ul class="u-list--inline">
   <li></li>
 </ul>
 ```
@@ -21,12 +33,6 @@ section: Layout
   <li>.u-list--inline</li>
   <li>.u-list--inline</li>
 </ul>
-
-```html
-<ul class="u-list--inline">
-  <li></li>
-</ul>
-```
 */
 
 .u-list--unstyled,

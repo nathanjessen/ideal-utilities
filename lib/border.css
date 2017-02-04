@@ -3,16 +3,13 @@ title: Border
 section: Borders
 ---
 
-**Applies the designated border**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
 
-<p class="u-border--all">u-border--all</p>
-<p class="u-border--x">u-border--x</p>
-<p class="u-border--y">u-border--y</p>
-<p class="u-border--top">u-border--top</p>
-<p class="u-border--right">u-border--right</p>
-<p class="u-border--bottom">u-border--bottom</p>
-<p class="u-border--left">u-border--left</p>
-<p class="u-border--none">u-border--none</p>
+**Available Values**: `[ all | x | y | top | right | bottom | left | none ]`
+
+**Abbreviation**: `border`
+
+**Format**: `u-border--<value>`
 
 ```html
 <p class="u-border--all"></p>
@@ -25,6 +22,14 @@ section: Borders
 <p class="u-border--none"></p>
 ```
 
+<p class="u-border--all">u-border--all</p>
+<p class="u-border--x">u-border--x</p>
+<p class="u-border--y">u-border--y</p>
+<p class="u-border--top">u-border--top</p>
+<p class="u-border--right">u-border--right</p>
+<p class="u-border--bottom">u-border--bottom</p>
+<p class="u-border--left">u-border--left</p>
+<p class="u-border--none">u-border--none</p>
 */
 
 .u-border--all {

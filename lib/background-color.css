@@ -3,16 +3,28 @@ title: Background Color
 section: Colors
 ---
 
-**Applies the designated background-color value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
 
-<p class="u-bgc--white">u-bgc--white</p>
-<p class="u-bgc--white-off">u-bgc--white-off</p>
-<p class="u-bgc--gray-light">u-bgc--gray-light</p>
-<p class="u-bgc--gray">u-bgc--gray</p>
-<p class="u-bgc--gray-dark">u-bgc--gray-dark</p>
-<p class="u-bgc--theme-primary">u-bgc--theme-primary</p>
-<p class="u-bgc--theme-secondary">u-bgc--theme-secondary</p>
-<p class="u-bgc--theme-tertiary">u-bgc--theme-tertiary</p>
+**Available Values**: `[ white | white-off | gray-light | gray | gray-dark | theme-primary | theme-secondary | theme-tertiary ]`
+
+Each value corresponds to a CSS Variable defined in settings.
+
+```css
+:root {
+  --white: #fff;
+  --white-off: gray(95%);
+  --gray-light: gray(80%);
+  --gray: gray(40%);
+  --gray-dark: gray(20%);
+  --theme-primary: #3494e6;
+  --theme-secondary: #36d7b7;
+  --theme-tertiary: #86d5c7;
+}
+```
+
+**Abbreviation**: `bgc`
+
+**Format**: `u-bgc--<value>`
 
 ```
 <p class="u-bgc--white"></p>
@@ -24,6 +36,15 @@ section: Colors
 <p class="u-bgc--theme-secondary"></p>
 <p class="u-bgc--theme-tertiary"></p>
 ```
+
+<p class="u-bgc--white">u-bgc--white</p>
+<p class="u-bgc--white-off">u-bgc--white-off</p>
+<p class="u-bgc--gray-light">u-bgc--gray-light</p>
+<p class="u-bgc--gray">u-bgc--gray</p>
+<p class="u-bgc--gray-dark">u-bgc--gray-dark</p>
+<p class="u-bgc--theme-primary">u-bgc--theme-primary</p>
+<p class="u-bgc--theme-secondary">u-bgc--theme-secondary</p>
+<p class="u-bgc--theme-tertiary">u-bgc--theme-tertiary</p>
 */
 
 @each $color in var(--color-options) {

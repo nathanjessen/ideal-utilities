@@ -7,6 +7,8 @@ Ideal Utilities is a library of functional CSS classes.
 
 */
 
+/*! Ideal Utilities */
+
 @import "./lib/align-content.css";
 @import "./lib/align-items.css";
 @import "./lib/align-self.css";
@@ -23,7 +25,6 @@ Ideal Utilities is a library of functional CSS classes.
 @import "./lib/font-size.css";
 @import "./lib/font-style.css";
 @import "./lib/font-weight.css";
-@import "./lib/hidden.css";
 @import "./lib/invisible.css";
 @import "./lib/justify-content.css";
 @import "./lib/letter-spacing.css";
@@ -37,6 +38,7 @@ Ideal Utilities is a library of functional CSS classes.
 @import "./lib/screen-reader.css";
 @import "./lib/text-align.css";
 @import "./lib/text-decoration.css";
+@import "./lib/text-hide.css";
 @import "./lib/text-transform.css";
 @import "./lib/truncate.css";
 @import "./lib/vertical-align.css";

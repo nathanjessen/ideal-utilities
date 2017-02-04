@@ -3,39 +3,32 @@ title: Vertical Align
 section: Layout
 ---
 
-**Applies the designated vertical-align value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
 
-<p class="u-va--baseline">u-va--baseline</p>
-<p class="u-va--bottom">u-va--bottom</p>
-<p class="u-va--middle">u-va--middle</p>
-<p class="u-va--sub">u-va--sub</p>
-<p class="u-va--super">u-va--super</p>
-<p class="u-va--text-bottom">u-va--text-bottom</p>
-<p class="u-va--text-top">u-va--text-top</p>
-<p class="u-va--top">u-va--top</p>
+**Available Values**: `[ baseline | sub | super | text-top | text-bottom | middle | top | bottom ]`
+
+**Unavailable values**: `[ <length> | <percentage> ]`
+
+**Abbreviation**: `va`
+
+**Format**: `u-va--<value>`
 
 ```html
 <p class="u-va--baseline"></p>
-<p class="u-va--bottom"></p>
-<p class="u-va--middle"></p>
 <p class="u-va--sub"></p>
 <p class="u-va--super"></p>
-<p class="u-va--text-bottom"></p>
 <p class="u-va--text-top"></p>
+<p class="u-va--text-bottom"></p>
+<p class="u-va--middle"></p>
 <p class="u-va--top"></p>
+<p class="u-va--bottom"></p>
 ```
+
+**No visuals currently available**
 */
 
 .u-va--baseline {
   vertical-align: baseline;
-}
-
-.u-va--bottom {
-  vertical-align: bottom;
-}
-
-.u-va--middle {
-  vertical-align: middle;
 }
 
 .u-va--sub {
@@ -46,14 +39,22 @@ section: Layout
   vertical-align: super;
 }
 
-.u-va--text-bottom {
-  vertical-align: text-bottom;
-}
-
 .u-va--text-top {
   vertical-align: text-top;
 }
 
+.u-va--text-bottom {
+  vertical-align: text-bottom;
+}
+
+.u-va--middle {
+  vertical-align: middle;
+}
+
 .u-va--top {
   vertical-align: top;
+}
+
+.u-va--bottom {
+  vertical-align: bottom;
 }

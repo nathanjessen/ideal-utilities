@@ -3,18 +3,30 @@ title: Flex Wrap
 section: Flexbox
 ---
 
-**Applies the designated flex-wrap value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
 
-<p class="u-flex--wrap">u-flex--wrap</p>
-<p class="u-flex--wrap-reverse">u-flex--wrap-reverse</p>
-<p class="u-flex--nowrap">u-flex--nowrap</p>
+**Available Values**: `[ nowrap | wrap | wrap-reverse ]`
+
+**Unavailable Values**: `[ inherit | initial | unset ]`
+
+**Abbreviation**: `flex`
+
+**Format**: `u-flex--<value>`
 
 ```html
 <p class="u-flex--wrap"></p>
 <p class="u-flex--wrap-reverse"></p>
 <p class="u-flex--nowrap"></p>
 ```
+
+<p class="u-flex--wrap">u-flex--wrap</p>
+<p class="u-flex--wrap-reverse">u-flex--wrap-reverse</p>
+<p class="u-flex--nowrap">u-flex--nowrap</p>
 */
+
+.u-flex--nowrap {
+  flex-wrap: nowrap;
+}
 
 .u-flex--wrap {
   flex-wrap: wrap;
@@ -22,8 +34,4 @@ section: Flexbox
 
 .u-flex--wrap-reverse {
   flex-wrap: wrap-reverse;
-}
-
-.u-flex--nowrap {
-  flex-wrap: nowrap;
 }

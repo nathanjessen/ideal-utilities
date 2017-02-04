@@ -3,32 +3,36 @@ title: Screen Reader
 section: Miscellaneous
 ---
 
-**Hides text or makes it only visible to screen readers**
+[Bootstrap v4 Screenreaders](http://v4-alpha.getbootstrap.com/utilities/screenreaders/)
 
-<p class="u-text-hide">u-text-hide</p>
-<p class="u-sr-only">u-sr-only</p>
+**Hide an element to all devices except screen readers. Combine with .u-sr-only--focusable to show the element again when it’s focused (e.g. by a keyboard-only user).**
 
 ```html
-<p class="u-text-hide"></p>
 <p class="u-sr-only"></p>
+<p class="u-sr-only u-sr-only--focusable"></p>
 ```
+
+<p class="u-sr-only">u-sr-only</p>
+<p class="u-sr-only u-sr-only--focusable">u-sr-only u-sr-only--focusable</p>
 */
 
-.u-text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-
 .u-sr-only {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
   height: 1px;
-  padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only--focusable:active,
+.sr-only--focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
 }

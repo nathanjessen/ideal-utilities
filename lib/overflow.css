@@ -1,23 +1,27 @@
 /* ---
 title: Overflow
-section: Display
+section: Visual Display
 ---
 
-**Applies the designated overflow value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
 
-<p class="u-overflow--visible">u-overflow--visible</p>
-<p class="u-overflow--hidden">u-overflow--hidden</p>
-<p class="u-overflow--scroll">u-overflow--scroll</p>
-<p class="u-overflow--auto">u-overflow--auto</p>
-<p class="u-overflow--initial">u-overflow--initial</p>
+**Available Values**: `[ visible | hidden | scroll ]`
+
+**Unavailable Values**: `[ auto | initial ]`
+
+**Abbreviation**: `overflow`
+
+**Format**: `u-overflow--<value>`
 
 ```html
 <p class="u-overflow--visible"></p>
 <p class="u-overflow--hidden"></p>
 <p class="u-overflow--scroll"></p>
-<p class="u-overflow--auto"></p>
-<p class="u-overflow--initial"></p>
 ```
+
+<p class="u-overflow--visible">u-overflow--visible</p>
+<p class="u-overflow--hidden">u-overflow--hidden</p>
+<p class="u-overflow--scroll">u-overflow--scroll</p>
 */
 
 .u-overflow--visible {
@@ -30,12 +34,4 @@ section: Display
 
 .u-overflow--scroll {
   overflow: scroll;
-}
-
-.u-overflow--auto {
-  overflow: auto;
-}
-
-.u-overflow--initial {
-  overflow: initial;
 }

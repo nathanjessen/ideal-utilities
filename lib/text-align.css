@@ -3,17 +3,25 @@ title: Text Align
 section: Text
 ---
 
-**Applies the designated text-align value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
 
-<p class="u-ta--left">u-ta--left</p>
-<p class="u-ta--right">u-ta--right</p>
-<p class="u-ta--center">u-ta--center</p>
+**Available Values**: `[ left | right | center | justify | justify-all ]`
+
+**Abbreviation**: `ta`
+
+**Format**: `u-ta--<value>`
 
 ```html
 <p class="u-ta--left"></p>
 <p class="u-ta--right"></p>
 <p class="u-ta--center"></p>
+<p class="u-ta--justify"></p>
 ```
+
+<p class="u-ta--left">Text that is left aligned.</p>
+<p class="u-ta--right">Text that is right aligned.</p>
+<p class="u-ta--center">Text that is center aligned.</p>
+<p class="u-ta--justify">Text that is justified.</p>
 */
 
 @each $mq in var(--mq-options) {
@@ -32,6 +40,14 @@ section: Text
       text-align: center;
     }
 
+    .u-ta--justify {
+      text-align: justify;
+    }
+
+    .u-ta--justify-all {
+      text-align: justify-all;
+    }
+
   }
 
   @else {
@@ -48,6 +64,14 @@ section: Text
 
       .u-ta--center\@$(mq) {
         text-align: center;
+      }
+
+      .u-ta--justify\@$(mq) {
+        text-align: justify;
+      }
+
+      .u-ta--justify-all\@$(mq) {
+        text-align: justify-all;
       }
 
     }
