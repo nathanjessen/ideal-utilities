@@ -3,45 +3,52 @@ title: Position
 section: Layout
 ---
 
-**Applies the designated position value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
-<p class="u-position--absolute">u-position--absolute</p>
-<p class="u-position--fixed">u-position--fixed</p>
-<p class="u-position--relative">u-position--relative</p>
-<p class="u-position--static">u-position--static</p>
-<p class="u-position--sticky">u-position--sticky</p>
+**Available Values**: `[ static | relative | absolute | fixed | sticky ]`
+
+**Unavailable Values**: `[ inherit | initial | unset ]`
+
+**Abbreviation**: `pos`
+
+**Format**: `u-pos--<value>`
 
 ```html
-<p class="u-position--absolute"></p>
-<p class="u-position--fixed"></p>
-<p class="u-position--relative"></p>
-<p class="u-position--static"></p>
-<p class="u-position--sticky"></p>
+<p class="u-pos--absolute"></p>
+<p class="u-pos--fixed"></p>
+<p class="u-pos--relative"></p>
+<p class="u-pos--static"></p>
+<p class="u-pos--sticky"></p>
 ```
+
+<p class="u-pos--absolute">u-pos--absolute</p>
+<p class="u-pos--fixed">u-pos--fixed</p>
+<p class="u-pos--relative">u-pos--relative</p>
+<p class="u-pos--static">u-pos--static</p>
+<p class="u-pos--sticky">u-pos--sticky</p>
 */
 
 @each $mq in var(--mq-options) {
 
   @if $(mq) == e {
 
-    .u-position--absolute {
-      position: absolute;
-    }
-
-    .u-position--fixed {
-      position: fixed;
-
-    }
-
-    .u-position--relative {
-      position: relative;
-    }
-
-    .u-position--static {
+    .u-pos--static {
       position: static;
     }
 
-    .u-position--sticky {
+    .u-pos--relative {
+      position: relative;
+    }
+
+    .u-pos--absolute {
+      position: absolute;
+    }
+
+    .u-pos--fixed {
+      position: fixed;
+    }
+
+    .u-pos--sticky {
       position: sticky;
     }
 
@@ -51,24 +58,24 @@ section: Layout
 
     @media (--mq-$(mq)) {
 
-      .u-position--absolute\@$mq {
+      .u-pos--absolute\@$mq {
         position: absolute;
       }
 
-      .u-position--fixed\@$mq {
+      .u-pos--fixed\@$mq {
         position: fixed;
 
       }
 
-      .u-position--relative\@$mq {
+      .u-pos--relative\@$mq {
         position: relative;
       }
 
-      .u-position--static\@$mq {
+      .u-pos--static\@$mq {
         position: static;
       }
 
-      .u-position--sticky\@$mq {
+      .u-pos--sticky\@$mq {
         position: sticky;
       }
 

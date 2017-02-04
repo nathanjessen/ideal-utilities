@@ -1,17 +1,17 @@
 /* ---
 title: Display
-section: Display
+section: Visual Display
 ---
 
-**Applies the designated display value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
-<p class="u-display--block">u-display--block</p>
-<p class="u-display--inline-block">u-display--inline-block</p>
-<p class="u-display--inline">u-display--inline</p>
-<p class="u-display--flex">u-display--flex</p>
-<p class="u-display--table">u-display--table</p>
-<p class="u-display--table-cell">u-display--table-cell</p>
-<p class="u-display--none">u-display--none</p>
+**Available Values**: `[ none | inline | block | inline-block | table | table-cell | flex ]`
+
+**Unavailable Values**: `[ list-item | inline-list-item | inline-table | table-column | table-column-group | table-footer-group | table-header-group | table-row | table-row-group | inline-flex | grid | inline-grid | run-in | ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container | contents ]`
+
+**Abbreviation**: `display`
+
+**Format**: `u-display--<value>`
 
 ```html
 <p class="u-display--block"></p>
@@ -22,6 +22,14 @@ section: Display
 <p class="u-display--table-cell"></p>
 <p class="u-display--none"></p>
 ```
+
+<p class="u-display--block">u-display--block</p>
+<p class="u-display--inline-block">u-display--inline-block</p>
+<p class="u-display--inline">u-display--inline</p>
+<p class="u-display--flex">u-display--flex</p>
+<p class="u-display--table">u-display--table</p>
+<p class="u-display--table-cell">u-display--table-cell</p>
+<p class="u-display--none">u-display--none</p>
 */
 
 @each $mq in var(--mq-options) {

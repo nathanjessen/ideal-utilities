@@ -3,15 +3,15 @@ title: Border Radius
 section: Borders
 ---
 
-**Applies the designated border-radius value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
 
-<p class="u-border-radius--0">u-border-radius--0</p>
-<p class="u-border-radius--1">u-border-radius--1</p>
-<p class="u-border-radius--2">u-border-radius--2</p>
-<p class="u-border-radius--3">u-border-radius--3</p>
-<p class="u-border-radius--4">u-border-radius--4</p>
-<p class="u-border-radius--25p">u-border-radius--25p</p>
-<p class="u-border-radius--50p">u-border-radius--50p</p>
+**Available Values**: `[ 0 | 1 | 2 | 3 | 4 | 25p | 50p ]`
+
+All values correspond to a pixel value except for `25p` and `50p` which refer to a percentage value.
+
+**Abbreviation**: `border-radius`
+
+**Format**: `u-border-radius--<value>`
 
 ```html
 <p class="u-border-radius--0"></p>
@@ -23,6 +23,13 @@ section: Borders
 <p class="u-border-radius--50p"></p>
 ```
 
+<p class="u-border-radius--0">u-border-radius--0</p>
+<p class="u-border-radius--1">u-border-radius--1</p>
+<p class="u-border-radius--2">u-border-radius--2</p>
+<p class="u-border-radius--3">u-border-radius--3</p>
+<p class="u-border-radius--4">u-border-radius--4</p>
+<p class="u-border-radius--25p">u-border-radius--25p</p>
+<p class="u-border-radius--50p">u-border-radius--50p</p>
 */
 
 .u-border-radius--0 {

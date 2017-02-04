@@ -3,13 +3,17 @@ title: Truncate
 section: Text
 ---
 
-**Shows an ellipsis instead of wrapped text**
+[CSS-Tricks](https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/)
 
-<p class="u-truncate">u-truncate</p>
+**Prevents text from wrapping and shows an ellipsis instead.**
+
+**Format**: `u-truncate`
 
 ```html
 <p class="u-truncate"></p>
 ```
+
+<p class="u-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit quia soluta quidem, quasi pariatur veniam. Aperiam amet fugit nemo laboriosam eos maiores delectus quia id, consequuntur, ea dolores voluptates.</p>
 */
 
 .u-truncate {

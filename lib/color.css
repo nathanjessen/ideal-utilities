@@ -3,16 +3,28 @@ title: Color
 section: Colors
 ---
 
-**Applies the designated color value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 
-<p class="u-color--white">u-color--white</p>
-<p class="u-color--white-off">u-color--white-off</p>
-<p class="u-color--gray-light">u-color--gray-light</p>
-<p class="u-color--gray">u-color--gray</p>
-<p class="u-color--gray-dark">u-color--gray-dark</p>
-<p class="u-color--theme-primary">u-color--theme-primary</p>
-<p class="u-color--theme-secondary">u-color--theme-secondary</p>
-<p class="u-color--theme-tertiary">u-color--theme-tertiary</p>
+**Available Values**: `[ white | white-off | gray-light | gray | gray-dark | theme-primary | theme-secondary | theme-tertiary ]`
+
+Each value corresponds to a CSS Variable defined in settings.
+
+```css
+:root {
+  --white: #fff;
+  --white-off: gray(95%);
+  --gray-light: gray(80%);
+  --gray: gray(40%);
+  --gray-dark: gray(20%);
+  --theme-primary: #3494e6;
+  --theme-secondary: #36d7b7;
+  --theme-tertiary: #86d5c7;
+}
+```
+
+**Abbreviation**: `color`
+
+**Format**: `u-color--<value>`
 
 ```html
 <p class="u-color--white"></p>
@@ -24,6 +36,15 @@ section: Colors
 <p class="u-color--theme-secondary"></p>
 <p class="u-color--theme-tertiary"></p>
 ```
+
+<p class="u-color--white">u-color--white</p>
+<p class="u-color--white-off">u-color--white-off</p>
+<p class="u-color--gray-light">u-color--gray-light</p>
+<p class="u-color--gray">u-color--gray</p>
+<p class="u-color--gray-dark">u-color--gray-dark</p>
+<p class="u-color--theme-primary">u-color--theme-primary</p>
+<p class="u-color--theme-secondary">u-color--theme-secondary</p>
+<p class="u-color--theme-tertiary">u-color--theme-tertiary</p>
 */
 
 @each $color in var(--color-options) {

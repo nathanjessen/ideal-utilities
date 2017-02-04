@@ -3,21 +3,47 @@ title: Text Decoration
 section: Text
 ---
 
-**Applies the designated text-decoration value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
 
-<p class="u-text--strikeout">u-text--strikeout</p>
-<p class="u-text--underline">u-text--underline</p>
+**Available Values**: `[ underline | overline | line-through | blink | none ]`
+
+**Unavailable Values**: `[ inherit | initial ]`
+
+**Abbreviation**: `td`
+
+**Format**: `u-td--<value>`
 
 ```html
-<p class="u-text--strikeout"></p>
-<p class="u-text--underline"></p>
+<p class="u-td--underline"></p>
+<p class="u-td--overline"></p>
+<p class="u-td--line-through"></p>
+<p class="u-td--blink"></p>
+<p class="u-td--none"></p>
 ```
+
+<p class="u-td--underline">Text with underline</p>
+<p class="u-td--overline">Text with overline</p>
+<p class="u-td--line-through">Text with line-through</p>
+<p class="u-td--blink">Text with blink</p>
+<p class="u-td--none">Text with none</p>
 */
 
-.u-text--strikeout {
+.u-td--underline {
+  text-decoration: underline;
+}
+
+.u-td--overline {
+  text-decoration: overline;
+}
+
+.u-td--line-through {
   text-decoration: line-through;
 }
 
-.u-text--underline {
-  text-decoration: underline;
+.u-td--blink {
+  text-decoration: blink;
+}
+
+.u-td--none {
+  text-decoration: none;
 }

@@ -12,6 +12,7 @@
     "rule-empty-line-before": ["always-multi-line", {
       "except": ["after-single-line-comment"]
     }],
-    "block-opening-brace-newline-after": null
+    "block-opening-brace-newline-after": null,
+    "custom-media-pattern": "mq-.+"
   }
 }

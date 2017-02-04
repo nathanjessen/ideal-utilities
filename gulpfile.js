@@ -1,4 +1,5 @@
-const siteRoot = 'docs';
+const docRoot = 'docs';
+const dist = 'dist';
 const projectName = 'Ideal Utilities';
 const cssFiles = ['index.css', 'lib/*.css'];
 
@@ -21,51 +22,63 @@ const atImport = require('postcss-import');
 const reporter = require('postcss-reporter');
 const stylelint = require('stylelint');
 
+// PostCSS Processors
+const processors = [
+  atImport(),
+  stylelint(),
+  immutableCss(),
+  reporter({
+    clearReportedMessages: true
+  }),
+  atVariables(),
+  atFor(),
+  cssEach(),
+  atIf(),
+  cssnext({
+    browsers: ['last 2 versions', '> 5%', 'not ie < 11']
+  })
+];
+
 // CSS
 gulp.task('css', function () {
-  var processors = [
-    atImport(),
-    stylelint(),
-    immutableCss(),
-    reporter({
-      clearReportedMessages: true
-    }),
-    atVariables(),
-    atFor(),
-    cssEach(),
-    atIf(),
-    cssnext({
-      browsers: ['last 2 versions', '> 5%', 'not ie < 11']
-    }),
-    mdcss({
-      destination: siteRoot
-    })
-  ];
-
   return gulp.src('index.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(siteRoot))
+    .pipe(gulp.dest(dist))
     .pipe(cssnano())
-    .pipe(size())
     .pipe(rename({extname: '.min.css'}))
-    .pipe(gulp.dest(siteRoot));
+    .pipe(size())
+    .pipe(gulp.dest(dist));
+});
+
+// Documentation
+gulp.task('docs', ['css'], function () {
+  return gulp.src('dist/index.css')
+    .pipe(postcss([
+      mdcss({
+        destination: docRoot
+      })
+    ]))
+    .pipe(gulp.dest(docRoot));
 });
 
 // BrowserSync
 gulp.task('serve', () => {
   browserSync.init({
-    files: [siteRoot + '/**'],
+    files: [docRoot + '/**'],
     port: 4000,
     server: {
-      baseDir: siteRoot
+      baseDir: docRoot
     }
   });
 
   // Watch
-  gulp.watch(cssFiles, ['css']);
+  gulp.watch(cssFiles, ['docs']);
 });
 
 // Default
-gulp.task('default', ['css', 'serve']);
+gulp.task('default', ['css']);
+
+// Development
+gulp.task('dev', ['docs', 'serve']);

@@ -30,6 +30,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "start": "gulp",
+    "docs": "gulp docs",
+    "dev": "gulp dev",
     "refresh": "rm -fr node_modules && yarn"
   },
   "repository": {
@@ -38,7 +40,9 @@
   },
   "keywords": [
     "css",
-    "utility classes"
+    "utility classes",
+    "functional css",
+    "atomic css"
   ],
   "bugs": {
     "url": "https://github.com/nathanjessen/ideal-utilities/issues"

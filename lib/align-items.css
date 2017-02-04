@@ -3,13 +3,13 @@ title: Align Items
 section: Flexbox
 ---
 
-**Applies the designated align-items value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 
-<p class="u-ai--flex-start">u-ai--flex-start</p>
-<p class="u-ai--flex-end">u-ai--flex-end</p>
-<p class="u-ai--center">u-ai--center</p>
-<p class="u-ai--baseline">u-ai--baseline</p>
-<p class="u-ai--stretch">u-ai--stretch</p>
+**Available Values**: `[ flex-start | flex-end | center | baseline | stretch ]`
+
+**Abbreviation**: `ai`
+
+**Format**: `u-ai--<value>`
 
 ```html
 <p class="u-ai--flex-start"></p>
@@ -18,7 +18,12 @@ section: Flexbox
 <p class="u-ai--baseline"></p>
 <p class="u-ai--stretch"></p>
 ```
-​
+
+<p class="u-ai--flex-start">u-ai--flex-start</p>
+<p class="u-ai--flex-end">u-ai--flex-end</p>
+<p class="u-ai--center">u-ai--center</p>
+<p class="u-ai--baseline">u-ai--baseline</p>
+<p class="u-ai--stretch">u-ai--stretch</p>
 */
 
 .u-ai--flex-start {

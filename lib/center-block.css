@@ -3,13 +3,15 @@ title: Center Block
 section: Layout
 ---
 
-***Applies display: block; and centers the element**
+Helper class for horizontally centering an element.
 
-<div class="u-center-block">u-center-block</div>
+**Format**: `u-center-block`
 
 ```
 <div class="u-center-block"></div>
 ```
+
+<div class="u-center-block">u-center-block</div>
 */
 
 .u-center-block {

@@ -3,24 +3,34 @@ title: Letter Spacing
 section: Text
 ---
 
-**Applies the designated letter-spacing value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
 
-<p class="u-ls--default">u-ls--default</p>
-<p class="u-ls--compact">u-ls--compact</p>
-<p class="u-ls--normal">u-ls--normal</p>
-<p class="u-ls--loose">u-ls--loose</p>
+**Available Values**: `[ compact | normal | loose ]`
+
+Each value corresponds to a CSS Variable defined in settings.
+
+```css
+:root {
+  --letter-compact: -1px;
+  --letter-normal: 0;
+  --letter-loose: 2px;
+}
+```
+
+**Abbreviation**: `ls`
+
+**Format**: `u-ls--<value>`
 
 ```html
-<p class="u-ls--default"></p>
 <p class="u-ls--compact"></p>
 <p class="u-ls--normal"></p>
 <p class="u-ls--loose"></p>
 ```
-*/
 
-.u-ls--default {
-  letter-spacing: var(--letter-default);
-}
+<p class="u-ls--compact">u-ls--compact</p>
+<p class="u-ls--normal">u-ls--normal</p>
+<p class="u-ls--loose">u-ls--loose</p>
+*/
 
 .u-ls--compact {
   letter-spacing: var(--letter-compact);

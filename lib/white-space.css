@@ -3,15 +3,63 @@ title: White Space
 section: Text
 ---
 
-**Applies the designated white-space value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)
 
-<p class="u-text--nowrap">u-text--nowrap</p>
+**Available Values**: `[ normal | nowrap | pre | pre-wrap | pre-line | inherit | initial | unset ]`
+
+**Abbreviation**: `ws`
+
+**Format**: `u-ws--<value>`
 
 ```html
-<p class="u-text--nowrap"></p>
+<p class="u-ws--normal"></p>
+<p class="u-ws--nowrap"></p>
+<p class="u-ws--pre"></p>
+<p class="u-ws--pre-wrap"></p>
+<p class="u-ws--pre-line"></p>
+<p class="u-ws--inherit"></p>
+<p class="u-ws--initial"></p>
+<p class="u-ws--unset"></p>
 ```
+
+<p class="u-ws--normal">normal normal normal normal normal normal normal normal normal normal normal normal normal normal normal normal normal normal normal normal normal normal normal</p>
+<p class="u-ws--nowrap">nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap nowrap</p>
+<p class="u-ws--pre">pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre pre</p>
+<p class="u-ws--pre-wrap">pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap pre-wrap</p>
+<p class="u-ws--pre-line">pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line pre-line</p>
+<p class="u-ws--inherit">inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit inherit</p>
+<p class="u-ws--initial">initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial</p>
+<p class="u-ws--unset">unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset</p>
 */
 
-.u-text--nowrap {
+.u-ws--normal {
+  white-space: normal;
+}
+
+.u-ws--nowrap {
   white-space: nowrap;
+}
+
+.u-ws--pre {
+  white-space: pre;
+}
+
+.u-ws--pre-wrap {
+  white-space: pre-wrap;
+}
+
+.u-ws--pre-line {
+  white-space: pre-line;
+}
+
+.u-ws--inherit {
+  white-space: inherit;
+}
+
+.u-ws--initial {
+  white-space: initial;
+}
+
+.u-ws--unset {
+  white-space: unset;
 }

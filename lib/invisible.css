@@ -3,12 +3,24 @@ title: Invisible
 section: Miscellaneous
 ---
 
-**Visually hides an element**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility)
 
-<p class="u-invisible">u-invisible</p>
+**Available Values**: `[ visible | hidden | collapse ]`
+
+**Unavailable Values**: `[ inherit | initial | unset ]`
+
+**Abbreviation**: `vis`
+
+**Format**: `u-vis--<value>`
+
+<p class="u-vis--visible">u-vis--visible</p>
+<p class="u-vis--hidden">u-vis--hidden</p>
+<p class="u-vis--collapse">u-vis--collapse</p>
 
 ```html
-<p class="u-invisible"></p>
+<p class="u-vis--visible"></p>
+<p class="u-vis--hidden"></p>
+<p class="u-vis--collapse"></p>
 ```
 
 */
@@ -17,8 +29,16 @@ section: Miscellaneous
 
   @if $(mq) == e {
 
-    .u-invisible {
+    .u-vis--visible {
+      visibility: visible;
+    }
+
+    .u-vis--hidden {
       visibility: hidden;
+    }
+
+    .u-vis--collapse {
+      visibility: collapse;
     }
 
   }
@@ -27,8 +47,16 @@ section: Miscellaneous
 
     @media (--mq-$(mq)) {
 
-      .u-invisible\@$mq {
+      .u-vis--visible\@$mq {
+        visibility: visible;
+      }
+
+      .u-vis--hidden\@$mq {
         visibility: hidden;
+      }
+
+      .u-vis--collapse\@$mq {
+        visibility: collapse;
       }
 
     }

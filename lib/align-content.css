@@ -3,24 +3,31 @@ title: Align Content
 section: Flexbox
 ---
 
-**Applies the designated align-content value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
 
-<p class="u-ac--flex-start">u-ac--flex-start</p>
-<p class="u-ac--flex-end">u-ac--flex-end</p>
-<p class="u-ac--center">u-ac--center</p>
-<p class="u-ac--stretch">u-ac--stretch</p>
-<p class="u-ac--space-between">u-ac--space-between</p>
-<p class="u-ac--space-around">u-ac--space-around</p>
+**Available Values**: `[ flex-start | flex-end | center | space-between | space-around | space-evenly | stretch ]`
+
+**Abbreviation**: `ac`
+
+**Format**: `u-ac--<value>`
 
 ```html
 <p class="u-ac--flex-start"></p>
 <p class="u-ac--flex-end"></p>
 <p class="u-ac--center"></p>
-<p class="u-ac--stretch"></p>
 <p class="u-ac--space-between"></p>
 <p class="u-ac--space-around"></p>
+<p class="u-ac--space-evenly"></p>
+<p class="u-ac--stretch"></p>
 ```
-​
+
+<p class="u-ac--flex-start">u-ac--flex-start</p>
+<p class="u-ac--flex-end">u-ac--flex-end</p>
+<p class="u-ac--center">u-ac--center</p>
+<p class="u-ac--space-between">u-ac--space-between</p>
+<p class="u-ac--space-around">u-ac--space-around</p>
+<p class="u-ac--space-evenly">u-ac--space-evenly</p>
+<p class="u-ac--stretch">u-ac--stretch</p>
 */
 
 .u-ac--flex-start {
@@ -35,14 +42,18 @@ section: Flexbox
   align-content: center;
 }
 
-.u-ac--stretch {
-  align-content: stretch;
-}
-
 .u-ac--space-between {
   align-content: space-between;
 }
 
 .u-ac--space-around {
   align-content: space-around;
+}
+
+.u-ac--space-evenly {
+  align-content: space-evenly;
+}
+
+.u-ac--stretch {
+  align-content: stretch;
 }

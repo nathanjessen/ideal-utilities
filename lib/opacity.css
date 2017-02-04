@@ -1,21 +1,17 @@
 /* ---
 title: Opacity
-section: Display
+section: Visual Display
 ---
 
-**Applies the designated opacity value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
 
-<p class="u-op--0">u-op--0</p>
-<p class="u-op--01">u-op--01</p>
-<p class="u-op--02">u-op--02</p>
-<p class="u-op--03">u-op--03</p>
-<p class="u-op--04">u-op--04</p>
-<p class="u-op--05">u-op--05</p>
-<p class="u-op--06">u-op--06</p>
-<p class="u-op--07">u-op--07</p>
-<p class="u-op--08">u-op--08</p>
-<p class="u-op--09">u-op--09</p>
-<p class="u-op--1">u-op--1</p>
+**Available Values**: `[ 0 | 01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09 | 1 ]`
+
+Each value corresponds to a number between `0.0` and `1.0` at increments of `0.1`. (e.g. `u-op--05` corresponds to `opacity: 0.5;`)
+
+**Abbreviation**: `op`
+
+**Format**: `u-op--<value>`
 
 ```html
 <p class="u-op--0"></p>
@@ -30,6 +26,18 @@ section: Display
 <p class="u-op--09"></p>
 <p class="u-op--1"></p>
 ```
+
+<p class="u-op--0">u-op--0</p>
+<p class="u-op--01">u-op--01</p>
+<p class="u-op--02">u-op--02</p>
+<p class="u-op--03">u-op--03</p>
+<p class="u-op--04">u-op--04</p>
+<p class="u-op--05">u-op--05</p>
+<p class="u-op--06">u-op--06</p>
+<p class="u-op--07">u-op--07</p>
+<p class="u-op--08">u-op--08</p>
+<p class="u-op--09">u-op--09</p>
+<p class="u-op--1">u-op--1</p>
 */
 
 .u-op--0 {

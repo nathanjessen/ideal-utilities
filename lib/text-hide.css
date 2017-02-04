@@ -1,0 +1,21 @@
+/* ---
+title: Text Hide
+section: Text
+---
+
+Hides text
+
+```html
+<p class="u-text-hide"></p>
+```
+
+<p class="u-text-hide">u-text-hide</p>
+*/
+
+.u-text-hide {
+  color: transparent;
+  background-color: transparent;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+}

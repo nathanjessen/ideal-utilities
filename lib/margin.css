@@ -3,16 +3,25 @@ title: Margin
 section: Layout
 ---
 
-**Applies the designated margin value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
 
-Classname format: `.u-abreviation--value`
+**Available Values**: `[ 0 | 5 | 10 | 20 | 30 | 40 ]`
 
-Example: `.u-ma-0`
+**Abbreviation**: `[ ma | mx | my | mt | mr | mb | ml ]`
 
-Abbreviations: [ma, mx, my, mt, mr, mb, ml]
+**Format**: `u-<abbrev>--<value>`
 
-Values: [auto, 0, 5, 10, 20, 30, 40]
+```html
+<p class="u-ma--0"></p>
+<p class="u-mx--0"></p>
+<p class="u-my--0"></p>
+<p class="u-mt--0"></p>
+<p class="u-mr--0"></p>
+<p class="u-mb--0"></p>
+<p class="u-ml--0"></p>
+```
 
+**No visuals currently available**
 */
 
 /* All Sides */

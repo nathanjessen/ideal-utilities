@@ -3,25 +3,33 @@ title: Font Style
 section: Text
 ---
 
-**Applies the designated font-style value**
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
 
-<p class="u-fs--italic">u-fs--italic</p>
-<p class="u-fs--normal">u-fs--normal</p>
-<p class="u-fs--oblique">u-fs--oblique</p>
+**Available Values**: `[ normal | italic | oblique ]`
+
+**Unavailable Values**: `[ inherit | initial | unset ]`
+
+**Abbreviation**: `fs`
+
+**Format**: `u-fs--<value>`
 
 ```html
-<p class="u-fs--italic"></p>
 <p class="u-fs--normal"></p>
+<p class="u-fs--italic"></p>
 <p class="u-fs--oblique"></p>
 ```
-*/
 
-.u-fs--italic {
-  font-style: italic;
-}
+<p class="u-fs--normal">u-fs--normal</p>
+<p class="u-fs--italic">u-fs--italic</p>
+<p class="u-fs--oblique">u-fs--oblique</p>
+*/
 
 .u-fs--normal {
   font-style: normal;
+}
+
+.u-fs--italic {
+  font-style: italic;
 }
 
 .u-fs--oblique {

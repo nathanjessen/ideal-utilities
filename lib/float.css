@@ -3,17 +3,23 @@ title: Float
 section: Layout
 ---
 
-**Applies the designated float value**
-*
-<p class="u-float--left">u-float--left</p>
-<p class="u-float--right">u-float--right</p>
-<p class="u-float--none">u-float--none</p>
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
+
+**Available Values**: `[ left | right | none ]`
+
+**Abbreviation**: `float`
+
+**Format**: `u-float--<value>`
 
 ```html
 <p class="u-float--left"></p>
 <p class="u-float--right"></p>
 <p class="u-float--none"></p>
 ```
+
+<p class="u-float--left">u-float--left</p>
+<p class="u-float--right">u-float--right</p>
+<p class="u-float--none">u-float--none</p>
 */
 
 @each $mq in var(--mq-options) {
