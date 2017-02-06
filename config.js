@@ -10,7 +10,7 @@ module.exports = {
   },
   documentation: {
     source: [
-      './dist/ideal.css'
+      './dist/index.css'
     ],
     destination: './dist/docs'
   },

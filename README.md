@@ -1,4 +1,4 @@
-# Ideal Utilities
+# Dagger Utilities
 
 This is a library of functional CSS classes. The library provides all the small, single-purpose, immutable classes you may find necessary in a project. Instead of writing big, monolithic components in your CSS and being forced to come up with clever names and clean CSS declarations, you can build a component by simply combining several of the functional classes.
 
@@ -14,6 +14,7 @@ I've been using many of these classes for years and this library is my attempt t
 
 ## Similar Projects
 
+- [topic=functional-css](https://github.com/search?q=topic%3Afunctional-css&type=Repositories)
 - [Tachyons](http://tachyons.io/)
 - [Shed.css](http://tedconf.github.io/shed-css/)
 - [funcssion](https://funcssion.com/)

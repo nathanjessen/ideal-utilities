@@ -1,10 +1,10 @@
 {
-  "name": "ideal-utilities",
+  "name": "dagger-utilities",
   "version": "0.0.1",
   "description": "CSS Utilities",
   "author": "Nathan Jessen",
   "license": "MIT",
-  "main": "ideal.scss",
+  "main": "index.scss",
   "dependencies": {
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nathanjessen/ideal-utilities.git"
+    "url": "https://github.com/nathanjessen/dagger-utilities.git"
   },
   "keywords": [
     "sass",
@@ -43,7 +43,7 @@
     "atomic css"
   ],
   "bugs": {
-    "url": "https://github.com/nathanjessen/ideal-utilities/issues"
+    "url": "https://github.com/nathanjessen/dagger-utilities/issues"
   },
-  "homepage": "https://github.com/nathanjessen/ideal-utilities"
+  "homepage": "https://github.com/nathanjessen/dagger-utilities"
 }
