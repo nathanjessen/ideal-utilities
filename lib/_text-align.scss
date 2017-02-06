@@ -24,9 +24,9 @@ section: Text
 <p class="u-ta--justify">Text that is justified.</p>
 */
 
-@each $mq in var(--mq-options) {
+@each $mq, $value in $mq-options {
 
-  @if $(mq) == e {
+  @if $mq == e {
 
     .u-ta--left {
       text-align: left;
@@ -52,25 +52,25 @@ section: Text
 
   @else {
 
-    @media (--mq-$(mq)) {
+    @media (--mq-#{$mq}) {
 
-      .u-ta--left\@$(mq) {
+      .u-ta--left\@#{$mq} {
         text-align: left;
       }
 
-      .u-ta--right\@$(mq) {
+      .u-ta--right\@#{$mq} {
         text-align: right;
       }
 
-      .u-ta--center\@$(mq) {
+      .u-ta--center\@#{$mq} {
         text-align: center;
       }
 
-      .u-ta--justify\@$(mq) {
+      .u-ta--justify\@#{$mq} {
         text-align: justify;
       }
 
-      .u-ta--justify-all\@$(mq) {
+      .u-ta--justify-all\@#{$mq} {
         text-align: justify-all;
       }
 

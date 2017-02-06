@@ -28,9 +28,9 @@ section: Layout
 <p class="u-pos--sticky">u-pos--sticky</p>
 */
 
-@each $mq in var(--mq-options) {
+@each $mq, $value in $mq-options {
 
-  @if $(mq) == e {
+  @if $mq == e {
 
     .u-pos--static {
       position: static;
@@ -56,26 +56,26 @@ section: Layout
 
   @else {
 
-    @media (--mq-$(mq)) {
+    @media (--mq-#{$mq}) {
 
-      .u-pos--absolute\@$mq {
+      .u-pos--absolute\@#{$mq} {
         position: absolute;
       }
 
-      .u-pos--fixed\@$mq {
+      .u-pos--fixed\@#{$mq} {
         position: fixed;
 
       }
 
-      .u-pos--relative\@$mq {
+      .u-pos--relative\@#{$mq} {
         position: relative;
       }
 
-      .u-pos--static\@$mq {
+      .u-pos--static\@#{$mq} {
         position: static;
       }
 
-      .u-pos--sticky\@$mq {
+      .u-pos--sticky\@#{$mq} {
         position: sticky;
       }
 

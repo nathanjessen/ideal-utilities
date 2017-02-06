@@ -234,19 +234,6 @@
 @media (--mq-lg) {}
 @media (--mq-xl) {}
 @media (--mq-xxl) {}
-
-## Each loop
-@each $mq in var(--mq-options) {
-
-  @if $(mq) == e {
-    .u-name {}
-  } @else {
-    @media (--mq-$(mq)) {
-      .u-name\@$mq {}
-    }
-  }
-
-}
 </code></pre>
         
       </div>
@@ -414,17 +401,17 @@
       <div class="markdown-body">
         <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">MDN</a></p>
 <p><strong>Available Values</strong>: <code>[ white | white-off | gray-light | gray | gray-dark | theme-primary | theme-secondary | theme-tertiary ]</code></p>
-<p>Each value corresponds to a CSS Variable defined in settings.</p>
-<pre><code class="lang-css">:root {
-  --white: #fff;
-  --white-off: gray(95%);
-  --gray-light: gray(80%);
-  --gray: gray(40%);
-  --gray-dark: gray(20%);
-  --theme-primary: #3494e6;
-  --theme-secondary: #36d7b7;
-  --theme-tertiary: #86d5c7;
-}
+<p>Each value corresponds to a color in the <code>$colors</code> Sass map.</p>
+<pre><code class="lang-css">$colors: (
+  white: #fff,
+  white-off: gray(95%),
+  gray-light: gray(80%),
+  gray: gray(40%),
+  gray-dark: gray(20%),
+  theme-primary: #3494e6,
+  theme-secondary: #36d7b7,
+  theme-tertiary: #86d5c7
+);
 </code></pre>
 <p><strong>Abbreviation</strong>: <code>bgc</code></p>
 <p><strong>Format</strong>: <code>u-bgc--&lt;value&gt;</code></p>
@@ -454,17 +441,17 @@
       <div class="markdown-body">
         <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">MDN</a></p>
 <p><strong>Available Values</strong>: <code>[ white | white-off | gray-light | gray | gray-dark | theme-primary | theme-secondary | theme-tertiary ]</code></p>
-<p>Each value corresponds to a CSS Variable defined in settings.</p>
-<pre><code class="lang-css">:root {
-  --white: #fff;
-  --white-off: gray(95%);
-  --gray-light: gray(80%);
-  --gray: gray(40%);
-  --gray-dark: gray(20%);
-  --theme-primary: #3494e6;
-  --theme-secondary: #36d7b7;
-  --theme-tertiary: #86d5c7;
-}
+<p>Each value corresponds to a color in the <code>$colors</code> Sass map.</p>
+<pre><code class="lang-css">$colors: (
+  white: #fff,
+  white-off: gray(95%),
+  gray-light: gray(80%),
+  gray: gray(40%),
+  gray-dark: gray(20%),
+  theme-primary: #3494e6,
+  theme-secondary: #36d7b7,
+  theme-tertiary: #86d5c7
+);
 </code></pre>
 <p><strong>Abbreviation</strong>: <code>color</code></p>
 <p><strong>Format</strong>: <code>u-color--&lt;value&gt;</code></p>
@@ -1017,8 +1004,7 @@
       <h2 class="page-title">Text Hide</h2>
 
       <div class="markdown-body">
-        <p>&nbsp;</p>
-<p><strong>Hides text</strong></p>
+        <p>Hides text</p>
 <pre><code class="lang-html">&lt;p class=&quot;u-text-hide&quot;&gt;&lt;/p&gt;
 </code></pre>
 <p class="u-text-hide">u-text-hide</p>
@@ -1141,7 +1127,7 @@
         </main>
       </div>
       <footer class="footer">
-        Last modified Friday, 3 February 2017 16:40
+        Last modified Monday, 6 February 2017 6:47
       </footer>
     </div>
     <script src="prism.js?871234"></script>

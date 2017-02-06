@@ -22,9 +22,9 @@ section: Layout
 <p class="u-float--none">u-float--none</p>
 */
 
-@each $mq in var(--mq-options) {
+@each $mq, $value in $mq-options {
 
-  @if $(mq) == e {
+  @if $mq == e {
 
     .u-float--left {
       float: left;
@@ -42,16 +42,17 @@ section: Layout
 
   @else {
 
-    @media (--mq-$(mq)) {
-      .u-float--left\@$(mq) {
+    @media (--mq-#{$mq}) {
+
+      .u-float--left\@#{$mq} {
         float: left;
       }
 
-      .u-float--right\@$(mq) {
+      .u-float--right\@#{$mq} {
         float: right;
       }
 
-      .u-float--none\@$(mq) {
+      .u-float--none\@#{$mq} {
         float: none;
       }
     }

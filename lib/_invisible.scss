@@ -25,9 +25,9 @@ section: Miscellaneous
 
 */
 
-@each $mq in var(--mq-options) {
+@each $mq, $value in $mq-options {
 
-  @if $(mq) == e {
+  @if $mq == e {
 
     .u-vis--visible {
       visibility: visible;
@@ -45,17 +45,17 @@ section: Miscellaneous
 
   @else {
 
-    @media (--mq-$(mq)) {
+    @media (--mq-#{$mq}) {
 
-      .u-vis--visible\@$mq {
+      .u-vis--visible\@#{$mq} {
         visibility: visible;
       }
 
-      .u-vis--hidden\@$mq {
+      .u-vis--hidden\@#{$mq} {
         visibility: hidden;
       }
 
-      .u-vis--collapse\@$mq {
+      .u-vis--collapse\@#{$mq} {
         visibility: collapse;
       }
 

@@ -7,19 +7,19 @@ section: Colors
 
 **Available Values**: `[ white | white-off | gray-light | gray | gray-dark | theme-primary | theme-secondary | theme-tertiary ]`
 
-Each value corresponds to a CSS Variable defined in settings.
+Each value corresponds to a color in the `$colors` Sass map.
 
 ```css
-:root {
-  --white: #fff;
-  --white-off: gray(95%);
-  --gray-light: gray(80%);
-  --gray: gray(40%);
-  --gray-dark: gray(20%);
-  --theme-primary: #3494e6;
-  --theme-secondary: #36d7b7;
-  --theme-tertiary: #86d5c7;
-}
+$colors: (
+  white: #fff,
+  white-off: gray(95%),
+  gray-light: gray(80%),
+  gray: gray(40%),
+  gray-dark: gray(20%),
+  theme-primary: #3494e6,
+  theme-secondary: #36d7b7,
+  theme-tertiary: #86d5c7
+);
 ```
 
 **Abbreviation**: `color`
@@ -47,10 +47,10 @@ Each value corresponds to a CSS Variable defined in settings.
 <p class="u-color--theme-tertiary">u-color--theme-tertiary</p>
 */
 
-@each $color in var(--color-options) {
+@each $color, $value in $colors {
 
-  .u-color--$(color) {
-    color: var(--$(color));
+  .u-color--#{$color} {
+    color: #{$value};
   }
 
 }

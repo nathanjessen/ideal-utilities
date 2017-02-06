@@ -32,9 +32,9 @@ section: Visual Display
 <p class="u-display--none">u-display--none</p>
 */
 
-@each $mq in var(--mq-options) {
+@each $mq, $value in $mq-options {
 
-  @if $(mq) == e {
+  @if $mq == e {
 
     .u-display--block {
       display: block;
@@ -68,33 +68,33 @@ section: Visual Display
 
   @else {
 
-    @media (--mq-$(mq)) {
+    @media (--mq-#{$mq}) {
 
-      .u-display--block\@$mq {
+      .u-display--block\@#{$mq} {
         display: block;
       }
 
-      .u-display--inline-block\@$mq {
+      .u-display--inline-block\@#{$mq} {
         display: inline-block;
       }
 
-      .u-display--inline\@$mq {
+      .u-display--inline\@#{$mq} {
         display: inline;
       }
 
-      .u-display--flex\@$mq {
+      .u-display--flex\@#{$mq} {
         display: flex;
       }
 
-      .u-display--table\@$mq {
+      .u-display--table\@#{$mq} {
         display: table;
       }
 
-      .u-display--table-cell\@$mq {
+      .u-display--table-cell\@#{$mq} {
         display: table-cell;
       }
 
-      .u-display--none\@$mq {
+      .u-display--none\@#{$mq} {
         display: none;
       }
 
