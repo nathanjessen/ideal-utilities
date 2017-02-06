@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ---
 title: Introduction
 section: Getting Started
@@ -6,9 +7,77 @@ section: Getting Started
 Ideal Utilities is a library of functional CSS classes.
 
 */
-
 /*! Ideal Utilities */
+/* ---
+title: Configuration
+section: Getting Started
+---
 
+The library leverages CSS Variables to set things like colors, font weights, and custom media queries. Include your own declarations to override the CSS variables.
+
+*/
+/* Media Queries */
+:root {
+  /* Letter Spacing */
+  --letter-compact: -1px;
+  --letter-normal: 0;
+  --letter-loose: 2px;
+  /* Font Weight */
+  --font-options: light, normal, medium, semibold, bold, bolder;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-bolder: 900;
+  /* Font Stack */
+  --font-stack-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+/* ---
+title: Media Queries
+section: Getting Started
+---
+
+[postcss-custom-media](https://github.com/postcss/postcss-custom-media)
+
+Custom media queries are set to make media queries more semantic and easier to work with.
+
+You may override the default values by defining your own custom media query declarations.
+
+**Available Values**: `[ xs | sm | md | lg | xl | xxl ]`
+
+Each value corresponds to a CSS Variable defined in settings.
+
+```
+@custom-media --mq-xs (min-width: 20em);
+@custom-media --mq-sm (min-width: 30em);
+@custom-media --mq-md (min-width: 35.5em);
+@custom-media --mq-lg (min-width: 48em);
+@custom-media --mq-xl (min-width: 64em);
+@custom-media --mq-xxl (min-width: 80em);
+```
+
+**Abbreviation**: `mq`
+
+**Format**: `--mq-<value>`
+
+```
+## General Usage
+@media (--mq-xs) {}
+@media (--mq-sm) {}
+@media (--mq-md) {}
+@media (--mq-lg) {}
+@media (--mq-xl) {}
+@media (--mq-xxl) {}
+
+```
+*/
+@custom-media --mq-xs (min-width: 20em);
+@custom-media --mq-sm (min-width: 30em);
+@custom-media --mq-md (min-width: 35.5em);
+@custom-media --mq-lg (min-width: 48em);
+@custom-media --mq-xl (min-width: 64em);
+@custom-media --mq-xxl (min-width: 80em);
 /* ---
 title: Align Content
 section: Flexbox
@@ -40,41 +109,26 @@ section: Flexbox
 <p class="u-ac--space-evenly">u-ac--space-evenly</p>
 <p class="u-ac--stretch">u-ac--stretch</p>
 */
-
 .u-ac--flex-start {
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-}
+  align-content: flex-start; }
 
 .u-ac--flex-end {
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-}
+  align-content: flex-end; }
 
 .u-ac--center {
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
+  align-content: center; }
 
 .u-ac--space-between {
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-}
+  align-content: space-between; }
 
 .u-ac--space-around {
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
+  align-content: space-around; }
 
 .u-ac--space-evenly {
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
-}
+  align-content: space-evenly; }
 
 .u-ac--stretch {
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-}
+  align-content: stretch; }
 
 /* ---
 title: Align Items
@@ -103,36 +157,20 @@ section: Flexbox
 <p class="u-ai--baseline">u-ai--baseline</p>
 <p class="u-ai--stretch">u-ai--stretch</p>
 */
-
 .u-ai--flex-start {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
+  align-items: flex-start; }
 
 .u-ai--flex-end {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
+  align-items: flex-end; }
 
 .u-ai--center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+  align-items: center; }
 
 .u-ai--baseline {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
+  align-items: baseline; }
 
 .u-ai--stretch {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
+  align-items: stretch; }
 
 /* ---
 title: Align Self
@@ -161,39 +199,23 @@ section: Flexbox
 <p class="u-as--stretch">u-as--stretch</p>
 <p class="u-as--auto">u-as--auto</p>
 */
-
 .u-as--auto {
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
-}
+  align-self: auto; }
 
 .u-as--flex-start {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
+  align-self: flex-start; }
 
 .u-as--flex-end {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
+  align-self: flex-end; }
 
 .u-as--center {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
+  align-self: center; }
 
 .u-as--baseline {
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
-}
+  align-self: baseline; }
 
 .u-as--stretch {
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-}
+  align-self: stretch; }
 
 /* ---
 title: Background Color
@@ -204,19 +226,19 @@ section: Colors
 
 **Available Values**: `[ white | white-off | gray-light | gray | gray-dark | theme-primary | theme-secondary | theme-tertiary ]`
 
-Each value corresponds to a CSS Variable defined in settings.
+Each value corresponds to a color in the `$colors` Sass map.
 
 ```css
-:root {
-  --white: #fff;
-  --white-off: gray(95%);
-  --gray-light: gray(80%);
-  --gray: gray(40%);
-  --gray-dark: gray(20%);
-  --theme-primary: #3494e6;
-  --theme-secondary: #36d7b7;
-  --theme-tertiary: #86d5c7;
-}
+$colors: (
+  white: #fff,
+  white-off: gray(95%),
+  gray-light: gray(80%),
+  gray: gray(40%),
+  gray-dark: gray(20%),
+  theme-primary: #3494e6,
+  theme-secondary: #36d7b7,
+  theme-tertiary: #86d5c7
+);
 ```
 
 **Abbreviation**: `bgc`
@@ -243,38 +265,29 @@ Each value corresponds to a CSS Variable defined in settings.
 <p class="u-bgc--theme-secondary">u-bgc--theme-secondary</p>
 <p class="u-bgc--theme-tertiary">u-bgc--theme-tertiary</p>
 */
-
 .u-bgc--white {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .u-bgc--white-off {
-  background-color: rgb(242, 242, 242);
-}
+  background-color: gray(95%); }
 
 .u-bgc--gray-light {
-  background-color: rgb(204, 204, 204);
-}
+  background-color: gray(80%); }
 
 .u-bgc--gray {
-  background-color: rgb(102, 102, 102);
-}
+  background-color: gray(40%); }
 
 .u-bgc--gray-dark {
-  background-color: rgb(51, 51, 51);
-}
+  background-color: gray(20%); }
 
 .u-bgc--theme-primary {
-  background-color: #3494e6;
-}
+  background-color: #3494e6; }
 
 .u-bgc--theme-secondary {
-  background-color: #36d7b7;
-}
+  background-color: #36d7b7; }
 
 .u-bgc--theme-tertiary {
-  background-color: #86d5c7;
-}
+  background-color: #86d5c7; }
 
 /* ---
 title: Border Radius
@@ -309,34 +322,26 @@ All values correspond to a pixel value except for `25p` and `50p` which refer to
 <p class="u-border-radius--25p">u-border-radius--25p</p>
 <p class="u-border-radius--50p">u-border-radius--50p</p>
 */
-
 .u-border-radius--0 {
-  border-radius: 0;
-}
+  border-radius: 0; }
 
 .u-border-radius--1 {
-  border-radius: 1px;
-}
+  border-radius: 1px; }
 
 .u-border-radius--2 {
-  border-radius: 2px;
-}
+  border-radius: 2px; }
 
 .u-border-radius--3 {
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 
 .u-border-radius--4 {
-  border-radius: 4px;
-}
+  border-radius: 4px; }
 
 .u-border-radius--25p {
-  border-radius: 25%;
-}
+  border-radius: 25%; }
 
 .u-border-radius--50p {
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 /* ---
 title: Border
@@ -371,40 +376,31 @@ section: Borders
 <p class="u-border--left">u-border--left</p>
 <p class="u-border--none">u-border--none</p>
 */
-
 .u-border--all {
-  border: 1px solid gray;
-}
+  border: 1px solid gray; }
 
 .u-border--x {
   border-left: 1px solid gray;
-  border-right: 1px solid gray;
-}
+  border-right: 1px solid gray; }
 
 .u-border--y {
   border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
+  border-bottom: 1px solid gray; }
 
 .u-border--top {
-  border-top: 1px solid gray;
-}
+  border-top: 1px solid gray; }
 
 .u-border--right {
-  border-right: 1px solid gray;
-}
+  border-right: 1px solid gray; }
 
 .u-border--bottom {
-  border-bottom: 1px solid gray;
-}
+  border-bottom: 1px solid gray; }
 
 .u-border--left {
-  border-left: 1px solid gray;
-}
+  border-left: 1px solid gray; }
 
 .u-border--none {
-  border: none;
-}
+  border: none; }
 
 /* ---
 title: Center Block
@@ -421,12 +417,10 @@ Helper class for horizontally centering an element.
 
 <div class="u-center-block">u-center-block</div>
 */
-
 .u-center-block {
   display: block;
   margin-right: auto;
-  margin-left: auto;
-}
+  margin-left: auto; }
 
 /* ---
 title: Color
@@ -437,19 +431,19 @@ section: Colors
 
 **Available Values**: `[ white | white-off | gray-light | gray | gray-dark | theme-primary | theme-secondary | theme-tertiary ]`
 
-Each value corresponds to a CSS Variable defined in settings.
+Each value corresponds to a color in the `$colors` Sass map.
 
 ```css
-:root {
-  --white: #fff;
-  --white-off: gray(95%);
-  --gray-light: gray(80%);
-  --gray: gray(40%);
-  --gray-dark: gray(20%);
-  --theme-primary: #3494e6;
-  --theme-secondary: #36d7b7;
-  --theme-tertiary: #86d5c7;
-}
+$colors: (
+  white: #fff,
+  white-off: gray(95%),
+  gray-light: gray(80%),
+  gray: gray(40%),
+  gray-dark: gray(20%),
+  theme-primary: #3494e6,
+  theme-secondary: #36d7b7,
+  theme-tertiary: #86d5c7
+);
 ```
 
 **Abbreviation**: `color`
@@ -476,38 +470,29 @@ Each value corresponds to a CSS Variable defined in settings.
 <p class="u-color--theme-secondary">u-color--theme-secondary</p>
 <p class="u-color--theme-tertiary">u-color--theme-tertiary</p>
 */
-
 .u-color--white {
-  color: #fff;
-}
+  color: #fff; }
 
 .u-color--white-off {
-  color: rgb(242, 242, 242);
-}
+  color: gray(95%); }
 
 .u-color--gray-light {
-  color: rgb(204, 204, 204);
-}
+  color: gray(80%); }
 
 .u-color--gray {
-  color: rgb(102, 102, 102);
-}
+  color: gray(40%); }
 
 .u-color--gray-dark {
-  color: rgb(51, 51, 51);
-}
+  color: gray(20%); }
 
 .u-color--theme-primary {
-  color: #3494e6;
-}
+  color: #3494e6; }
 
 .u-color--theme-secondary {
-  color: #36d7b7;
-}
+  color: #36d7b7; }
 
 .u-color--theme-tertiary {
-  color: #86d5c7;
-}
+  color: #86d5c7; }
 
 /* ---
 title: Display
@@ -542,234 +527,122 @@ section: Visual Display
 <p class="u-display--table-cell">u-display--table-cell</p>
 <p class="u-display--none">u-display--none</p>
 */
-
 .u-display--block {
-  display: block;
-}
+  display: block; }
 
 .u-display--inline-block {
-  display: inline-block;
-}
+  display: inline-block; }
 
 .u-display--inline {
-  display: inline;
-}
+  display: inline; }
 
 .u-display--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+  display: flex; }
 
 .u-display--table {
-  display: table;
-}
+  display: table; }
 
 .u-display--table-cell {
-  display: table-cell;
-}
+  display: table-cell; }
 
 .u-display--none {
-  display: none;
-}
+  display: none; }
 
-@media (min-width: 20em) {
-
+@media (--mq-xs) {
   .u-display--block\@xs {
-    display: block;
-  }
-
+    display: block; }
   .u-display--inline-block\@xs {
-    display: inline-block;
-  }
-
+    display: inline-block; }
   .u-display--inline\@xs {
-    display: inline;
-  }
-
+    display: inline; }
   .u-display--flex\@xs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
+    display: flex; }
   .u-display--table\@xs {
-    display: table;
-  }
-
+    display: table; }
   .u-display--table-cell\@xs {
-    display: table-cell;
-  }
-
+    display: table-cell; }
   .u-display--none\@xs {
-    display: none;
-  }
-}
+    display: none; } }
 
-@media (min-width: 30em) {
-
+@media (--mq-sm) {
   .u-display--block\@sm {
-    display: block;
-  }
-
+    display: block; }
   .u-display--inline-block\@sm {
-    display: inline-block;
-  }
-
+    display: inline-block; }
   .u-display--inline\@sm {
-    display: inline;
-  }
-
+    display: inline; }
   .u-display--flex\@sm {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
+    display: flex; }
   .u-display--table\@sm {
-    display: table;
-  }
-
+    display: table; }
   .u-display--table-cell\@sm {
-    display: table-cell;
-  }
-
+    display: table-cell; }
   .u-display--none\@sm {
-    display: none;
-  }
-}
+    display: none; } }
 
-@media (min-width: 35.5em) {
-
+@media (--mq-md) {
   .u-display--block\@md {
-    display: block;
-  }
-
+    display: block; }
   .u-display--inline-block\@md {
-    display: inline-block;
-  }
-
+    display: inline-block; }
   .u-display--inline\@md {
-    display: inline;
-  }
-
+    display: inline; }
   .u-display--flex\@md {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
+    display: flex; }
   .u-display--table\@md {
-    display: table;
-  }
-
+    display: table; }
   .u-display--table-cell\@md {
-    display: table-cell;
-  }
-
+    display: table-cell; }
   .u-display--none\@md {
-    display: none;
-  }
-}
+    display: none; } }
 
-@media (min-width: 48em) {
-
+@media (--mq-lg) {
   .u-display--block\@lg {
-    display: block;
-  }
-
+    display: block; }
   .u-display--inline-block\@lg {
-    display: inline-block;
-  }
-
+    display: inline-block; }
   .u-display--inline\@lg {
-    display: inline;
-  }
-
+    display: inline; }
   .u-display--flex\@lg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
+    display: flex; }
   .u-display--table\@lg {
-    display: table;
-  }
-
+    display: table; }
   .u-display--table-cell\@lg {
-    display: table-cell;
-  }
-
+    display: table-cell; }
   .u-display--none\@lg {
-    display: none;
-  }
-}
+    display: none; } }
 
-@media (min-width: 64em) {
-
+@media (--mq-xl) {
   .u-display--block\@xl {
-    display: block;
-  }
-
+    display: block; }
   .u-display--inline-block\@xl {
-    display: inline-block;
-  }
-
+    display: inline-block; }
   .u-display--inline\@xl {
-    display: inline;
-  }
-
+    display: inline; }
   .u-display--flex\@xl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
+    display: flex; }
   .u-display--table\@xl {
-    display: table;
-  }
-
+    display: table; }
   .u-display--table-cell\@xl {
-    display: table-cell;
-  }
-
+    display: table-cell; }
   .u-display--none\@xl {
-    display: none;
-  }
-}
+    display: none; } }
 
-@media (min-width: 80em) {
-
+@media (--mq-xxl) {
   .u-display--block\@xxl {
-    display: block;
-  }
-
+    display: block; }
   .u-display--inline-block\@xxl {
-    display: inline-block;
-  }
-
+    display: inline-block; }
   .u-display--inline\@xxl {
-    display: inline;
-  }
-
+    display: inline; }
   .u-display--flex\@xxl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
+    display: flex; }
   .u-display--table\@xxl {
-    display: table;
-  }
-
+    display: table; }
   .u-display--table-cell\@xxl {
-    display: table-cell;
-  }
-
+    display: table-cell; }
   .u-display--none\@xxl {
-    display: none;
-  }
-}
+    display: none; } }
 
 /* ---
 title: Flex Direction
@@ -798,34 +671,17 @@ section: Flexbox
 <p class="u-flex--column">u-flex--column</p>
 <p class="u-flex--column-reverse">u-flex--column-reverse</p>
 */
-
 .u-flex--row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
+  flex-direction: row; }
 
 .u-flex--row-reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
+  flex-direction: row-reverse; }
 
 .u-flex--column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+  flex-direction: column; }
 
 .u-flex--column-reverse {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-}
+  flex-direction: column-reverse; }
 
 /* ---
 title: Flex Wrap
@@ -852,21 +708,14 @@ section: Flexbox
 <p class="u-flex--wrap-reverse">u-flex--wrap-reverse</p>
 <p class="u-flex--nowrap">u-flex--nowrap</p>
 */
-
 .u-flex--nowrap {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
+  flex-wrap: nowrap; }
 
 .u-flex--wrap {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .u-flex--wrap-reverse {
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-}
+  flex-wrap: wrap-reverse; }
 
 /* ---
 title: Float
@@ -891,108 +740,62 @@ section: Layout
 <p class="u-float--right">u-float--right</p>
 <p class="u-float--none">u-float--none</p>
 */
-
 .u-float--left {
-  float: left;
-}
+  float: left; }
 
 .u-float--right {
-  float: right;
-}
+  float: right; }
 
 .u-float--none {
-  float: none;
-}
+  float: none; }
 
-@media (min-width: 20em) {
-
+@media (--mq-xs) {
   .u-float--left\@xs {
-    float: left;
-  }
-
+    float: left; }
   .u-float--right\@xs {
-    float: right;
-  }
-
+    float: right; }
   .u-float--none\@xs {
-    float: none;
-  }
-}
+    float: none; } }
 
-@media (min-width: 30em) {
-
+@media (--mq-sm) {
   .u-float--left\@sm {
-    float: left;
-  }
-
+    float: left; }
   .u-float--right\@sm {
-    float: right;
-  }
-
+    float: right; }
   .u-float--none\@sm {
-    float: none;
-  }
-}
+    float: none; } }
 
-@media (min-width: 35.5em) {
-
+@media (--mq-md) {
   .u-float--left\@md {
-    float: left;
-  }
-
+    float: left; }
   .u-float--right\@md {
-    float: right;
-  }
-
+    float: right; }
   .u-float--none\@md {
-    float: none;
-  }
-}
+    float: none; } }
 
-@media (min-width: 48em) {
-
+@media (--mq-lg) {
   .u-float--left\@lg {
-    float: left;
-  }
-
+    float: left; }
   .u-float--right\@lg {
-    float: right;
-  }
-
+    float: right; }
   .u-float--none\@lg {
-    float: none;
-  }
-}
+    float: none; } }
 
-@media (min-width: 64em) {
-
+@media (--mq-xl) {
   .u-float--left\@xl {
-    float: left;
-  }
-
+    float: left; }
   .u-float--right\@xl {
-    float: right;
-  }
-
+    float: right; }
   .u-float--none\@xl {
-    float: none;
-  }
-}
+    float: none; } }
 
-@media (min-width: 80em) {
-
+@media (--mq-xxl) {
   .u-float--left\@xxl {
-    float: left;
-  }
-
+    float: left; }
   .u-float--right\@xxl {
-    float: right;
-  }
-
+    float: right; }
   .u-float--none\@xxl {
-    float: none;
-  }
-}
+    float: none; } }
 
 /* ---
 title: Font Family
@@ -1021,10 +824,8 @@ Each value corresponds to a CSS Variable defined in settings.
 
 <p class="u-ff--wordpress">u-ff--system</p>
 */
-
 .u-ff--system {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+  font-family: var(--font-stack-system); }
 
 /* ---
 title: Font Size
@@ -1057,30 +858,23 @@ section: Text
 <p class="u-fs--3">u-fs--3</p>
 <p class="u-fs--4">u-fs--4</p>
 */
-
 .u-fs--05 {
-  font-size: 0.5rem;
-}
+  font-size: 0.5rem; }
 
 .u-fs--075 {
-  font-size: 0.75rem;
-}
+  font-size: 0.75rem; }
 
 .u-fs--1 {
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .u-fs--2 {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .u-fs--3 {
-  font-size: 3rem;
-}
+  font-size: 3rem; }
 
 .u-fs--4 {
-  font-size: 4rem;
-}
+  font-size: 4rem; }
 
 /* ---
 title: Font Style
@@ -1107,18 +901,14 @@ section: Text
 <p class="u-fs--italic">u-fs--italic</p>
 <p class="u-fs--oblique">u-fs--oblique</p>
 */
-
 .u-fs--normal {
-  font-style: normal;
-}
+  font-style: normal; }
 
 .u-fs--italic {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .u-fs--oblique {
-  font-style: oblique;
-}
+  font-style: oblique; }
 
 /* ---
 title: Font Weight
@@ -1165,58 +955,44 @@ section: Text
 <p class="u-fw--lighter">u-fw--lighter</p>
 <p class="u-fw--bolder">u-fw--bolder</p>
 */
-
 .u-fw--100 {
-  font-weight: 100;
-}
+  font-weight: 100; }
 
 .u-fw--200 {
-  font-weight: 200;
-}
+  font-weight: 200; }
 
 .u-fw--300 {
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 .u-fw--400 {
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 .u-fw--500 {
-  font-weight: 500;
-}
+  font-weight: 500; }
 
 .u-fw--600 {
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 .u-fw--700 {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 .u-fw--800 {
-  font-weight: 800;
-}
+  font-weight: 800; }
 
 .u-fw--900 {
-  font-weight: 900;
-}
+  font-weight: 900; }
 
 .u-fw--normal {
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 .u-fw--bold {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .u-fw--lighter {
-  font-weight: lighter;
-}
+  font-weight: lighter; }
 
 .u-fw--bolder {
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 /* ---
 title: Invisible
@@ -1244,108 +1020,62 @@ section: Miscellaneous
 ```
 
 */
-
 .u-vis--visible {
-  visibility: visible;
-}
+  visibility: visible; }
 
 .u-vis--hidden {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 .u-vis--collapse {
-  visibility: collapse;
-}
+  visibility: collapse; }
 
-@media (min-width: 20em) {
-
+@media (--mq-xs) {
   .u-vis--visible\@xs {
-    visibility: visible;
-  }
-
+    visibility: visible; }
   .u-vis--hidden\@xs {
-    visibility: hidden;
-  }
-
+    visibility: hidden; }
   .u-vis--collapse\@xs {
-    visibility: collapse;
-  }
-}
+    visibility: collapse; } }
 
-@media (min-width: 30em) {
-
+@media (--mq-sm) {
   .u-vis--visible\@sm {
-    visibility: visible;
-  }
-
+    visibility: visible; }
   .u-vis--hidden\@sm {
-    visibility: hidden;
-  }
-
+    visibility: hidden; }
   .u-vis--collapse\@sm {
-    visibility: collapse;
-  }
-}
+    visibility: collapse; } }
 
-@media (min-width: 35.5em) {
-
+@media (--mq-md) {
   .u-vis--visible\@md {
-    visibility: visible;
-  }
-
+    visibility: visible; }
   .u-vis--hidden\@md {
-    visibility: hidden;
-  }
-
+    visibility: hidden; }
   .u-vis--collapse\@md {
-    visibility: collapse;
-  }
-}
+    visibility: collapse; } }
 
-@media (min-width: 48em) {
-
+@media (--mq-lg) {
   .u-vis--visible\@lg {
-    visibility: visible;
-  }
-
+    visibility: visible; }
   .u-vis--hidden\@lg {
-    visibility: hidden;
-  }
-
+    visibility: hidden; }
   .u-vis--collapse\@lg {
-    visibility: collapse;
-  }
-}
+    visibility: collapse; } }
 
-@media (min-width: 64em) {
-
+@media (--mq-xl) {
   .u-vis--visible\@xl {
-    visibility: visible;
-  }
-
+    visibility: visible; }
   .u-vis--hidden\@xl {
-    visibility: hidden;
-  }
-
+    visibility: hidden; }
   .u-vis--collapse\@xl {
-    visibility: collapse;
-  }
-}
+    visibility: collapse; } }
 
-@media (min-width: 80em) {
-
+@media (--mq-xxl) {
   .u-vis--visible\@xxl {
-    visibility: visible;
-  }
-
+    visibility: visible; }
   .u-vis--hidden\@xxl {
-    visibility: hidden;
-  }
-
+    visibility: hidden; }
   .u-vis--collapse\@xxl {
-    visibility: collapse;
-  }
-}
+    visibility: collapse; } }
 
 /* ---
 title: Justify Content
@@ -1374,35 +1104,20 @@ section: Flexbox
 <p class="u-justify--space-between">u-justify--space-between</p>
 <p class="u-justify--space-around">u-justify--space-around</p>
 */
-
 .u-justify--flex-start {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
+  justify-content: flex-start; }
 
 .u-justify--flex-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
+  justify-content: flex-end; }
 
 .u-justify--center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
+  justify-content: center; }
 
 .u-justify--space-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .u-justify--space-around {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
+  justify-content: space-around; }
 
 /* ---
 title: Letter Spacing
@@ -1437,18 +1152,14 @@ Each value corresponds to a CSS Variable defined in settings.
 <p class="u-ls--normal">u-ls--normal</p>
 <p class="u-ls--loose">u-ls--loose</p>
 */
-
 .u-ls--compact {
-  letter-spacing: -1px;
-}
+  letter-spacing: var(--letter-compact); }
 
 .u-ls--normal {
-  letter-spacing: 0;
-}
+  letter-spacing: var(--letter-normal); }
 
 .u-ls--loose {
-  letter-spacing: 2px;
-}
+  letter-spacing: var(--letter-loose); }
 
 /* ---
 title: Line Height
@@ -1471,14 +1182,11 @@ section: Text
 <p class="u-lh--normal">u-lh--normal</p>
 <p class="u-lh--1">u-lh--1</p>
 */
-
 .u-lh--normal {
-  line-height: normal;
-}
+  line-height: normal; }
 
 .u-lh--1 {
-  line-height: 1rem;
-}
+  line-height: 1rem; }
 
 /* ---
 title: List
@@ -1516,20 +1224,15 @@ Controls the appearance of a list element (e.g. `ul`, `ol`, `dl`)
   <li>.u-list--inline</li>
 </ul>
 */
-
 .u-list--unstyled,
 .u-list--inline {
   list-style: none;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 .u-list--inline > li {
-  display: inline-block
-}
-
-.u-list--inline > li:not(:last-child)::after {
-  content: " |";
-}
+  display: inline-block; }
+  .u-list--inline > li:not(:last-child)::after {
+    content: " |"; }
 
 /* ---
 title: Margin
@@ -1556,160 +1259,173 @@ section: Layout
 
 **No visuals currently available**
 */
-
 /* All Sides */
+.u-ma--auto {
+  margin: auto; }
 
-.u-ma--auto { margin: auto; }
+.u-ma--0 {
+  margin: 0; }
 
-.u-ma--0 { margin: 0; }
+.u-ma--5 {
+  margin: 5px; }
 
-.u-ma--5 { margin: 5px; }
+.u-ma--10 {
+  margin: 10px; }
 
-.u-ma--10 { margin: 10px; }
+.u-ma--20 {
+  margin: 20px; }
 
-.u-ma--20 { margin: 20px; }
+.u-ma--30 {
+  margin: 30px; }
 
-.u-ma--30 { margin: 30px; }
-
-.u-ma--40 { margin: 40px; }
+.u-ma--40 {
+  margin: 40px; }
 
 /* Left and Right */
-
 .u-mx--auto {
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 .u-mx--0 {
   margin-left: 0;
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 .u-mx--5 {
   margin-left: 5px;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 
 .u-mx--10 {
   margin-left: 10px;
-  margin-right: 10px;
-}
+  margin-right: 10px; }
 
 .u-mx--20 {
   margin-left: 20px;
-  margin-right: 20px;
-}
+  margin-right: 20px; }
 
 .u-mx--30 {
   margin-left: 30px;
-  margin-right: 30px;
-}
+  margin-right: 30px; }
 
 .u-mx--40 {
   margin-left: 40px;
-  margin-right: 40px;
-}
+  margin-right: 40px; }
 
 /* Top and Bottom */
-
 .u-my--auto {
   margin-bottom: auto;
-  margin-top: auto;
-}
+  margin-top: auto; }
 
 .u-my--0 {
   margin-bottom: 0;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 .u-my--5 {
   margin-bottom: 5px;
-  margin-top: 5px;
-}
+  margin-top: 5px; }
 
 .u-my--10 {
   margin-bottom: 10px;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 .u-my--20 {
   margin-bottom: 20px;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .u-my--30 {
   margin-bottom: 30px;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .u-my--40 {
   margin-bottom: 40px;
-  margin-top: 40px;
-}
+  margin-top: 40px; }
 
 /* Top */
+.u-mt--auto {
+  margin-top: auto; }
 
-.u-mt--auto { margin-top: auto; }
+.u-mt--0 {
+  margin-top: 0; }
 
-.u-mt--0 { margin-top: 0; }
+.u-mt--5 {
+  margin-top: 5px; }
 
-.u-mt--5 { margin-top: 5px; }
+.u-mt--10 {
+  margin-top: 10px; }
 
-.u-mt--10 { margin-top: 10px; }
+.u-mt--20 {
+  margin-top: 20px; }
 
-.u-mt--20 { margin-top: 20px; }
+.u-mt--30 {
+  margin-top: 30px; }
 
-.u-mt--30 { margin-top: 30px; }
-
-.u-mt--40 { margin-top: 40px; }
+.u-mt--40 {
+  margin-top: 40px; }
 
 /* Right */
+.u-mr--auto {
+  margin-right: auto; }
 
-.u-mr--auto { margin-right: auto; }
+.u-mr--0 {
+  margin-right: 0; }
 
-.u-mr--0 { margin-right: 0; }
+.u-mr--5 {
+  margin-right: 5px; }
 
-.u-mr--5 { margin-right: 5px; }
+.u-mr--10 {
+  margin-right: 10px; }
 
-.u-mr--10 { margin-right: 10px; }
+.u-mr--20 {
+  margin-right: 20px; }
 
-.u-mr--20 { margin-right: 20px; }
+.u-mr--30 {
+  margin-right: 30px; }
 
-.u-mr--30 { margin-right: 30px; }
-
-.u-mr--40 { margin-right: 40px; }
+.u-mr--40 {
+  margin-right: 40px; }
 
 /* Bottom */
+.u-mb--auto {
+  margin-bottom: auto; }
 
-.u-mb--auto { margin-bottom: auto; }
+.u-mb--0 {
+  margin-bottom: 0; }
 
-.u-mb--0 { margin-bottom: 0; }
+.u-mb--5 {
+  margin-bottom: 5px; }
 
-.u-mb--5 { margin-bottom: 5px; }
+.u-mb--10 {
+  margin-bottom: 10px; }
 
-.u-mb--10 { margin-bottom: 10px; }
+.u-mb--20 {
+  margin-bottom: 20px; }
 
-.u-mb--20 { margin-bottom: 20px; }
+.u-mb--30 {
+  margin-bottom: 30px; }
 
-.u-mb--30 { margin-bottom: 30px; }
-
-.u-mb--40 { margin-bottom: 40px; }
+.u-mb--40 {
+  margin-bottom: 40px; }
 
 /* Left */
+.u-ml--auto {
+  margin-left: auto; }
 
-.u-ml--auto { margin-left: auto; }
+.u-ml--0 {
+  margin-left: 0; }
 
-.u-ml--0 { margin-left: 0; }
+.u-ml--5 {
+  margin-left: 5px; }
 
-.u-ml--5 { margin-left: 5px; }
+.u-ml--10 {
+  margin-left: 10px; }
 
-.u-ml--10 { margin-left: 10px; }
+.u-ml--20 {
+  margin-left: 20px; }
 
-.u-ml--20 { margin-left: 20px; }
+.u-ml--30 {
+  margin-left: 30px; }
 
-.u-ml--30 { margin-left: 30px; }
-
-.u-ml--40 { margin-left: 40px; }
+.u-ml--40 {
+  margin-left: 40px; }
 
 /* ---
 title: Opacity
@@ -1752,50 +1468,38 @@ Each value corresponds to a number between `0.0` and `1.0` at increments of `0.1
 <p class="u-op--09">u-op--09</p>
 <p class="u-op--1">u-op--1</p>
 */
-
 .u-op--0 {
-  opacity: 0;
-}
+  opacity: 0; }
 
 .u-op--01 {
-  opacity: 0.1;
-}
+  opacity: 0.1; }
 
 .u-op--02 {
-  opacity: 0.2;
-}
+  opacity: 0.2; }
 
 .u-op--03 {
-  opacity: 0.3;
-}
+  opacity: 0.3; }
 
 .u-op--04 {
-  opacity: 0.4;
-}
+  opacity: 0.4; }
 
 .u-op--05 {
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 .u-op--06 {
-  opacity: 0.6;
-}
+  opacity: 0.6; }
 
 .u-op--07 {
-  opacity: 0.7;
-}
+  opacity: 0.7; }
 
 .u-op--08 {
-  opacity: 0.8;
-}
+  opacity: 0.8; }
 
 .u-op--09 {
-  opacity: 0.9;
-}
+  opacity: 0.9; }
 
 .u-op--1 {
-  opacity: 1;
-}
+  opacity: 1; }
 
 /* ---
 title: Overflow
@@ -1822,18 +1526,14 @@ section: Visual Display
 <p class="u-overflow--hidden">u-overflow--hidden</p>
 <p class="u-overflow--scroll">u-overflow--scroll</p>
 */
-
 .u-overflow--visible {
-  overflow: visible;
-}
+  overflow: visible; }
 
 .u-overflow--hidden {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .u-overflow--scroll {
-  overflow: scroll;
-}
+  overflow: scroll; }
 
 /* ---
 title: Padding
@@ -1860,140 +1560,150 @@ section: Layout
 
 **No visuals currently available**
 */
-
 /* All sides */
+.u-pa--0 {
+  padding: 0; }
 
-.u-pa--0 { padding: 0; }
+.u-pa--5 {
+  padding: 5px; }
 
-.u-pa--5 { padding: 5px; }
+.u-pa--10 {
+  padding: 10px; }
 
-.u-pa--10 { padding: 10px; }
+.u-pa--20 {
+  padding: 20px; }
 
-.u-pa--20 { padding: 20px; }
+.u-pa--30 {
+  padding: 30px; }
 
-.u-pa--30 { padding: 30px; }
-
-.u-pa--40 { padding: 40px; }
+.u-pa--40 {
+  padding: 40px; }
 
 /* Left and Right */
-
 .u-px--0 {
   padding-left: 0;
-  padding-right: 0;
-}
+  padding-right: 0; }
 
 .u-px--5 {
   padding-left: 5px;
-  padding-right: 5px;
-}
+  padding-right: 5px; }
 
 .u-px--10 {
   padding-left: 10px;
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 .u-px--20 {
   padding-left: 20px;
-  padding-right: 20px;
-}
+  padding-right: 20px; }
 
 .u-px--30 {
   padding-left: 30px;
-  padding-right: 30px;
-}
+  padding-right: 30px; }
 
 .u-px--40 {
   padding-left: 40px;
-  padding-right: 40px;
-}
+  padding-right: 40px; }
 
 /* Top and Bottom */
-
 .u-py--0 {
   padding-bottom: 0;
-  padding-top: 0;
-}
+  padding-top: 0; }
 
 .u-py--5 {
   padding-bottom: 5px;
-  padding-top: 5px;
-}
+  padding-top: 5px; }
 
 .u-py--10 {
   padding-bottom: 10px;
-  padding-top: 10px;
-}
+  padding-top: 10px; }
 
 .u-py--20 {
   padding-bottom: 20px;
-  padding-top: 20px;
-}
+  padding-top: 20px; }
 
 .u-py--30 {
   padding-bottom: 30px;
-  padding-top: 30px;
-}
+  padding-top: 30px; }
 
 .u-py--40 {
   padding-bottom: 40px;
-  padding-top: 40px;
-}
+  padding-top: 40px; }
 
 /* Top */
+.u-pt--0 {
+  padding-top: 0; }
 
-.u-pt--0 { padding-top: 0; }
+.u-pt--5 {
+  padding-top: 5px; }
 
-.u-pt--5 { padding-top: 5px; }
+.u-pt--10 {
+  padding-top: 10px; }
 
-.u-pt--10 { padding-top: 10px; }
+.u-pt--20 {
+  padding-top: 20px; }
 
-.u-pt--20 { padding-top: 20px; }
+.u-pt--30 {
+  padding-top: 30px; }
 
-.u-pt--30 { padding-top: 30px; }
-
-.u-pt--40 { padding-top: 40px; }
+.u-pt--40 {
+  padding-top: 40px; }
 
 /* Right */
+.u-pr--0 {
+  padding-right: 0; }
 
-.u-pr--0 { padding-right: 0; }
+.u-pr--5 {
+  padding-right: 5px; }
 
-.u-pr--5 { padding-right: 5px; }
+.u-pr--10 {
+  padding-right: 10px; }
 
-.u-pr--10 { padding-right: 10px; }
+.u-pr--20 {
+  padding-right: 20px; }
 
-.u-pr--20 { padding-right: 20px; }
+.u-pr--30 {
+  padding-right: 30px; }
 
-.u-pr--30 { padding-right: 30px; }
-
-.u-pr--40 { padding-right: 40px; }
+.u-pr--40 {
+  padding-right: 40px; }
 
 /* Bottom */
+.u-pb--0 {
+  padding-bottom: 0; }
 
-.u-pb--0 { padding-bottom: 0; }
+.u-pb--5 {
+  padding-bottom: 5px; }
 
-.u-pb--5 { padding-bottom: 5px; }
+.u-pb--10 {
+  padding-bottom: 10px; }
 
-.u-pb--10 { padding-bottom: 10px; }
+.u-pb--20 {
+  padding-bottom: 20px; }
 
-.u-pb--20 { padding-bottom: 20px; }
+.u-pb--30 {
+  padding-bottom: 30px; }
 
-.u-pb--30 { padding-bottom: 30px; }
-
-.u-pb--40 { padding-bottom: 40px; }
+.u-pb--40 {
+  padding-bottom: 40px; }
 
 /* Left */
+.u-pl--0 {
+  padding-left: 0; }
 
-.u-pl--0 { padding-left: 0; }
+.u-pl--5 {
+  padding-left: 5px; }
 
-.u-pl--5 { padding-left: 5px; }
+.u-pl--10 {
+  padding-left: 10px; }
 
-.u-pl--10 { padding-left: 10px; }
+.u-pl--20 {
+  padding-left: 20px; }
 
-.u-pl--20 { padding-left: 20px; }
+.u-pl--30 {
+  padding-left: 30px; }
 
-.u-pl--30 { padding-left: 30px; }
-
-.u-pl--40 { padding-left: 40px; }
+.u-pl--40 {
+  padding-left: 40px; }
 
 /* ---
 title: Position
@@ -2024,171 +1734,92 @@ section: Layout
 <p class="u-pos--static">u-pos--static</p>
 <p class="u-pos--sticky">u-pos--sticky</p>
 */
-
 .u-pos--static {
-  position: static;
-}
+  position: static; }
 
 .u-pos--relative {
-  position: relative;
-}
+  position: relative; }
 
 .u-pos--absolute {
-  position: absolute;
-}
+  position: absolute; }
 
 .u-pos--fixed {
-  position: fixed;
-}
+  position: fixed; }
 
 .u-pos--sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
+  position: sticky; }
 
-@media (min-width: 20em) {
-
+@media (--mq-xs) {
   .u-pos--absolute\@xs {
-    position: absolute;
-  }
-
+    position: absolute; }
   .u-pos--fixed\@xs {
-    position: fixed;
-  }
-
+    position: fixed; }
   .u-pos--relative\@xs {
-    position: relative;
-  }
-
+    position: relative; }
   .u-pos--static\@xs {
-    position: static;
-  }
-
+    position: static; }
   .u-pos--sticky\@xs {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
+    position: sticky; } }
 
-@media (min-width: 30em) {
-
+@media (--mq-sm) {
   .u-pos--absolute\@sm {
-    position: absolute;
-  }
-
+    position: absolute; }
   .u-pos--fixed\@sm {
-    position: fixed;
-  }
-
+    position: fixed; }
   .u-pos--relative\@sm {
-    position: relative;
-  }
-
+    position: relative; }
   .u-pos--static\@sm {
-    position: static;
-  }
-
+    position: static; }
   .u-pos--sticky\@sm {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
+    position: sticky; } }
 
-@media (min-width: 35.5em) {
-
+@media (--mq-md) {
   .u-pos--absolute\@md {
-    position: absolute;
-  }
-
+    position: absolute; }
   .u-pos--fixed\@md {
-    position: fixed;
-  }
-
+    position: fixed; }
   .u-pos--relative\@md {
-    position: relative;
-  }
-
+    position: relative; }
   .u-pos--static\@md {
-    position: static;
-  }
-
+    position: static; }
   .u-pos--sticky\@md {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
+    position: sticky; } }
 
-@media (min-width: 48em) {
-
+@media (--mq-lg) {
   .u-pos--absolute\@lg {
-    position: absolute;
-  }
-
+    position: absolute; }
   .u-pos--fixed\@lg {
-    position: fixed;
-  }
-
+    position: fixed; }
   .u-pos--relative\@lg {
-    position: relative;
-  }
-
+    position: relative; }
   .u-pos--static\@lg {
-    position: static;
-  }
-
+    position: static; }
   .u-pos--sticky\@lg {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
+    position: sticky; } }
 
-@media (min-width: 64em) {
-
+@media (--mq-xl) {
   .u-pos--absolute\@xl {
-    position: absolute;
-  }
-
+    position: absolute; }
   .u-pos--fixed\@xl {
-    position: fixed;
-  }
-
+    position: fixed; }
   .u-pos--relative\@xl {
-    position: relative;
-  }
-
+    position: relative; }
   .u-pos--static\@xl {
-    position: static;
-  }
-
+    position: static; }
   .u-pos--sticky\@xl {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
+    position: sticky; } }
 
-@media (min-width: 80em) {
-
+@media (--mq-xxl) {
   .u-pos--absolute\@xxl {
-    position: absolute;
-  }
-
+    position: absolute; }
   .u-pos--fixed\@xxl {
-    position: fixed;
-  }
-
+    position: fixed; }
   .u-pos--relative\@xxl {
-    position: relative;
-  }
-
+    position: relative; }
   .u-pos--static\@xxl {
-    position: static;
-  }
-
+    position: static; }
   .u-pos--sticky\@xxl {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
+    position: sticky; } }
 
 /* ---
 title: Screen Reader
@@ -2207,7 +1838,6 @@ section: Miscellaneous
 <p class="u-sr-only">u-sr-only</p>
 <p class="u-sr-only u-sr-only--focusable">u-sr-only u-sr-only--focusable</p>
 */
-
 .u-sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -2216,8 +1846,7 @@ section: Miscellaneous
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
-}
+  width: 1px; }
 
 .sr-only--focusable:active,
 .sr-only--focusable:focus {
@@ -2226,8 +1855,7 @@ section: Miscellaneous
   height: auto;
   margin: 0;
   overflow: visible;
-  clip: auto;
-}
+  clip: auto; }
 
 /* ---
 title: Text Align
@@ -2254,164 +1882,92 @@ section: Text
 <p class="u-ta--center">Text that is center aligned.</p>
 <p class="u-ta--justify">Text that is justified.</p>
 */
-
 .u-ta--left {
-  text-align: left;
-}
+  text-align: left; }
 
 .u-ta--right {
-  text-align: right;
-}
+  text-align: right; }
 
 .u-ta--center {
-  text-align: center;
-}
+  text-align: center; }
 
 .u-ta--justify {
-  text-align: justify;
-}
+  text-align: justify; }
 
 .u-ta--justify-all {
-  text-align: justify-all;
-}
+  text-align: justify-all; }
 
-@media (min-width: 20em) {
-
+@media (--mq-xs) {
   .u-ta--left\@xs {
-    text-align: left;
-  }
-
+    text-align: left; }
   .u-ta--right\@xs {
-    text-align: right;
-  }
-
+    text-align: right; }
   .u-ta--center\@xs {
-    text-align: center;
-  }
-
+    text-align: center; }
   .u-ta--justify\@xs {
-    text-align: justify;
-  }
-
+    text-align: justify; }
   .u-ta--justify-all\@xs {
-    text-align: justify-all;
-  }
-}
+    text-align: justify-all; } }
 
-@media (min-width: 30em) {
-
+@media (--mq-sm) {
   .u-ta--left\@sm {
-    text-align: left;
-  }
-
+    text-align: left; }
   .u-ta--right\@sm {
-    text-align: right;
-  }
-
+    text-align: right; }
   .u-ta--center\@sm {
-    text-align: center;
-  }
-
+    text-align: center; }
   .u-ta--justify\@sm {
-    text-align: justify;
-  }
-
+    text-align: justify; }
   .u-ta--justify-all\@sm {
-    text-align: justify-all;
-  }
-}
+    text-align: justify-all; } }
 
-@media (min-width: 35.5em) {
-
+@media (--mq-md) {
   .u-ta--left\@md {
-    text-align: left;
-  }
-
+    text-align: left; }
   .u-ta--right\@md {
-    text-align: right;
-  }
-
+    text-align: right; }
   .u-ta--center\@md {
-    text-align: center;
-  }
-
+    text-align: center; }
   .u-ta--justify\@md {
-    text-align: justify;
-  }
-
+    text-align: justify; }
   .u-ta--justify-all\@md {
-    text-align: justify-all;
-  }
-}
+    text-align: justify-all; } }
 
-@media (min-width: 48em) {
-
+@media (--mq-lg) {
   .u-ta--left\@lg {
-    text-align: left;
-  }
-
+    text-align: left; }
   .u-ta--right\@lg {
-    text-align: right;
-  }
-
+    text-align: right; }
   .u-ta--center\@lg {
-    text-align: center;
-  }
-
+    text-align: center; }
   .u-ta--justify\@lg {
-    text-align: justify;
-  }
-
+    text-align: justify; }
   .u-ta--justify-all\@lg {
-    text-align: justify-all;
-  }
-}
+    text-align: justify-all; } }
 
-@media (min-width: 64em) {
-
+@media (--mq-xl) {
   .u-ta--left\@xl {
-    text-align: left;
-  }
-
+    text-align: left; }
   .u-ta--right\@xl {
-    text-align: right;
-  }
-
+    text-align: right; }
   .u-ta--center\@xl {
-    text-align: center;
-  }
-
+    text-align: center; }
   .u-ta--justify\@xl {
-    text-align: justify;
-  }
-
+    text-align: justify; }
   .u-ta--justify-all\@xl {
-    text-align: justify-all;
-  }
-}
+    text-align: justify-all; } }
 
-@media (min-width: 80em) {
-
+@media (--mq-xxl) {
   .u-ta--left\@xxl {
-    text-align: left;
-  }
-
+    text-align: left; }
   .u-ta--right\@xxl {
-    text-align: right;
-  }
-
+    text-align: right; }
   .u-ta--center\@xxl {
-    text-align: center;
-  }
-
+    text-align: center; }
   .u-ta--justify\@xxl {
-    text-align: justify;
-  }
-
+    text-align: justify; }
   .u-ta--justify-all\@xxl {
-    text-align: justify-all;
-  }
-}
+    text-align: justify-all; } }
 
 /* ---
 title: Text Decoration
@@ -2442,35 +1998,27 @@ section: Text
 <p class="u-td--blink">Text with blink</p>
 <p class="u-td--none">Text with none</p>
 */
-
 .u-td--underline {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 .u-td--overline {
-  text-decoration: overline;
-}
+  text-decoration: overline; }
 
 .u-td--line-through {
-  text-decoration: line-through;
-}
+  text-decoration: line-through; }
 
 .u-td--blink {
-  text-decoration: blink;
-}
+  text-decoration: blink; }
 
 .u-td--none {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /* ---
 title: Text Hide
 section: Text
 ---
 
-&nbsp;
-
-**Hides text**
+Hides text
 
 ```html
 <p class="u-text-hide"></p>
@@ -2478,14 +2026,12 @@ section: Text
 
 <p class="u-text-hide">u-text-hide</p>
 */
-
 .u-text-hide {
   color: transparent;
   background-color: transparent;
   border: 0;
   font: 0/0 a;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 /* ---
 title: Text Transform
@@ -2512,18 +2058,14 @@ section: Text
 <p class="u-tt--lowercase">Lowercase is a keyword forcing all characters to be converted to lowercase.</p>
 <p class="u-tt--uppercase">Uppercase is a keyword forcing all characters to be converted to uppercase.</p>
 */
-
 .u-tt--capitalize {
-  text-transform: capitalize;
-}
+  text-transform: capitalize; }
 
 .u-tt--lowercase {
-  text-transform: lowercase;
-}
+  text-transform: lowercase; }
 
 .u-tt--uppercase {
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 /* ---
 title: Truncate
@@ -2542,12 +2084,10 @@ section: Text
 
 <p class="u-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit quia soluta quidem, quasi pariatur veniam. Aperiam amet fugit nemo laboriosam eos maiores delectus quia id, consequuntur, ea dolores voluptates.</p>
 */
-
 .u-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 /* ---
 title: Vertical Align
@@ -2577,38 +2117,29 @@ section: Layout
 
 **No visuals currently available**
 */
-
 .u-va--baseline {
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 .u-va--sub {
-  vertical-align: sub;
-}
+  vertical-align: sub; }
 
 .u-va--super {
-  vertical-align: super;
-}
+  vertical-align: super; }
 
 .u-va--text-top {
-  vertical-align: text-top;
-}
+  vertical-align: text-top; }
 
 .u-va--text-bottom {
-  vertical-align: text-bottom;
-}
+  vertical-align: text-bottom; }
 
 .u-va--middle {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 .u-va--top {
-  vertical-align: top;
-}
+  vertical-align: top; }
 
 .u-va--bottom {
-  vertical-align: bottom;
-}
+  vertical-align: bottom; }
 
 /* ---
 title: White Space
@@ -2643,111 +2174,26 @@ section: Text
 <p class="u-ws--initial">initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial initial</p>
 <p class="u-ws--unset">unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset unset</p>
 */
-
 .u-ws--normal {
-  white-space: normal;
-}
+  white-space: normal; }
 
 .u-ws--nowrap {
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 .u-ws--pre {
-  white-space: pre;
-}
+  white-space: pre; }
 
 .u-ws--pre-wrap {
-  white-space: pre-wrap;
-}
+  white-space: pre-wrap; }
 
 .u-ws--pre-line {
-  white-space: pre-line;
-}
+  white-space: pre-line; }
 
 .u-ws--inherit {
-  white-space: inherit;
-}
+  white-space: inherit; }
 
 .u-ws--initial {
-  white-space: normal;
-  white-space: initial;
-}
+  white-space: initial; }
 
 .u-ws--unset {
-  white-space: unset;
-}
-
-/* ---
-title: Configuration
-section: Getting Started
----
-
-The library leverages CSS Variables to set things like colors, font weights, and custom media queries. Include your own declarations to override the CSS variables.
-
-*/
-
-:root {
-
-  /* Colors */
-
-  /* Letter Spacing */
-
-  /* Font Weight */
-
-  /* Font Stack */
-
-  /* Media Queries */
-
-}
-
-/* ---
-title: Media Queries
-section: Getting Started
----
-
-[postcss-custom-media](https://github.com/postcss/postcss-custom-media)
-
-Custom media queries are set to make media queries more semantic and easier to work with.
-
-You may override the default values by defining your own custom media query declarations.
-
-**Available Values**: `[ xs | sm | md | lg | xl | xxl ]`
-
-Each value corresponds to a CSS Variable defined in settings.
-
-```
-@custom-media --mq-xs (min-width: 20em);
-@custom-media --mq-sm (min-width: 30em);
-@custom-media --mq-md (min-width: 35.5em);
-@custom-media --mq-lg (min-width: 48em);
-@custom-media --mq-xl (min-width: 64em);
-@custom-media --mq-xxl (min-width: 80em);
-```
-
-**Abbreviation**: `mq`
-
-**Format**: `--mq-<value>`
-
-```
-## General Usage
-@media (--mq-xs) {}
-@media (--mq-sm) {}
-@media (--mq-md) {}
-@media (--mq-lg) {}
-@media (--mq-xl) {}
-@media (--mq-xxl) {}
-
-## Each loop
-@each $mq in var(--mq-options) {
-
-  @if $(mq) == e {
-    .u-name {}
-  } @else {
-    @media (--mq-$(mq)) {
-      .u-name\@$mq {}
-    }
-  }
-
-}
-```
-*/
+  white-space: unset; }

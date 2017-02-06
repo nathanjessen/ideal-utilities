@@ -1,91 +1,46 @@
-const docRoot = 'docs';
-const dist = 'dist';
-const projectName = 'Ideal Utilities';
-const scssFiles = ['ideal.scss', 'lib/*.scss'];
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const runSequence = require('run-sequence');
 
-const browserSync  = require('browser-sync').create();
-const gulp         = require('gulp');
-const cssnano      = require('gulp-cssnano');
-const notify       = require('gulp-notify');
-const postcss      = require('gulp-postcss');
-const rename       = require('gulp-rename');
-const sass         = require('gulp-sass');
-const size         = require('gulp-size');
-const sourcemaps   = require('gulp-sourcemaps');
-const immutableCss = require('immutable-css');
-const mdcss        = require('mdcss');
-const cssnext      = require('postcss-cssnext');
-const reporter     = require('postcss-reporter');
-const stylelint    = require('stylelint');
-const syntax_scss  = require('postcss-scss');
+const documentation = require('./tasks/documentation');
+const sass_development = require('./tasks/sass_development');
+const sass_lint = require('./tasks/sass_lint');
+const sass_production = require('./tasks/sass_production');
 
-// PostCSS Processors
-const processors = [
-  cssnext({
-    browsers: ['last 2 versions', '> 5%', 'not ie < 11']
-  })
-];
+const default_settings = require('./config');
+const user_settings = {};
+const settings = Object.assign({}, default_settings, user_settings);
 
-// Styles
-gulp.task('sass:development', function () {
-  return gulp.src('ideal.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(dist));
+gulp.task('documentation', function() {
+  return documentation(settings.documentation);
 });
 
-gulp.task('sass:lint', function () {
-  return gulp.src(scssFiles)
-    .pipe(postcss([
-      stylelint(),
-      immutableCss(),
-      reporter({
-        clearReportedMessages: true
-      })
-    ], {
-      syntax: syntax_scss
-    }));
+gulp.task('sass:lint', function() {
+  return sass_lint(settings.sass_lint);
 });
 
-gulp.task('sass:production', function () {
-  return gulp.src('ideal.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss(processors))
-    .pipe(gulp.dest(dist))
-    .pipe(cssnano())
-    .pipe(rename({extname: '.min.css'}))
-    .pipe(size())
-    .pipe(gulp.dest(dist));
+gulp.task('sass:development', ['sass:lint'], function() {
+  return sass_development(settings.sass_development);
 });
 
-// Documentation
-gulp.task('docs', ['sass:development'], function () {
-  return gulp.src('dist/ideal.css')
-    .pipe(postcss([
-      mdcss({
-        destination: docRoot
-      })
-    ]))
-    .pipe(gulp.dest(docRoot));
+gulp.task('sass:production', ['sass:lint'], function() {
+  return sass_production(settings.sass_production);
 });
 
-// BrowserSync
-gulp.task('serve', () => {
+gulp.task('build:production', function(callback) {
+  runSequence('sass:development', 'documentation', 'sass:production', callback);
+});
+
+gulp.task('watch', ['documentation'], function() {
   browserSync.init({
-    files: [docRoot + '/**'],
+    files: settings.browsersync.files,
     port: 4000,
     server: {
-      baseDir: docRoot
+      baseDir: settings.browsersync.source
     }
   });
 
-  // Watch
-  gulp.watch(scssFiles, ['docs', 'sass:lint']);
+  gulp.watch(settings.browsersync.destination, ['sass:development', 'documentation']);
 });
 
-// Default
-gulp.task('default', ['sass:development']);
-
-// Development
-gulp.task('dev', ['docs', 'serve']);
+gulp.task('default', ['watch']);
