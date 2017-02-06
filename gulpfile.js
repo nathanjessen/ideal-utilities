@@ -1,50 +1,57 @@
 const docRoot = 'docs';
 const dist = 'dist';
 const projectName = 'Ideal Utilities';
-const cssFiles = ['index.css', 'lib/*.css'];
+const scssFiles = ['ideal.scss', 'lib/*.scss'];
 
-const browserSync = require('browser-sync').create();
-const gulp = require('gulp');
-const cssnano = require('gulp-cssnano');
-const notify = require('gulp-notify');
-const postcss = require('gulp-postcss');
-const rename = require('gulp-rename');
-const size = require('gulp-size');
-const sourcemaps = require('gulp-sourcemaps');
+const browserSync  = require('browser-sync').create();
+const gulp         = require('gulp');
+const cssnano      = require('gulp-cssnano');
+const notify       = require('gulp-notify');
+const postcss      = require('gulp-postcss');
+const rename       = require('gulp-rename');
+const sass         = require('gulp-sass');
+const size         = require('gulp-size');
+const sourcemaps   = require('gulp-sourcemaps');
 const immutableCss = require('immutable-css');
-const mdcss = require('mdcss');
-const atVariables = require('postcss-at-rules-variables');
-const atIf = require('postcss-conditionals');
-const cssnext = require('postcss-cssnext');
-const cssEach = require('postcss-each');
-const atFor = require('postcss-for');
-const atImport = require('postcss-import');
-const reporter = require('postcss-reporter');
-const stylelint = require('stylelint');
+const mdcss        = require('mdcss');
+const cssnext      = require('postcss-cssnext');
+const reporter     = require('postcss-reporter');
+const stylelint    = require('stylelint');
+const syntax_scss  = require('postcss-scss');
 
 // PostCSS Processors
 const processors = [
-  atImport(),
-  stylelint(),
-  immutableCss(),
-  reporter({
-    clearReportedMessages: true
-  }),
-  atVariables(),
-  atFor(),
-  cssEach(),
-  atIf(),
   cssnext({
     browsers: ['last 2 versions', '> 5%', 'not ie < 11']
   })
 ];
 
-// CSS
-gulp.task('css', function () {
-  return gulp.src('index.css')
+// Styles
+gulp.task('sass:development', function () {
+  return gulp.src('ideal.scss')
     .pipe(sourcemaps.init())
-    .pipe(postcss(processors))
+    .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
+    .pipe(gulp.dest(dist));
+});
+
+gulp.task('sass:lint', function () {
+  return gulp.src(scssFiles)
+    .pipe(postcss([
+      stylelint(),
+      immutableCss(),
+      reporter({
+        clearReportedMessages: true
+      })
+    ], {
+      syntax: syntax_scss
+    }));
+});
+
+gulp.task('sass:production', function () {
+  return gulp.src('ideal.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss(processors))
     .pipe(gulp.dest(dist))
     .pipe(cssnano())
     .pipe(rename({extname: '.min.css'}))
@@ -53,8 +60,8 @@ gulp.task('css', function () {
 });
 
 // Documentation
-gulp.task('docs', ['css'], function () {
-  return gulp.src('dist/index.css')
+gulp.task('docs', ['sass:development'], function () {
+  return gulp.src('dist/ideal.css')
     .pipe(postcss([
       mdcss({
         destination: docRoot
@@ -74,11 +81,11 @@ gulp.task('serve', () => {
   });
 
   // Watch
-  gulp.watch(cssFiles, ['docs']);
+  gulp.watch(scssFiles, ['docs', 'sass:lint']);
 });
 
 // Default
-gulp.task('default', ['css']);
+gulp.task('default', ['sass:development']);
 
 // Development
 gulp.task('dev', ['docs', 'serve']);
