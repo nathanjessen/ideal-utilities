@@ -26,9 +26,7 @@ var settings = {
 
 dagger(settings);
 
-/**
- * Push build to gh-pages
- */
+/* Deploy build to gh-pages */
 gulp.task('deploy', ['build:production'], function () {
   return gulp.src('./dist/docs/**/*')
     .pipe(deploy())
