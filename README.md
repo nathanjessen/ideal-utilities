@@ -1,4 +1,4 @@
-# Dagger Utilities
+# Dagger Utilities [![Build Status](https://travis-ci.org/nathanjessen/dagger-utilities.svg?branch=master)](https://travis-ci.org/nathanjessen/dagger-utilities)
 
 This is a library of functional CSS classes. The library provides all the small, single-purpose, immutable classes you may find necessary in a project. Instead of writing big, monolithic components in your CSS and being forced to come up with clever names and clean CSS declarations, you can build a component by simply combining several of the functional classes.
 

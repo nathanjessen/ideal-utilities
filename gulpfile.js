@@ -1,4 +1,6 @@
 var dagger = require('dagger-tasks');
+var gulp = require('gulp');
+var deploy = require('gulp-gh-pages');
 
 var settings = {
   browsersync: {
@@ -23,3 +25,11 @@ var settings = {
 };
 
 dagger(settings);
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', ['build:production'], function () {
+  return gulp.src('./dist/docs/**/*')
+    .pipe(deploy())
+});

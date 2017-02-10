@@ -8,13 +8,18 @@
   "dependencies": {
     "dagger-tasks": "^0.0.1"
   },
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.4",
+    "rimraf": "^2.5.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "refresh": "rm -fr node_modules && yarn",
-    "clean": "rm -fr dist",
+    "clean": "rimraf dist .publish",
+    "refresh": "rimraf node_modules && yarn",
     "start": "gulp",
     "lint": "gulp sass:lint",
-    "build": "gulp build:production"
+    "build": "gulp build:production",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
