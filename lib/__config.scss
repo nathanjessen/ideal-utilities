@@ -31,21 +31,18 @@ $mq-options: (
   xxl: '(min-width: 80em)'
 );
 
+/* Font Weight */
+$font-weights: (
+  100, 200, 300, 400, 500, 600, 700, 800, 900,
+  normal, bold, lighter, bolder
+);
+
 :root {
 
   /* Letter Spacing */
   --letter-compact: -1px;
   --letter-normal: 0;
   --letter-loose: 2px;
-
-  /* Font Weight */
-  --font-options: light, normal, medium, semibold, bold, bolder;
-  --font-light: 300;
-  --font-normal: 400;
-  --font-medium: 500;
-  --font-semibold: 600;
-  --font-bold: 700;
-  --font-bolder: 900;
 
   /* Font Stack */
   --font-stack-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
