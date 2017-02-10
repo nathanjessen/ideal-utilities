@@ -27,7 +27,7 @@ var settings = {
 dagger(settings);
 
 /* Deploy build to gh-pages */
-gulp.task('deploy', ['build:production'], function () {
+gulp.task('deploy', ['build:development', 'build:production'], function () {
   return gulp.src('./dist/docs/**/*')
     .pipe(deploy())
 });
