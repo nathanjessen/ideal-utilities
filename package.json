@@ -6,11 +6,11 @@
   "license": "MIT",
   "main": "index.scss",
   "dependencies": {
-    "dagger-tasks": "^0.0.1"
+    "dagger-tasks": "0.0.1"
   },
   "devDependencies": {
     "gulp-gh-pages": "^0.5.4",
-    "rimraf": "^2.5.4"
+    "rimraf": "^3.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",

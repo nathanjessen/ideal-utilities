@@ -27,3 +27,4 @@ nbproject
 *.sublime-workspace
 .publish
 dist
+package-lock.json
